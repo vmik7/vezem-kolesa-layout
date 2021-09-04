@@ -10,5 +10,6 @@ module.exports = {
         'scss/at-rule-no-unknown': true,
         'no-empty-source': null,
         'block-no-empty': null,
+        'no-descending-specificity': null,
     },
 };

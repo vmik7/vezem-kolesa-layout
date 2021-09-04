@@ -1,9 +1,15 @@
 /* eslint-disable no-undef, no-unused-vars */
 const productGalleryThumbsSwiper = new Swiper('.product-gallery__thumbs', {
     spaceBetween: 20,
-    slidesPerView: 3,
+    slidesPerView: 4,
+    centerInsufficientSlides: true,
     freeMode: true,
     watchSlidesProgress: true,
+    breakpoints: {
+        768: {
+            slidesPerView: 3,
+        },
+    },
 });
 const productGallerySwiper = new Swiper('.product-gallery__swiper', {
     thumbs: {
