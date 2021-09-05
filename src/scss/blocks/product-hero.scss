@@ -172,7 +172,7 @@
 
     &__delivery-line {
         flex-shrink: 1;
-        margin: 0 20px;
+        margin: 0 17px;
 
         @media screen and (max-width: $md2 + px) {
             display: none;
@@ -234,80 +234,15 @@
     }
 
     &__stars {
-        display: flex;
-        align-items: center;
+        width: 130px;
+        height: 17px;
         margin-left: 25px;
 
         @media screen and (max-width: $md4 + px) {
+            width: 100px;
+            height: 15px;
             margin-left: 15px;
         }
-    }
-
-    &__stars-item {
-        svg {
-            width: 16px;
-            @media screen and (max-width: $md4 + px) {
-                width: 13px;
-            }
-        }
-
-        path {
-            fill: #ddd;
-        }
-
-        &:not(:first-child) {
-            margin-left: 5px;
-        }
-    }
-
-    &__stars_value_five > &__stars-item:nth-child(5) path {
-        fill: #ff4343;
-    }
-    &__stars_value_five > &__stars-item:nth-child(4) path {
-        fill: #ff4343;
-    }
-    &__stars_value_five > &__stars-item:nth-child(3) path {
-        fill: #ff4343;
-    }
-    &__stars_value_five > &__stars-item:nth-child(2) path {
-        fill: #ff4343;
-    }
-    &__stars_value_five > &__stars-item:nth-child(1) path {
-        fill: #ff4343;
-    }
-
-    &__stars_value_four > &__stars-item:nth-child(4) path {
-        fill: #ff4343;
-    }
-    &__stars_value_four > &__stars-item:nth-child(3) path {
-        fill: #ff4343;
-    }
-    &__stars_value_four > &__stars-item:nth-child(2) path {
-        fill: #ff4343;
-    }
-    &__stars_value_four > &__stars-item:nth-child(1) path {
-        fill: #ff4343;
-    }
-
-    &__stars_value_three > &__stars-item:nth-child(3) path {
-        fill: #ff4343;
-    }
-    &__stars_value_three > &__stars-item:nth-child(2) path {
-        fill: #ff4343;
-    }
-    &__stars_value_three > &__stars-item:nth-child(1) path {
-        fill: #ff4343;
-    }
-
-    &__stars_value_two > &__stars-item:nth-child(2) path {
-        fill: #ff4343;
-    }
-    &__stars_value_two > &__stars-item:nth-child(1) path {
-        fill: #ff4343;
-    }
-
-    &__stars_value_one > &__stars-item:nth-child(1) path {
-        fill: #ff4343;
     }
 
     &__vendor-code {

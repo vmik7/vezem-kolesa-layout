@@ -22,4 +22,21 @@ const productGallerySwiper = new Swiper('.product-gallery__swiper', {
         bulletActiveClass: 'product-gallery__paggination-bullet-active',
     },
 });
+
+$.fn.responsiveTabs = function () {
+    this.addClass('responsive-tabs');
+    this.append($('<span class="glyphicon glyphicon-chevron-down"></span>'));
+    this.append($('<span class="glyphicon glyphicon-chevron-up"></span>'));
+
+    this.on('click', 'li.active > a, span.glyphicon', () => {
+        this.toggleClass('open');
+    });
+
+    this.on('click', 'li:not(.active) > a', () => {
+        this.removeClass('open');
+    });
+};
+
+$('.product-info__tabs').responsiveTabs();
+
 /* eslint-enable no-undef, no-unused-vars */

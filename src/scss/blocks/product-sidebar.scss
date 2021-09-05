@@ -5,10 +5,13 @@
     }
 }
 .product-sidebar {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
     padding-top: 20px;
-    row-gap: 18px;
+
+    & > * {
+        margin-bottom: 18px;
+    }
 
     &__my-avto-btn {
     }
@@ -28,6 +31,7 @@
     }
 }
 .my-avto-btn {
+    display: block;
     text-align: left;
     background: none;
     border: none;

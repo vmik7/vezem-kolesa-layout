@@ -48,6 +48,80 @@ body {
     }
 }
 
+.star-raiting {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__item {
+        width: 16%;
+        height: inherit;
+
+        svg {
+            width: 100%;
+            height: inherit;
+        }
+
+        path {
+            fill: transparent;
+        }
+
+        &:not(:first-child) {
+            margin-left: 5px;
+        }
+    }
+
+    &_value_five > &__item:nth-child(5) path {
+        fill: #ff4343;
+    }
+    &_value_five > &__item:nth-child(4) path {
+        fill: #ff4343;
+    }
+    &_value_five > &__item:nth-child(3) path {
+        fill: #ff4343;
+    }
+    &_value_five > &__item:nth-child(2) path {
+        fill: #ff4343;
+    }
+    &_value_five > &__item:nth-child(1) path {
+        fill: #ff4343;
+    }
+
+    &_value_four > &__item:nth-child(4) path {
+        fill: #ff4343;
+    }
+    &_value_four > &__item:nth-child(3) path {
+        fill: #ff4343;
+    }
+    &_value_four > &__item:nth-child(2) path {
+        fill: #ff4343;
+    }
+    &_value_four > &__item:nth-child(1) path {
+        fill: #ff4343;
+    }
+
+    &_value_three > &__item:nth-child(3) path {
+        fill: #ff4343;
+    }
+    &_value_three > &__item:nth-child(2) path {
+        fill: #ff4343;
+    }
+    &_value_three > &__item:nth-child(1) path {
+        fill: #ff4343;
+    }
+
+    &_value_two > &__item:nth-child(2) path {
+        fill: #ff4343;
+    }
+    &_value_two > &__item:nth-child(1) path {
+        fill: #ff4343;
+    }
+
+    &_value_one > &__item:nth-child(1) path {
+        fill: #ff4343;
+    }
+}
+
 .page {
     display: flex;
     flex-direction: column;
@@ -87,5 +161,5 @@ body {
     }
 }
 .footer {
-    display: none;
+    height: 500px;
 }
