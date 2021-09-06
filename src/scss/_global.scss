@@ -142,3 +142,15 @@ body {
 .footer {
     height: 500px;
 }
+
+.only-desktop {
+    @media screen and (max-width: $md3 + px) {
+        display: none;
+    }
+}
+
+.only-mobile {
+    @media screen and (min-width: $md3 + 1 + px) {
+        display: none;
+    }
+}
