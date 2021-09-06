@@ -1,9 +1,21 @@
 @import '../vars';
 
 .product-info {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+
     &__tabs {
         @media screen and (max-width: $md3 + px) {
             margin: 20px 0 30px;
+        }
+    }
+
+    &__tab-content {
+        flex: 1;
+        @media screen and (min-width: $md3 + 1 + px) {
+            padding: 30px 30px 50px 30px;
+            background: #f9f9f9;
         }
     }
 
@@ -12,11 +24,6 @@
         font-size: 13px;
         font-family: $font-roboto;
         line-height: 120%;
-
-        @media screen and (min-width: $md3 + 1 + px) {
-            padding: 30px 30px 50px 30px;
-            background: #f9f9f9;
-        }
     }
 
     &__header {
@@ -213,14 +220,6 @@
 }
 
 .product-specifications {
-    &__header {
-        margin-bottom: 40px;
-        font-weight: bold;
-        font-size: 30px;
-        font-family: $font-open-sans;
-        line-height: 100%;
-    }
-
     &__wrapper {
         display: grid;
         grid-template-columns: repeat(3, 1fr);

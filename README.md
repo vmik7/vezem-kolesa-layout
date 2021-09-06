@@ -7,11 +7,10 @@ Template, which makes process of creating landing-page sites easely.
 ### single-line-elipsis
 
 ```css
-text-overflow: ellipsis;
 overflow: hidden;
 white-space: nowrap;
+text-overflow: ellipsis;
 ```
-
 
 ### multi-line-elipsis
 

@@ -36,3 +36,16 @@
 @mixin no-focus-outline() {
     outline: 0;
 }
+
+@mixin singleLineElipsis() {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+@mixin multiLineElipsis($lines) {
+    display: -webkit-box;
+    -webkit-line-clamp: $lines;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}

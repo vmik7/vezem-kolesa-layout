@@ -1,0 +1,14 @@
+@import '../vars';
+
+.product-analogs {
+    &__label {
+        margin-bottom: 20px;
+        font-size: 21px;
+        font-family: $font-roboto;
+        line-height: 100%;
+
+        &_bold {
+            font-weight: bold;
+        }
+    }
+}

@@ -29,8 +29,8 @@
         <section class="main">
             <div class="product-details">
                 <div class="page-container">
-                    <div class="product-details__wrapper">
-                        <div class="product-details__content">
+                    <div class="product-details__top">
+                        <div class="product-details__top-content">
                             <div class="product-hero">
                                 <header class="product-hero__header product-header">
                                     <div class="product-header__top">
@@ -304,7 +304,7 @@
                                 <div class="tab-content product-info__tab-content">
                                     <div role="tabpanel" class="tab-pane fade in active" id="product-specifications">
                                         <div class="product-info__block product-specifications">
-                                            <h2 class="product-specifications__header">Характеристики</h2>
+                                            <h2 class="product-details__header">Характеристики</h2>
                                             <div class="product-specifications__wrapper">
                                                 <div class="product-specifications__block">
                                                     <h3 class="product-info__header">Основные</h3>
@@ -751,7 +751,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="product-details__sidebar product-sidebar">
+                        <div class="product-details__top-sidebar product-sidebar">
                             <a href="#" class="product-sidebar__my-avto-btn my-avto-btn">
                                 <span class="my-avto-btn__icon">
                                     <img src="img/avto-ask.svg" alt="автомобиль со знаком вопроса">
@@ -795,6 +795,331 @@
                                 <li class="social__item"><a href="https://ok.ru/" class="social__link" aria-label="Одноклассники"><img src="img/OK.svg" alt="лого Одноклассники"></a></li>
                                 <li class="social__item"><a href="https://telegram.org/" class="social__link" aria-label="Телеграм"><img src="img/Telegram.svg" alt="лого Телеграм"></a></li>
                             </ul>
+                        </div>
+                    </div>
+                    <div class="product-details__wrapper">
+                        <h2 class="product-details__header">Акции</h2>
+                        <div class="product-disconts">
+                            <div class="discont">
+                                <div class="discont__figure">
+                                    <div class="discont__image">
+                                        <picture>
+                                            <source srcset="img/discont-1@1x.webp 1x,
+                                                            img/discont-1@2x.webp 2x"
+                                                    type="image/webp">
+                                            <img	src="img/discont-1@1x.png"
+                                                    srcset="img/discont-1@2x.png 2x"
+                                                    alt="шины Michelin">
+                                        </picture>
+                                    </div>
+                                    <!-- <div class="discont__image-caption">
+                                        <div class="discont__caption-label">Акция!</div>
+                                        <div class="discont__caption-promo">Заправься</div>
+                                        <div class="discont__caption-text">бесплатно с шинами Michelin</div>
+                                    </div> -->
+                                </div>
+                                <div class="discont__info">
+                                    <div class="discont__header">Заправиться с шинами Michelin</div>
+                                    <div class="discont__text">Всем покупателям комплекта зимних или летних Michelin шин мы дарим заправку полного бака топлива. </div>
+                                </div>
+                            </div>
+                            <div class="discont">
+                                <div class="discont__figure">
+                                    <div class="discont__image">
+                                        <picture>
+                                            <source srcset="img/discont-2@1x.webp 1x,
+                                                            img/discont-2@2x.webp 2x"
+                                                    type="image/webp">
+                                            <img	src="img/discont-2@1x.png"
+                                                    srcset="img/discont-2@2x.png 2x"
+                                                    alt="шины Michelin">
+                                        </picture>
+                                    </div>
+                                    <!-- <div class="discont__image-caption">
+                                        <div class="discont__caption-label">Скидка</div>
+                                        <div class="discont__caption-promo">-30%</div>
+                                        <div class="discont__caption-text">для Вас на хранение шин круглый год</div>
+                                    </div> -->
+                                </div>
+                                <div class="discont__info">
+                                    <div class="discont__header">Скидка на хранение 30%</div>
+                                    <div class="discont__text">Шины произведены из уникальной смеси c добавлением кремня, разработанной для увеличения сцепления с влажной поверхностью, акцентируя внимание </div>
+                                </div>
+                            </div>
+                            <div class="discont">
+                                <div class="discont__figure">
+                                    <div class="discont__image">
+                                        <picture>
+                                            <source srcset="img/discont-3@1x.webp 1x,
+                                                            img/discont-3@2x.webp 2x"
+                                                    type="image/webp">
+                                            <img	src="img/discont-3@1x.png"
+                                                    srcset="img/discont-3@2x.png 2x"
+                                                    alt="шины Michelin">
+                                        </picture>
+                                    </div>
+                                    <!-- <div class="discont__image-caption">
+                                        <div class="discont__caption-label">Акция!</div>
+                                        <div class="discont__caption-promo">Бесплатный</div>
+                                        <div class="discont__caption-text">шиномонтаж для покупателей комплекта</div>
+                                    </div> -->
+                                </div>
+                                <div class="discont__info">
+                                    <div class="discont__header">Шиномонтаж бесплатно</div>
+                                    <div class="discont__text">До окнца осени  покупателям комплекта зимних шин мы дарим заправку бесплатный шиномонтаж на СТО партнеров.</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h2 class="product-details__header">Подходит для этих автомобилей</h2>
+                        <div class="product-avto">
+                            <div class="product-avto__models">
+                                <ul class="product-avto__model-list">
+                                    <li class="product-avto__model-item"><a href="#" class="product-avto__model-link">Chevrolet</a></li>
+                                    <li class="product-avto__model-item"><a href="#" class="product-avto__model-link">Daewoo</a></li>
+                                    <li class="product-avto__model-item"><a href="#" class="product-avto__model-link">FAW</a></li>
+                                    <li class="product-avto__model-item"><a href="#" class="product-avto__model-link">Citroën</a></li>
+                                    <li class="product-avto__model-item"><a href="#" class="product-avto__model-link">Honda</a></li>
+                                    <li class="product-avto__model-item"><a href="#" class="product-avto__model-link">Hyundai</a></li>
+                                    <li class="product-avto__model-item"><a href="#" class="product-avto__model-link">Kia</a></li>
+                                    <li class="product-avto__model-item"><a href="#" class="product-avto__model-link">Lancia</a></li>
+                                    <li class="product-avto__model-item"><a href="#" class="product-avto__model-link">Mazda</a></li>
+                                    <li class="product-avto__model-item"><a href="#" class="product-avto__model-link">Mitsubishi</a></li>
+                                    <li class="product-avto__model-item"><a href="#" class="product-avto__model-link">Nissan</a></li>
+                                    <li class="product-avto__model-item"><a href="#" class="product-avto__model-link">Opel</a></li>
+                                    <li class="product-avto__model-item"><a href="#" class="product-avto__model-link">Peugeot</a></li>
+                                    <li class="product-avto__model-item"><a href="#" class="product-avto__model-link">Ravon</a></li>
+                                    <li class="product-avto__model-item"><a href="#" class="product-avto__model-link">Renault</a></li>
+                                    <li class="product-avto__model-item"><a href="#" class="product-avto__model-link">Rover</a></li>
+                                    <li class="product-avto__model-item"><a href="#" class="product-avto__model-link">Skoda</a></li>
+                                    <li class="product-avto__model-item"><a href="#" class="product-avto__model-link">Subaru</a></li>
+                                    <li class="product-avto__model-item"><a href="#" class="product-avto__model-link">Suzuki</a></li>
+                                    <li class="product-avto__model-item"><a href="#" class="product-avto__model-link">Toyota</a></li>
+                                    <li class="product-avto__model-item"><a href="#" class="product-avto__model-link">ВАЗ</a></li>
+                                    <li class="product-avto__model-item"><a href="#" class="product-avto__model-link">Лада</a></li>
+                                </ul>
+                            </div>
+                            <div class="product-avto__table avto-table">
+                                <div class="avto-table__heading-row">
+                                    <div class="avto-table__header">Производитель</div>
+                                    <div class="avto-table__header-wrapper">
+                                        <div class="avto-table__header">Марка</div>
+                                        <div class="avto-table__header">Модели и модификация</div>
+                                    </div>
+                                </div>
+                                <div class="avto-table__row">
+                                    <div class="avto-table__brand">Chevrolet</div>
+                                    <ul class="avto-table__models-list">
+                                        <li class="avto-table__models-item">
+                                            <div class="avto-table__name">Lacetti</div>
+                                            <div class="avto-table__model">J200 (2003-2013)</div>
+                                            <ul class="avto-table__modifications-list">
+                                                <li class="avto-table__modifications-item">1.6i</li>
+                                                <li class="avto-table__modifications-item">1.4i</li>
+                                                <li class="avto-table__modifications-item">1.8</li>
+                                                <li class="avto-table__modifications-item">2.0 D</li>
+                                                <li class="avto-table__modifications-item">1.6i</li>
+                                                <li class="avto-table__modifications-item">1.8</li>
+                                                <li class="avto-table__modifications-item">2.0 D</li>
+                                            </ul>
+                                        </li>
+                                        <li class="avto-table__models-item">
+                                            <div class="avto-table__name">Lacetti</div>
+                                            <div class="avto-table__model">J200 (2003-2013)</div>
+                                            <ul class="avto-table__modifications-list">
+                                                <li class="avto-table__modifications-item">1.6i</li>
+                                                <li class="avto-table__modifications-item">1.4i</li>
+                                                <li class="avto-table__modifications-item">1.8</li>
+                                                <li class="avto-table__modifications-item">2.0 D</li>
+                                                <li class="avto-table__modifications-item">1.6i</li>
+                                                <li class="avto-table__modifications-item">1.8</li>
+                                                <li class="avto-table__modifications-item">2.0 D</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="avto-table__row">
+                                    <div class="avto-table__brand">Chevrolet</div>
+                                    <ul class="avto-table__models-list">
+                                        <li class="avto-table__models-item">
+                                            <div class="avto-table__name">Lacetti</div>
+                                            <div class="avto-table__model">J200 (2003-2013)</div>
+                                            <ul class="avto-table__modifications-list">
+                                                <li class="avto-table__modifications-item">1.6i</li>
+                                                <li class="avto-table__modifications-item">1.4i</li>
+                                                <li class="avto-table__modifications-item">1.8</li>
+                                                <li class="avto-table__modifications-item">2.0 D</li>
+                                                <li class="avto-table__modifications-item">1.6i</li>
+                                                <li class="avto-table__modifications-item">1.8</li>
+                                                <li class="avto-table__modifications-item">2.0 D</li>
+                                            </ul>
+                                        </li>
+                                        <li class="avto-table__models-item">
+                                            <div class="avto-table__name">Lacetti</div>
+                                            <div class="avto-table__model">J200 (2003-2013)</div>
+                                            <ul class="avto-table__modifications-list">
+                                                <li class="avto-table__modifications-item">1.6i</li>
+                                                <li class="avto-table__modifications-item">1.4i</li>
+                                                <li class="avto-table__modifications-item">1.8</li>
+                                                <li class="avto-table__modifications-item">2.0 D</li>
+                                                <li class="avto-table__modifications-item">1.6i</li>
+                                                <li class="avto-table__modifications-item">1.8</li>
+                                                <li class="avto-table__modifications-item">2.0 D</li>
+                                            </ul>
+                                        </li>
+                                        <li class="avto-table__models-item">
+                                            <div class="avto-table__name">Lacetti</div>
+                                            <div class="avto-table__model">J200 (2003-2013)</div>
+                                            <ul class="avto-table__modifications-list">
+                                                <li class="avto-table__modifications-item">1.6i</li>
+                                                <li class="avto-table__modifications-item">1.4i</li>
+                                                <li class="avto-table__modifications-item">1.8</li>
+                                                <li class="avto-table__modifications-item">2.0 D</li>
+                                                <li class="avto-table__modifications-item">1.6i</li>
+                                                <li class="avto-table__modifications-item">1.8</li>
+                                                <li class="avto-table__modifications-item">2.0 D</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="avto-table__row">
+                                    <div class="avto-table__brand">Chevrolet</div>
+                                    <ul class="avto-table__models-list">
+                                        <li class="avto-table__models-item">
+                                            <div class="avto-table__name">Lacetti</div>
+                                            <div class="avto-table__model">J200 (2003-2013)</div>
+                                            <ul class="avto-table__modifications-list">
+                                                <li class="avto-table__modifications-item">1.6i</li>
+                                                <li class="avto-table__modifications-item">1.4i</li>
+                                                <li class="avto-table__modifications-item">1.8</li>
+                                                <li class="avto-table__modifications-item">2.0 D</li>
+                                                <li class="avto-table__modifications-item">1.6i</li>
+                                                <li class="avto-table__modifications-item">1.8</li>
+                                                <li class="avto-table__modifications-item">2.0 D</li>
+                                            </ul>
+                                        </li>
+                                        <li class="avto-table__models-item">
+                                            <div class="avto-table__name">Lacetti</div>
+                                            <div class="avto-table__model">J200 (2003-2013)</div>
+                                            <ul class="avto-table__modifications-list">
+                                                <li class="avto-table__modifications-item">1.6i</li>
+                                                <li class="avto-table__modifications-item">1.4i</li>
+                                                <li class="avto-table__modifications-item">1.8</li>
+                                                <li class="avto-table__modifications-item">2.0 D</li>
+                                                <li class="avto-table__modifications-item">1.6i</li>
+                                                <li class="avto-table__modifications-item">1.8</li>
+                                                <li class="avto-table__modifications-item">2.0 D</li>
+                                            </ul>
+                                        </li>
+                                        <li class="avto-table__models-item">
+                                            <div class="avto-table__name">Lacetti</div>
+                                            <div class="avto-table__model">J200 (2003-2013)</div>
+                                            <ul class="avto-table__modifications-list">
+                                                <li class="avto-table__modifications-item">1.6i</li>
+                                                <li class="avto-table__modifications-item">1.4i</li>
+                                                <li class="avto-table__modifications-item">1.8</li>
+                                                <li class="avto-table__modifications-item">2.0 D</li>
+                                                <li class="avto-table__modifications-item">1.6i</li>
+                                                <li class="avto-table__modifications-item">1.8</li>
+                                                <li class="avto-table__modifications-item">2.0 D</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="avto-table__row">
+                                    <div class="avto-table__brand">Chevrolet</div>
+                                    <ul class="avto-table__models-list">
+                                        <li class="avto-table__models-item">
+                                            <div class="avto-table__name">Lacetti</div>
+                                            <div class="avto-table__model">J200 (2003-2013)</div>
+                                            <ul class="avto-table__modifications-list">
+                                                <li class="avto-table__modifications-item">1.6i</li>
+                                                <li class="avto-table__modifications-item">1.4i</li>
+                                                <li class="avto-table__modifications-item">1.8</li>
+                                                <li class="avto-table__modifications-item">2.0 D</li>
+                                                <li class="avto-table__modifications-item">1.6i</li>
+                                                <li class="avto-table__modifications-item">1.8</li>
+                                                <li class="avto-table__modifications-item">2.0 D</li>
+                                            </ul>
+                                        </li>
+                                        <li class="avto-table__models-item">
+                                            <div class="avto-table__name">Lacetti</div>
+                                            <div class="avto-table__model">J200 (2003-2013)</div>
+                                            <ul class="avto-table__modifications-list">
+                                                <li class="avto-table__modifications-item">1.6i</li>
+                                                <li class="avto-table__modifications-item">1.4i</li>
+                                                <li class="avto-table__modifications-item">1.8</li>
+                                                <li class="avto-table__modifications-item">2.0 D</li>
+                                                <li class="avto-table__modifications-item">1.6i</li>
+                                                <li class="avto-table__modifications-item">1.8</li>
+                                                <li class="avto-table__modifications-item">2.0 D</li>
+                                            </ul>
+                                        </li>
+                                        <li class="avto-table__models-item">
+                                            <div class="avto-table__name">Lacetti</div>
+                                            <div class="avto-table__model">J200 (2003-2013)</div>
+                                            <ul class="avto-table__modifications-list">
+                                                <li class="avto-table__modifications-item">1.6i</li>
+                                                <li class="avto-table__modifications-item">1.4i</li>
+                                                <li class="avto-table__modifications-item">1.8</li>
+                                                <li class="avto-table__modifications-item">2.0 D</li>
+                                                <li class="avto-table__modifications-item">1.6i</li>
+                                                <li class="avto-table__modifications-item">1.8</li>
+                                                <li class="avto-table__modifications-item">2.0 D</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="avto-table__row">
+                                    <div class="avto-table__brand">Chevrolet</div>
+                                    <ul class="avto-table__models-list">
+                                        <li class="avto-table__models-item">
+                                            <div class="avto-table__name">Lacetti</div>
+                                            <div class="avto-table__model">J200 (2003-2013)</div>
+                                            <ul class="avto-table__modifications-list">
+                                                <li class="avto-table__modifications-item">1.6i</li>
+                                                <li class="avto-table__modifications-item">1.4i</li>
+                                                <li class="avto-table__modifications-item">1.8</li>
+                                                <li class="avto-table__modifications-item">2.0 D</li>
+                                                <li class="avto-table__modifications-item">1.6i</li>
+                                                <li class="avto-table__modifications-item">1.8</li>
+                                                <li class="avto-table__modifications-item">2.0 D</li>
+                                            </ul>
+                                        </li>
+                                        <li class="avto-table__models-item">
+                                            <div class="avto-table__name">Lacetti</div>
+                                            <div class="avto-table__model">J200 (2003-2013)</div>
+                                            <ul class="avto-table__modifications-list">
+                                                <li class="avto-table__modifications-item">1.6i</li>
+                                                <li class="avto-table__modifications-item">1.4i</li>
+                                                <li class="avto-table__modifications-item">1.8</li>
+                                                <li class="avto-table__modifications-item">2.0 D</li>
+                                                <li class="avto-table__modifications-item">1.6i</li>
+                                                <li class="avto-table__modifications-item">1.8</li>
+                                                <li class="avto-table__modifications-item">2.0 D</li>
+                                            </ul>
+                                        </li>
+                                        <li class="avto-table__models-item">
+                                            <div class="avto-table__name">Lacetti</div>
+                                            <div class="avto-table__model">J200 (2003-2013)</div>
+                                            <ul class="avto-table__modifications-list">
+                                                <li class="avto-table__modifications-item">1.6i</li>
+                                                <li class="avto-table__modifications-item">1.4i</li>
+                                                <li class="avto-table__modifications-item">1.8</li>
+                                                <li class="avto-table__modifications-item">2.0 D</li>
+                                                <li class="avto-table__modifications-item">1.6i</li>
+                                                <li class="avto-table__modifications-item">1.8</li>
+                                                <li class="avto-table__modifications-item">2.0 D</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h2 class="product-details__header">Альтернативные товары</h2>
+                        <div class="product-analogs">
+                            <div class="product-analogs__label">Летние шины в размере <span class="product-analogs__label_bold">175/70 R13</span> которые подойдут к вашему автомомбилю</div>
                         </div>
                     </div>
                 </div>

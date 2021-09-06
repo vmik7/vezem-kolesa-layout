@@ -139,27 +139,6 @@ body {
 .main {
     flex: 1;
 }
-.product-details {
-    color: $color-main;
-    font-family: $font-roboto;
-
-    &__wrapper {
-        display: flex;
-    }
-
-    &__content {
-        flex: 1;
-    }
-
-    &__sidebar {
-        flex: 0 0 260px;
-        margin-left: 40px;
-
-        @media screen and (max-width: $md1 + px) {
-            display: none;
-        }
-    }
-}
 .footer {
     height: 500px;
 }

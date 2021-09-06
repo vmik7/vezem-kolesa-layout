@@ -1,0 +1,153 @@
+@import '../vars';
+
+.product-avto {
+    &__models {
+    }
+
+    &__model-list {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -10px;
+        margin-bottom: 30px;
+    }
+
+    &__model-item {
+        margin: 10px;
+    }
+
+    &__model-link {
+        color: $color-accent;
+        font-weight: bold;
+        font-size: 20px;
+        font-family: $font-open-sans;
+        line-height: 100%;
+        text-decoration-line: underline;
+    }
+
+    &__table {
+    }
+}
+
+.avto-table {
+    color: $color-main;
+    font-size: 16px;
+    font-family: $font-roboto;
+    line-height: 1.2em;
+
+    &__heading-row {
+        display: grid;
+        grid-template-columns: 15% 1fr;
+        font-weight: bold;
+        column-gap: 5%;
+        background: #f9f9f9;
+
+        @media screen and (max-width: $md2 + px) {
+            grid-template-columns: 20% 1fr;
+        }
+        @media screen and (min-width: $md3 + 1 + px) {
+            padding: 12px 20px;
+        }
+        @media screen and (max-width: $md3 + px) {
+            display: none;
+        }
+    }
+
+    &__header {
+    }
+
+    &__header-wrapper {
+        display: grid;
+        grid-template-columns: 15% 1fr;
+        column-gap: 5%;
+
+        @media screen and (max-width: $md2 + px) {
+            grid-template-columns: 20% 1fr;
+        }
+    }
+
+    &__row {
+        position: relative;
+        display: grid;
+        grid-template-columns: 15% 1fr;
+        column-gap: 5%;
+
+        @media screen and (max-width: $md2 + px) {
+            grid-template-columns: 20% 1fr;
+        }
+        @media screen and (min-width: $md3 + 1 + px) {
+            padding: 10px 20px;
+            &::after {
+                position: absolute;
+                right: 20px;
+                bottom: 0;
+                left: 20px;
+                display: block;
+                height: 1px;
+                background: #f2f2f2;
+                content: '';
+            }
+        }
+        @media screen and (max-width: $md3 + px) {
+            grid-template-columns: 1fr;
+
+            &:not(:first-child) {
+                margin-top: 20px;
+            }
+        }
+    }
+
+    &__brand {
+        font-weight: bold;
+        @media screen and (max-width: $md3 + px) {
+            margin-bottom: 10px;
+            &::after {
+                display: block;
+                height: 1px;
+                margin-top: 10px;
+                background: #f2f2f2;
+                content: '';
+            }
+        }
+    }
+
+    &__models-list {
+        & > *:not(:first-child) {
+            margin-top: 10px;
+        }
+    }
+
+    &__models-item {
+        display: grid;
+        grid-template-columns: 15% 1fr 2fr;
+        column-gap: 5%;
+
+        @media screen and (max-width: $md2 + px) {
+            grid-template-columns: 20% 1fr 1fr;
+        }
+        @media screen and (max-width: $md3 + px) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__name {
+        color: $color-accent;
+        font-weight: bold;
+        @media screen and (max-width: $md3 + px) {
+            margin-bottom: 5px;
+        }
+    }
+
+    &__model {
+    }
+
+    &__modifications-list {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -5px -10px;
+    }
+
+    &__modifications-item {
+        margin: 5px 10px;
+        color: $color-accent;
+    }
+}

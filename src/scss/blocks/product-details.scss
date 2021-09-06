@@ -1,0 +1,41 @@
+@import '../vars';
+
+.product-details {
+    color: $color-main;
+    font-family: $font-roboto;
+
+    &__top {
+        display: flex;
+    }
+
+    &__top-content {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+    }
+
+    &__top-sidebar {
+        flex: 0 0 260px;
+        margin-left: 40px;
+
+        @media screen and (max-width: $md1 + px) {
+            display: none;
+        }
+    }
+
+    &__wrapper {
+        margin-top: 60px;
+    }
+
+    &__header {
+        margin-bottom: 40px;
+        font-weight: bold;
+        font-size: 30px;
+        font-family: $font-open-sans;
+        line-height: 100%;
+
+        &:not(:first-child) {
+            margin-top: 60px;
+        }
+    }
+}
