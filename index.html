@@ -1,0 +1,1362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"/>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+    <div class="page">
+        <header class="header"></header>
+
+        <section class="main">
+            <div class="product-details">
+                <div class="page-container">
+                    <div class="product-details__top">
+                        <div class="product-details__top-content">
+                            <div class="product-hero">
+                                <header class="product-hero__header product-header">
+                                    <div class="product-header__top">
+                                        <div class="product-header__logo">
+                                            <picture>
+                                                <source srcset="img/product-logo@1x.webp 1x,
+                                                                img/product-logo@2x.webp 2x"
+                                                        type="image/webp">
+                                                <img	src="img/product-logo@1x.png"
+                                                        srcset="img/product-logo@2x.png 2x"
+                                                        alt="nokian tyres">
+                                            </picture>
+                                        </div>
+                                        <div class="product-header__delivery-line delivery-line">
+                                            <div class="delivery-line__item">В кредит от <span class="delivery-line__item-highlight">500₽/мес</span></div>
+                                            <div class="delivery-line__item">Бесплатная доставка</div>
+                                            <div class="delivery-line__item">Самовывоз 1-2 дня</div>
+                                        </div>
+                                        <div class="product-header__actions">
+                                            <button class="product-header__actions-item product-header__actions-item_like">
+                                                <svg width="28" height="24" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M14.7071 22.4853L24.8361 12.3563C27.3249 9.86747 27.6921 5.77302 25.3369 3.15748C24.7469 2.50044 24.0293 1.97048 23.2278 1.59995C22.4262 1.22942 21.5576 1.02609 20.6749 1.00235C19.7922 0.978612 18.9139 1.13497 18.0936 1.46189C17.2733 1.78881 16.5282 2.27943 15.9038 2.90381L14 4.80761L12.3563 3.16387C9.86747 0.675068 5.77302 0.307884 3.15748 2.66313C2.50044 3.25309 1.97048 3.97072 1.59995 4.77225C1.22942 5.57379 1.02609 6.44241 1.00235 7.32512C0.978612 8.20784 1.13497 9.08613 1.46189 9.90642C1.78881 10.7267 2.27943 11.4718 2.90381 12.0962L13.2929 22.4853C13.4804 22.6728 13.7348 22.7782 14 22.7782C14.2652 22.7782 14.5196 22.6728 14.7071 22.4853V22.4853Z" stroke="#D6E152" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </button>
+                                            <button class="product-header__actions-item product-header__actions-item_compare">
+                                                <svg width="32" height="28" viewBox="0 0 32 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M15.8335 0.91124V6.75148M15.8335 6.75148H25.086M15.8335 6.75148H6.58093" stroke="#0E8ECF" stroke-width="1.69749" stroke-linecap="round"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 22.9467C1.00184 25.8891 3.73273 28 6.94457 28C10.1564 28 12.8873 25.8891 13.8891 22.9467H0Z" fill="#0E8ECF"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M18.1011 22.9467C19.1029 25.8891 21.8338 28 25.0456 28C28.2575 28 30.9884 25.8891 31.9902 22.9467H18.1011Z" fill="#0E8ECF"/>
+                                                    <path d="M13.0505 23.3609L6.7475 6.79289L0.808105 23.3609" stroke="#0E8ECF" stroke-width="1.61666" stroke-linejoin="round"/>
+                                                    <path d="M31.1515 23.3609L24.8485 6.79289L18.9091 23.3609" stroke="#0E8ECF" stroke-width="1.61666" stroke-linejoin="round"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="product-header__wrapper">
+                                        <div class="product-header__subline">
+                                            <div class="product-header__type-name">Шина</div>
+                                            <div class="product-header__stars star-raiting star-raiting_value_four">
+                                                <div class="star-raiting__item">
+                                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M7.49597 4.28772L7.57251 4.52328H7.8202H11.1708C11.5011 4.52328 11.6384 4.94588 11.3712 5.13999L8.66049 7.10945L8.46011 7.25504L8.53665 7.4906L9.57206 10.6773C9.67411 10.9913 9.31463 11.2525 9.04745 11.0584L6.33672 9.08894L6.13634 8.94336L5.93596 9.08894L3.22523 11.0584C2.95805 11.2525 2.59857 10.9913 2.70062 10.6773L3.73603 7.4906L3.81257 7.25504L3.61219 7.10945L0.901457 5.13999C0.634282 4.94588 0.771592 4.52328 1.10184 4.52328H4.45249H4.70017L4.77671 4.28772L5.81212 1.10106C5.91417 0.786979 6.35851 0.786981 6.46057 1.10106L7.49597 4.28772Z" stroke="#FF4343" stroke-width="0.681818"/>
+                                                    </svg>
+                                                </div>
+                                                <div class="star-raiting__item">
+                                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M7.49597 4.28772L7.57251 4.52328H7.8202H11.1708C11.5011 4.52328 11.6384 4.94588 11.3712 5.13999L8.66049 7.10945L8.46011 7.25504L8.53665 7.4906L9.57206 10.6773C9.67411 10.9913 9.31463 11.2525 9.04745 11.0584L6.33672 9.08894L6.13634 8.94336L5.93596 9.08894L3.22523 11.0584C2.95805 11.2525 2.59857 10.9913 2.70062 10.6773L3.73603 7.4906L3.81257 7.25504L3.61219 7.10945L0.901457 5.13999C0.634282 4.94588 0.771592 4.52328 1.10184 4.52328H4.45249H4.70017L4.77671 4.28772L5.81212 1.10106C5.91417 0.786979 6.35851 0.786981 6.46057 1.10106L7.49597 4.28772Z" stroke="#FF4343" stroke-width="0.681818"/>
+                                                    </svg>
+                                                </div>
+                                                <div class="star-raiting__item">
+                                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M7.49597 4.28772L7.57251 4.52328H7.8202H11.1708C11.5011 4.52328 11.6384 4.94588 11.3712 5.13999L8.66049 7.10945L8.46011 7.25504L8.53665 7.4906L9.57206 10.6773C9.67411 10.9913 9.31463 11.2525 9.04745 11.0584L6.33672 9.08894L6.13634 8.94336L5.93596 9.08894L3.22523 11.0584C2.95805 11.2525 2.59857 10.9913 2.70062 10.6773L3.73603 7.4906L3.81257 7.25504L3.61219 7.10945L0.901457 5.13999C0.634282 4.94588 0.771592 4.52328 1.10184 4.52328H4.45249H4.70017L4.77671 4.28772L5.81212 1.10106C5.91417 0.786979 6.35851 0.786981 6.46057 1.10106L7.49597 4.28772Z" stroke="#FF4343" stroke-width="0.681818"/>
+                                                    </svg>
+                                                </div>
+                                                <div class="star-raiting__item">
+                                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M7.49597 4.28772L7.57251 4.52328H7.8202H11.1708C11.5011 4.52328 11.6384 4.94588 11.3712 5.13999L8.66049 7.10945L8.46011 7.25504L8.53665 7.4906L9.57206 10.6773C9.67411 10.9913 9.31463 11.2525 9.04745 11.0584L6.33672 9.08894L6.13634 8.94336L5.93596 9.08894L3.22523 11.0584C2.95805 11.2525 2.59857 10.9913 2.70062 10.6773L3.73603 7.4906L3.81257 7.25504L3.61219 7.10945L0.901457 5.13999C0.634282 4.94588 0.771592 4.52328 1.10184 4.52328H4.45249H4.70017L4.77671 4.28772L5.81212 1.10106C5.91417 0.786979 6.35851 0.786981 6.46057 1.10106L7.49597 4.28772Z" stroke="#FF4343" stroke-width="0.681818"/>
+                                                    </svg>
+                                                </div>
+                                                <div class="star-raiting__item">
+                                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M7.49597 4.28772L7.57251 4.52328H7.8202H11.1708C11.5011 4.52328 11.6384 4.94588 11.3712 5.13999L8.66049 7.10945L8.46011 7.25504L8.53665 7.4906L9.57206 10.6773C9.67411 10.9913 9.31463 11.2525 9.04745 11.0584L6.33672 9.08894L6.13634 8.94336L5.93596 9.08894L3.22523 11.0584C2.95805 11.2525 2.59857 10.9913 2.70062 10.6773L3.73603 7.4906L3.81257 7.25504L3.61219 7.10945L0.901457 5.13999C0.634282 4.94588 0.771592 4.52328 1.10184 4.52328H4.45249H4.70017L4.77671 4.28772L5.81212 1.10106C5.91417 0.786979 6.35851 0.786981 6.46057 1.10106L7.49597 4.28772Z" stroke="#FF4343" stroke-width="0.681818"/>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="product-header__vendor-code">арт. T430358</div>
+                                        </div>
+                                        <h2 class="product-header__title">Nokian HAKKA BLUE 2 SUV 175/70 R13 82T</h2>
+                                    </div>
+                                </header>
+                                <div class="product-hero__gallery product-gallery">
+                                    <div class="swiper product-gallery__swiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <picture>
+                                                    <source srcset="img/gallery-photo-1@1x.webp 1x,
+                                                                    img/gallery-photo-1@2x.webp 2x"
+                                                            type="image/webp">
+                                                    <img	src="img/gallery-photo-1@1x.jpg"
+                                                            srcset="img/gallery-photo-1@2x.jpg 2x"
+                                                            data-fancybox="product-gallery"
+                                                            data-src="img/gallery-photo-1@2x.jpg"
+                                                            alt="колесо">
+                                                </picture>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <picture>
+                                                    <source srcset="img/gallery-photo-2@1x.webp 1x,
+                                                                    img/gallery-photo-2@2x.webp 2x"
+                                                            type="image/webp">
+                                                    <img	src="img/gallery-photo-2@1x.jpg"
+                                                            srcset="img/gallery-photo-2@2x.jpg 2x"
+                                                            data-fancybox="product-gallery"
+                                                            data-src="img/gallery-photo-2@2x.jpg"
+                                                            alt="колесо">
+                                                </picture>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <picture>
+                                                    <source srcset="img/gallery-photo-3@1x.webp 1x,
+                                                                    img/gallery-photo-3@2x.webp 2x"
+                                                            type="image/webp">
+                                                    <img	src="img/gallery-photo-3@1x.jpg"
+                                                            srcset="img/gallery-photo-3@2x.jpg 2x"
+                                                            data-fancybox="product-gallery"
+                                                            data-src="img/gallery-photo-3@2x.jpg"
+                                                            alt="колесо">
+                                                </picture>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <picture>
+                                                    <source srcset="img/gallery-photo-4@1x.webp 1x,
+                                                                    img/gallery-photo-4@2x.webp 2x"
+                                                            type="image/webp">
+                                                    <img	src="img/gallery-photo-4@1x.jpg"
+                                                            srcset="img/gallery-photo-4@2x.jpg 2x"
+                                                            data-fancybox="product-gallery"
+                                                            data-src="img/gallery-photo-4@2x.jpg"
+                                                            alt="колесо">
+                                                </picture>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div thumbsslider class="swiper product-gallery__thumbs">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <picture>
+                                                    <source srcset="img/gallery-photo-1@1x.webp 1x,
+                                                                    img/gallery-photo-1@2x.webp 2x"
+                                                            type="image/webp">
+                                                    <img	src="img/gallery-photo-1@1x.jpg"
+                                                            srcset="img/gallery-photo-1@2x.jpg 2x"
+                                                            alt="колесо">
+                                                </picture>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <picture>
+                                                    <source srcset="img/gallery-photo-2@1x.webp 1x,
+                                                                    img/gallery-photo-2@2x.webp 2x"
+                                                            type="image/webp">
+                                                    <img	src="img/gallery-photo-2@1x.jpg"
+                                                            srcset="img/gallery-photo-2@2x.jpg 2x"
+                                                            alt="колесо">
+                                                </picture>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <picture>
+                                                    <source srcset="img/gallery-photo-3@1x.webp 1x,
+                                                                    img/gallery-photo-3@2x.webp 2x"
+                                                            type="image/webp">
+                                                    <img	src="img/gallery-photo-3@1x.jpg"
+                                                            srcset="img/gallery-photo-3@2x.jpg 2x"
+                                                            alt="колесо">
+                                                </picture>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <picture>
+                                                    <source srcset="img/gallery-photo-4@1x.webp 1x,
+                                                                    img/gallery-photo-4@2x.webp 2x"
+                                                            type="image/webp">
+                                                    <img	src="img/gallery-photo-4@1x.jpg"
+                                                            srcset="img/gallery-photo-4@2x.jpg 2x"
+                                                            alt="колесо">
+                                                </picture>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-gallery__paggination"></div>
+                                </div>
+                                <div class="product-hero__content">
+                                    <section class="product-hero__actions">
+                                        <div class="product-hero__price product-price">
+                                            <div class="product-price__value">3 770 ₽</div>
+                                            <div class="product-price__total">Итого: 12 480 ₽</div>
+                                        </div>
+                                        <div class="product-hero__cart product-cart">
+                                            <div class="product-cart__counter">
+                                                <button class="product-cart__minus my-button my-button_grey">
+                                                    <svg width="16" height="4" viewBox="0 0 16 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M7.78829e-07 4L9.53674e-07 -2.22545e-07L16 0L16 4L7.78829e-07 4Z" fill="white"/>
+                                                    </svg>
+                                                </button>
+                                                <div class="product-cart__count">4</div>
+                                                <button class="product-cart__plus my-button my-button_grey">
+                                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M0 10V6H16V10H0Z" fill="white"/>
+                                                        <path d="M10 16H6L6 1.74846e-07L10 0V16Z" fill="white"/>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                            <button class="product-cart__add-to-cart my-button my-button_accent">Добавить в корзину</button>
+                                            <button class="product-cart__one-click my-button">Купить в 1 клик</button>
+                                        </div>
+                                    </section>
+                                    <section class="product-hero__info">
+                                        <div class="product-hero__promo product-promo">
+                                            <div class="product-promo__item">
+                                                <div class="product-promo__icon">
+                                                    <img src="img/promo-icon-1.svg" alt="логотип Michelin">
+                                                </div>
+                                                <div class="product-promo__text">
+                                                    Заправка<br>с Michelin
+                                                </div>
+                                            </div>
+                                            <div class="product-promo__item">
+                                                <div class="product-promo__icon">
+                                                    <img src="img/promo-icon-2.svg" alt="логотип Michelin">
+                                                </div>
+                                                <div class="product-promo__text">
+                                                    Бесплатный<br>шиномотнаж
+                                                </div>
+                                            </div>
+                                            <div class="product-promo__item">
+                                                <div class="product-promo__icon">
+                                                    <img src="img/promo-icon-3.svg" alt="логотип Michelin">
+                                                </div>
+                                                <div class="product-promo__text">
+                                                    -30%<br>на хранение
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-hero__available product-available">
+                                            <div class="product-available__status available-status available-status_with-icon available-status_yes">В наличии</div>
+                                            <!-- <div class="product-available__status available-status available-status_with-icon available-status_no">Нет в наличии</div> -->
+                                            <ul class="product-available__cities available-cities">
+                                                <li class="available-cities__item">
+                                                    <div class="available-cities__city-name">Москва</div>
+                                                    <div class="available-cities__adress"><span class="available-cities__underground">Текстильщики</span>, ул. Строителей, 10</div>
+                                                    <div class="available-cities__count">2 шт</div>
+                                                </li>
+                                                <li class="available-cities__item">
+                                                    <div class="available-cities__city-name">Москва</div>
+                                                    <div class="available-cities__adress"><span class="available-cities__underground">Автозаводская</span>, ул. Кораблева, 156</div><div class="available-cities__count">8 шт</div>
+                                                </li>
+                                                <li class="available-cities__item">
+                                                    <div class="available-cities__city-name">Химки</div>
+                                                    <div class="available-cities__adress">ул. Автозаводская, 3</div><div class="available-cities__count"><span class="available-cities__count-more">></span> 10 шт</div>
+                                                </li>
+                                                <li class="available-cities__item">
+                                                    <div class="available-cities__city-name">Зеленоград</div>
+                                                    <div class="available-cities__adress">ул. Автозаводская, 3</div><span class="available-cities__count">6 шт</span>
+                                                </li>
+                                                <li class="available-cities__item">
+                                                    <div class="available-cities__city-name">Мытищи</div>
+                                                    <div class="available-cities__adress">ул. Ботаническая, 25</div><span class="available-cities__count">8 шт</span>
+                                                </li>
+                                            </ul>
+                                            <!-- <div class="product-available__alternative product-alternative">
+                                                <div class="product-alternative__text product-alternative__text_yes">для этой шины есть отличные варианты замены</div>
+                                                <button class="product-alternative__show my-button">Посмотреть аналоги</button>
+                                            </div> -->
+                                            <div class="product-hero__delivery-line delivery-line">
+                                                <div class="delivery-line__item">В кредит от <span class="delivery-line__item-highlight">500₽/мес</span></div>
+                                                <div class="delivery-line__item">Бесплатная доставка</div>
+                                                <div class="delivery-line__item">Самовывоз 1-2 дня</div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
+                            </div>
+                            <div class="product-info" id="product-info">
+                                <!-- Nav tabs -->
+                                <ul class="nav nav-tabs product-info__tabs product-tabs" role="tablist">
+                                    <li role="presentation" class="active product-tabs__item"><a href="#product-specifications" aria-controls="product-specifications" role="tab" data-toggle="tab">Характеристики</a></li>
+                                    <li role="presentation" class="product-tabs__item"><a href="#product-description" aria-controls="product-description" role="tab" data-toggle="tab">Описание</a></li>
+                                    <li role="presentation" class="product-tabs__item"><a href="#product-delivery" aria-controls="product-delivery" role="tab" data-toggle="tab">Доставка шин</a></li>
+                                    <li role="presentation" class="product-tabs__item"><a href="#product-payment" aria-controls="product-payment" role="tab" data-toggle="tab">Варианты оплаты</a></li>
+                                    <li role="presentation" class="product-tabs__item"><a href="#product-reviews" aria-controls="product-reviews" role="tab" data-toggle="tab">Отзывы</a></li>
+                                </ul>
+                                <!-- Tab panes -->
+                                <div class="tab-content product-info__tab-content">
+                                    <div role="tabpanel" class="tab-pane fade in active" id="product-specifications">
+                                        <div class="product-info__block product-specifications">
+                                            <h2 class="product-details__header">Характеристики</h2>
+                                            <div class="product-specifications__wrapper">
+                                                <div class="product-specifications__block">
+                                                    <h3 class="product-info__header">Основные</h3>
+                                                    <div class="product-info__content">
+                                                        <ul class="product-specifications__list">
+                                                            <li class="product-specifications__line">
+                                                                <div class="product-specifications__property-name">Производитель</div>
+                                                                <div class="product-specifications__property-value product-specifications__property-value_accent">Nokian</div>
+                                                            </li>
+                                                            <li class="product-specifications__line">
+                                                                <div class="product-specifications__property-name">Модель</div>
+                                                                <div class="product-specifications__property-value">Nordman 7</div>
+                                                            </li>
+                                                            <li class="product-specifications__line">
+                                                                <div class="product-specifications__property-name">Начало продаж</div>
+                                                                <div class="product-specifications__property-value">август 2017 г.</div>
+                                                            </li>
+                                                            <li class="product-specifications__line">
+                                                                <div class="product-specifications__property-name">Сезон</div>
+                                                                <div class="product-specifications__property-value product-specifications__property-value_accent"><img src="img/winter.svg" alt="снежинка" aria-hidden class="product-specifications__property-icon"> Зимние</div>
+                                                            </li>
+                                                            <li class="product-specifications__line">
+                                                                <div class="product-specifications__property-name">Размеров в наличии</div>
+                                                                <div class="product-specifications__property-value">32</div>
+                                                            </li>
+                                                            <li class="product-specifications__line">
+                                                                <div class="product-specifications__property-name">Управляемость</div>
+                                                                <div class="product-specifications__property-value">А...В</div>
+                                                            </li>
+                                                            <li class="product-specifications__line">
+                                                                <div class="product-specifications__property-name">Тип автомобиля</div>
+                                                                <div class="product-specifications__property-value">Внедорожники и SUV</div>
+                                                            </li>
+                                                            <li class="product-specifications__line">
+                                                                <div class="product-specifications__property-name">Расход топлива</div>
+                                                                <div class="product-specifications__property-value">B...C</div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="product-specifications__block">
+                                                    <h3 class="product-info__header">Размеры и вес</h3>
+                                                    <div class="product-info__content">
+                                                        <ul class="product-specifications__list">
+                                                            <li class="product-specifications__line">
+                                                                <div class="product-specifications__property-name">Диаметр шины (дюймы)</div>
+                                                                <div class="product-specifications__property-value product-specifications__property-value_accent">R13</div>
+                                                            </li>
+                                                            <li class="product-specifications__line">
+                                                                <div class="product-specifications__property-name">Ширина (мм)</div>
+                                                                <div class="product-specifications__property-value">175</div>
+                                                            </li>
+                                                            <li class="product-specifications__line">
+                                                                <div class="product-specifications__property-name">Допустимая ширина диска</div>
+                                                                <div class="product-specifications__property-value">от 4.5 до 6 дюймов</div>
+                                                            </li>
+                                                            <li class="product-specifications__line">
+                                                                <div class="product-specifications__property-name">Профиль</div>
+                                                                <div class="product-specifications__property-value">70% ( ≈ 124 мм)</div>
+                                                            </li>
+                                                            <li class="product-specifications__line">
+                                                                <div class="product-specifications__property-name">Вес шины</div>
+                                                                <div class="product-specifications__property-value">≈ 8 кг</div>
+                                                            </li>
+                                                            <li class="product-specifications__line">
+                                                                <div class="product-specifications__property-name">Типоразмер</div>
+                                                                <div class="product-specifications__property-value product-specifications__property-value_accent">175/70 R13 82T</div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="product-specifications__block">
+                                                    <h3 class="product-info__header">Назначение</h3>
+                                                    <div class="product-info__content">
+                                                        <ul class="product-specifications__list">
+                                                            <li class="product-specifications__line">
+                                                                <div class="product-specifications__property-name">Тип авто</div>
+                                                                <div class="product-specifications__property-value">легковые</div>
+                                                            </li>
+                                                            <li class="product-specifications__line">
+                                                                <div class="product-specifications__property-name">Стиль управления</div>
+                                                                <div class="product-specifications__property-value">универсальный</div>
+                                                            </li>
+                                                            <li class="product-specifications__line">
+                                                                <div class="product-specifications__property-name">Тип дорог</div>
+                                                                <div class="product-specifications__property-value">асфальт</div>
+                                                            </li>
+                                                            <li class="product-specifications__line">
+                                                                <div class="product-specifications__property-name">Назначение</div>
+                                                                <div class="product-specifications__property-value">город (пригород)</div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="product-specifications__block">
+                                                    <h3 class="product-info__header">Основные</h3>
+                                                    <div class="product-info__content">
+                                                        <ul class="product-specifications__list">
+                                                            <li class="product-specifications__line">
+                                                                <div class="product-specifications__property-name">Усиленные боковины</div>
+                                                                <div class="product-specifications__property-value product-specifications__property-value_accent">XL (да)</div>
+                                                            </li>
+                                                            <li class="product-specifications__line">
+                                                                <div class="product-specifications__property-name">Технология ранфлет</div>
+                                                                <div class="product-specifications__property-value">нет</div>
+                                                            </li>
+                                                            <li class="product-specifications__line">
+                                                                <div class="product-specifications__property-name">Тип протектора</div>
+                                                                <div class="product-specifications__property-value">направленный</div>
+                                                            </li>
+                                                            <li class="product-specifications__line">
+                                                                <div class="product-specifications__property-name">Шипы</div>
+                                                                <div class="product-specifications__property-value">да</div>
+                                                            </li>
+                                                            <li class="product-specifications__line">
+                                                                <div class="product-specifications__property-name">Упаковка</div>
+                                                                <div class="product-specifications__property-value">фирменные пакеты в подарок</div>
+                                                            </li>
+                                                            <li class="product-specifications__line">
+                                                                <div class="product-specifications__property-name">Производитель:</div>
+                                                                <div class="product-specifications__property-value">205</div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="product-specifications__block">
+                                                    <h3 class="product-info__header">Дополнительно</h3>
+                                                    <div class="product-info__content">
+                                                        <ul class="product-specifications__list">
+                                                            <li class="product-specifications__line">
+                                                                <div class="product-specifications__property-name">Бренд</div>
+                                                                <div class="product-specifications__property-value">Nokian Tyres, Финляндия</div>
+                                                            </li>
+                                                            <li class="product-specifications__line">
+                                                                <div class="product-specifications__property-name">Сегмент</div>
+                                                                <div class="product-specifications__property-value">премиум</div>
+                                                            </li>
+                                                            <li class="product-specifications__line">
+                                                                <div class="product-specifications__property-name">Производство</div>
+                                                                <div class="product-specifications__property-value">уточняйте</div>
+                                                            </li>
+                                                            <li class="product-specifications__line">
+                                                                <div class="product-specifications__property-name">Расширенная гарантия	</div>
+                                                                <div class="product-specifications__property-value">да, от компании Nokian</div>
+                                                            </li>
+                                                            <li class="product-specifications__line">
+                                                                <div class="product-specifications__property-name">Гарантия</div>
+                                                                <div class="product-specifications__property-value">1 год</div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="product-specifications__block">
+                                                    <h3 class="product-info__header">Участие в тестах</h3>
+                                                    <div class="product-info__content">
+                                                        <ul class="product-specifications__list">
+                                                            <li class="product-specifications__line">
+                                                                <div class="product-specifications__property-name">За Рулем</div>
+                                                                <div class="product-specifications__property-value">6 место</div>
+                                                            </li>
+                                                            <li class="product-specifications__line">
+                                                                <div class="product-specifications__property-name">Все тесты</div>
+                                                                <div class="product-specifications__property-value product-specifications__property-value_accent">1</div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade" id="product-description">
+                                        <div class="product-info__block product-description">
+                                            <div class="product-description__wrapper">
+                                                <div class="product-description__block">
+                                                    <h3 class="product-info__header">О шине</h3>
+                                                    <div class="product-info__content">
+                                                        <p class="product-info__paragraph">
+                                                            Не только продукты переработки топлива и других химических веществ вашего автомобиля наносят вред окружающей среде. Состав и неправильная утилизация некоторых покрышек, по мнению экспертов, наносят гораздо больший вред экологии.
+                                                        </p>
+                                                        <p class="product-info__paragraph">
+                                                            Современные производители шин уже давно активно используют более экологичные разработки для производства. Кроме того, проводятся исследования в сфере поиска максимально экологичного материала.
+                                                        </p>
+                                                        <p class="product-info__paragraph product-info__paragraph_bold">
+                                                            Характеристики шин Nokian HAKKA BLUE 2
+                                                        </p>
+                                                        <p class="product-info__paragraph">
+                                                            Новые шины Nokian HAKKA BLUE 2 в Москве открыл для широкого круга автолюбителей немецкий концерн BMW. Именно они выбрали эту модель для стандартной комплектации своих авто в 2011 году.
+                                                        </p>
+                                                        <p class="product-info__paragraph">
+                                                            Эта модель ко всем прочим своим характеристикам еще является и экологически безопасной – так называемые «зеленые шины». Резина Nokian HAKKA BLUE 2 известна не только своими экологическими свойствами, она к тому же максимально высокотехнологична, она давно и активно используется многими ценителями комфортной езды.
+                                                        </p>
+                                                        <p class="product-info__paragraph product-info__paragraph_bold">
+                                                            Выгодная покупка летней резины Nokian HAKKA BLUE 2
+                                                        </p>
+                                                        <p class="product-info__paragraph">
+                                                            Полный ассортимент шин Nokian HAKKA BLUE 2 вы всегда сможете в интернет-магазине. Главным преимуществом магазина являются прямые поставки, благодаря которым, обеспечивается минимальная цена на резину Nokian HAKKA BLUE 2 в Москве.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="product-description__block">
+                                                    <h3 class="product-info__header">Видео</h3>
+                                                    <div class="product-info__content">
+                                                        <div class="product-description__video">
+                                                            <iframe width="950" height="534" src="https://www.youtube.com/embed/GCt8iLHF1M4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                        </div>
+                                                        <div class="product-description__video-caption">
+                                                            Современные производители шин уже давно активно используют более экологичные разработки для производства.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade" id="product-delivery">
+                                        <div class="product-info__block product-delivery">
+                                            <div class="product-delivery__date-block product-date">
+                                                <div class="product-date__icon">
+                                                    <img src="img/watch.svg" alt="часы" aria-hidden>
+                                                </div>
+                                                <div class="product-date__wrapper">
+                                                    <div class="product-date__item">Ближайшая дата доставки По Москве: <span class="product-date__value">19/08/2021</span></div>
+                                                    <div class="product-date__item">В регионы: <span class="product-date__value">20/08/2021</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="product-delivery__wrapper">
+                                                <div class="product-delivery__block">
+                                                    <h3 class="product-info__header">Самовывоз с розничного склада</h3>
+                                                    <div class="product-info__content">
+                                                        <div class="product-info__paragraph">Заказ можно получить непосредственно в часы работы любого шинного центра.</div>
+                                                        <div class="product-info__paragraph">После прибытия заказа в шинный центр покупатель получит СМС-оповещение. Для получения заказа нужно предъявить документ, удостоверяющий личность (например, паспорт или водительские права).</div>
+                                                        <div class="product-info__paragraph">Доставка заказа до шинного центра – бесплатная.</div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-delivery__block">
+                                                    <h3 class="product-info__header">Доставка по Москве</h3>
+                                                    <div class="product-info__content">
+                                                        <div class="product-info__paragraph">Заказ можно получить непосредственно в часы работы любого шинного центра.</div>
+                                                        <div class="product-info__paragraph">После прибытия заказа в шинный центр покупатель получит СМС-оповещение. </div>
+                                                        <div class="product-info__paragraph">Для получения заказа нужно предъявить документ, удостоверяющий личность (например, паспорт или водительские права).</div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-delivery__block">
+                                                    <h3 class="product-info__header">Доставка в регионы</h3>
+                                                    <div class="product-info__content">
+                                                        <div class="product-info__paragraph">Для получения заказа нужно предъявить документ, удостоверяющий личность (например, паспорт или водительские права).</div>
+                                                        <div class="product-info__paragraph">Доставка заказа до шинного центра – бесплатная.</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade" id="product-payment">
+                                        <div class="product-info__block product-payment">
+                                            <div class="product-payment__wrapper">
+                                                <div class="product-payment__block">
+                                                    <h3 class="product-info__header"><img src="img/cash.svg" alt="наличные" class="product-info__header-icon" aria-hidden> Наличный расчет</h3>
+                                                    <div class="product-info__content">
+                                                        <div class="product-info__paragraph">Заказ можно получить непосредственно в часы работы любого шинного центра.</div>
+                                                        <div class="product-info__paragraph">После прибытия заказа в шинный центр покупатель получит СМС-оповещение. Для получения заказа нужно предъявить документ, удостоверяющий личность (например, паспорт или водительские права).</div>
+                                                        <div class="product-info__paragraph">Доставка заказа до шинного центра – бесплатная.</div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-payment__block">
+                                                    <h3 class="product-info__header"><img src="img/credit-card.svg" alt="наличные" class="product-info__header-icon" aria-hidden> Оплата банковскими картами</h3>
+                                                    <div class="product-info__content">
+                                                        <div class="product-info__paragraph">Заказ можно получить непосредственно в часы работы любого шинного центра.</div>
+                                                        <div class="product-info__paragraph">После прибытия заказа в шинный центр покупатель получит СМС-оповещение. </div>
+                                                        <div class="product-info__paragraph">Для получения заказа нужно предъявить документ, удостоверяющий личность (например, паспорт или водительские права).</div>
+                                                        <div class="product-payment__pay-banner">
+                                                            <picture>
+                                                                <source srcset="img/payment@1x.webp 1x,
+                                                                                img/payment@2x.webp 2x"
+                                                                        type="image/webp">
+                                                                <img	src="img/payment@1x.jpg"
+                                                                        srcset="img/payment@2x.jpg 2x"
+                                                                        alt="Visa, Mastercard, Мир">
+                                                            </picture>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-payment__block">
+                                                    <h3 class="product-info__header"><img src="img/laptop.svg" alt="наличные" class="product-info__header-icon" aria-hidden> Онлайн-оплата</h3>
+                                                    <div class="product-info__content">
+                                                        <div class="product-info__paragraph">Для получения заказа нужно предъявить документ, удостоверяющий личность (например, паспорт или водительские права).</div>
+                                                        <div class="product-info__paragraph">Доставка заказа до шинного центра – бесплатная.</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade" id="product-reviews">
+                                        <div class="product-info__block product-reviews">
+                                            <div class="product-reviews__wrapper">
+                                                <article class="product-reviews__block product-review">
+                                                    <h3 class="product-info__header product-review__author"><img src="img/user-circle.svg" alt="наличные" class="product-info__header-icon" aria-hidden> Константин</h3>
+                                                    <div class="product-info__content">
+                                                        <div class="product-review__header">
+                                                            <div class="product-review__raiting star-raiting star-raiting_value_four">
+                                                                <div class="star-raiting__item">
+                                                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M7.49597 4.28772L7.57251 4.52328H7.8202H11.1708C11.5011 4.52328 11.6384 4.94588 11.3712 5.13999L8.66049 7.10945L8.46011 7.25504L8.53665 7.4906L9.57206 10.6773C9.67411 10.9913 9.31463 11.2525 9.04745 11.0584L6.33672 9.08894L6.13634 8.94336L5.93596 9.08894L3.22523 11.0584C2.95805 11.2525 2.59857 10.9913 2.70062 10.6773L3.73603 7.4906L3.81257 7.25504L3.61219 7.10945L0.901457 5.13999C0.634282 4.94588 0.771592 4.52328 1.10184 4.52328H4.45249H4.70017L4.77671 4.28772L5.81212 1.10106C5.91417 0.786979 6.35851 0.786981 6.46057 1.10106L7.49597 4.28772Z" stroke="#FF4343" stroke-width="0.681818"/>
+                                                                    </svg>
+                                                                </div>
+                                                                <div class="star-raiting__item">
+                                                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M7.49597 4.28772L7.57251 4.52328H7.8202H11.1708C11.5011 4.52328 11.6384 4.94588 11.3712 5.13999L8.66049 7.10945L8.46011 7.25504L8.53665 7.4906L9.57206 10.6773C9.67411 10.9913 9.31463 11.2525 9.04745 11.0584L6.33672 9.08894L6.13634 8.94336L5.93596 9.08894L3.22523 11.0584C2.95805 11.2525 2.59857 10.9913 2.70062 10.6773L3.73603 7.4906L3.81257 7.25504L3.61219 7.10945L0.901457 5.13999C0.634282 4.94588 0.771592 4.52328 1.10184 4.52328H4.45249H4.70017L4.77671 4.28772L5.81212 1.10106C5.91417 0.786979 6.35851 0.786981 6.46057 1.10106L7.49597 4.28772Z" stroke="#FF4343" stroke-width="0.681818"/>
+                                                                    </svg>
+                                                                </div>
+                                                                <div class="star-raiting__item">
+                                                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M7.49597 4.28772L7.57251 4.52328H7.8202H11.1708C11.5011 4.52328 11.6384 4.94588 11.3712 5.13999L8.66049 7.10945L8.46011 7.25504L8.53665 7.4906L9.57206 10.6773C9.67411 10.9913 9.31463 11.2525 9.04745 11.0584L6.33672 9.08894L6.13634 8.94336L5.93596 9.08894L3.22523 11.0584C2.95805 11.2525 2.59857 10.9913 2.70062 10.6773L3.73603 7.4906L3.81257 7.25504L3.61219 7.10945L0.901457 5.13999C0.634282 4.94588 0.771592 4.52328 1.10184 4.52328H4.45249H4.70017L4.77671 4.28772L5.81212 1.10106C5.91417 0.786979 6.35851 0.786981 6.46057 1.10106L7.49597 4.28772Z" stroke="#FF4343" stroke-width="0.681818"/>
+                                                                    </svg>
+                                                                </div>
+                                                                <div class="star-raiting__item">
+                                                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M7.49597 4.28772L7.57251 4.52328H7.8202H11.1708C11.5011 4.52328 11.6384 4.94588 11.3712 5.13999L8.66049 7.10945L8.46011 7.25504L8.53665 7.4906L9.57206 10.6773C9.67411 10.9913 9.31463 11.2525 9.04745 11.0584L6.33672 9.08894L6.13634 8.94336L5.93596 9.08894L3.22523 11.0584C2.95805 11.2525 2.59857 10.9913 2.70062 10.6773L3.73603 7.4906L3.81257 7.25504L3.61219 7.10945L0.901457 5.13999C0.634282 4.94588 0.771592 4.52328 1.10184 4.52328H4.45249H4.70017L4.77671 4.28772L5.81212 1.10106C5.91417 0.786979 6.35851 0.786981 6.46057 1.10106L7.49597 4.28772Z" stroke="#FF4343" stroke-width="0.681818"/>
+                                                                    </svg>
+                                                                </div>
+                                                                <div class="star-raiting__item">
+                                                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M7.49597 4.28772L7.57251 4.52328H7.8202H11.1708C11.5011 4.52328 11.6384 4.94588 11.3712 5.13999L8.66049 7.10945L8.46011 7.25504L8.53665 7.4906L9.57206 10.6773C9.67411 10.9913 9.31463 11.2525 9.04745 11.0584L6.33672 9.08894L6.13634 8.94336L5.93596 9.08894L3.22523 11.0584C2.95805 11.2525 2.59857 10.9913 2.70062 10.6773L3.73603 7.4906L3.81257 7.25504L3.61219 7.10945L0.901457 5.13999C0.634282 4.94588 0.771592 4.52328 1.10184 4.52328H4.45249H4.70017L4.77671 4.28772L5.81212 1.10106C5.91417 0.786979 6.35851 0.786981 6.46057 1.10106L7.49597 4.28772Z" stroke="#FF4343" stroke-width="0.681818"/>
+                                                                    </svg>
+                                                                </div>
+                                                            </div>
+                                                            <div class="product-review__date">22.05.2021</div>
+                                                        </div>
+                                                        <div class="product-review__body">
+                                                            <main class="product-review__main">
+                                                                <div class="product-review__paragraph">Заказ можно получить непосредственно в часы работы любого шинного центра.</div>
+                                                                <div class="product-review__paragraph">После прибытия заказа в шинный центр покупатель получит СМС-оповещение. Для получения заказа нужно предъявить документ, удостоверяющий личность (например, паспорт или водительские права).</div>
+                                                            </main>
+                                                            <section class="product-review__section">
+                                                                <div class="product-review__title">Достоинства</div>
+                                                                <div class="product-review__paragraph">Доставка заказа до шинного центра – бесплатная.</div>
+                                                            </section>
+                                                            <section class="product-review__section">
+                                                                <div class="product-review__title">Недостатки</div>
+                                                                <div class="product-review__paragraph">На сухом асфальте еще пойдет ездить держит нормально, шум есть и это было бы ей простительно если не...</div>
+                                                            </section>
+                                                        </div>
+                                                    </div>
+                                                </article>
+                                                <article class="product-reviews__block product-review">
+                                                    <h3 class="product-info__header product-review__author"><img src="img/user-circle.svg" alt="наличные" class="product-info__header-icon" aria-hidden> Константин</h3>
+                                                    <div class="product-info__content">
+                                                        <div class="product-review__header">
+                                                            <div class="product-review__raiting star-raiting star-raiting_value_four">
+                                                                <div class="star-raiting__item">
+                                                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M7.49597 4.28772L7.57251 4.52328H7.8202H11.1708C11.5011 4.52328 11.6384 4.94588 11.3712 5.13999L8.66049 7.10945L8.46011 7.25504L8.53665 7.4906L9.57206 10.6773C9.67411 10.9913 9.31463 11.2525 9.04745 11.0584L6.33672 9.08894L6.13634 8.94336L5.93596 9.08894L3.22523 11.0584C2.95805 11.2525 2.59857 10.9913 2.70062 10.6773L3.73603 7.4906L3.81257 7.25504L3.61219 7.10945L0.901457 5.13999C0.634282 4.94588 0.771592 4.52328 1.10184 4.52328H4.45249H4.70017L4.77671 4.28772L5.81212 1.10106C5.91417 0.786979 6.35851 0.786981 6.46057 1.10106L7.49597 4.28772Z" stroke="#FF4343" stroke-width="0.681818"/>
+                                                                    </svg>
+                                                                </div>
+                                                                <div class="star-raiting__item">
+                                                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M7.49597 4.28772L7.57251 4.52328H7.8202H11.1708C11.5011 4.52328 11.6384 4.94588 11.3712 5.13999L8.66049 7.10945L8.46011 7.25504L8.53665 7.4906L9.57206 10.6773C9.67411 10.9913 9.31463 11.2525 9.04745 11.0584L6.33672 9.08894L6.13634 8.94336L5.93596 9.08894L3.22523 11.0584C2.95805 11.2525 2.59857 10.9913 2.70062 10.6773L3.73603 7.4906L3.81257 7.25504L3.61219 7.10945L0.901457 5.13999C0.634282 4.94588 0.771592 4.52328 1.10184 4.52328H4.45249H4.70017L4.77671 4.28772L5.81212 1.10106C5.91417 0.786979 6.35851 0.786981 6.46057 1.10106L7.49597 4.28772Z" stroke="#FF4343" stroke-width="0.681818"/>
+                                                                    </svg>
+                                                                </div>
+                                                                <div class="star-raiting__item">
+                                                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M7.49597 4.28772L7.57251 4.52328H7.8202H11.1708C11.5011 4.52328 11.6384 4.94588 11.3712 5.13999L8.66049 7.10945L8.46011 7.25504L8.53665 7.4906L9.57206 10.6773C9.67411 10.9913 9.31463 11.2525 9.04745 11.0584L6.33672 9.08894L6.13634 8.94336L5.93596 9.08894L3.22523 11.0584C2.95805 11.2525 2.59857 10.9913 2.70062 10.6773L3.73603 7.4906L3.81257 7.25504L3.61219 7.10945L0.901457 5.13999C0.634282 4.94588 0.771592 4.52328 1.10184 4.52328H4.45249H4.70017L4.77671 4.28772L5.81212 1.10106C5.91417 0.786979 6.35851 0.786981 6.46057 1.10106L7.49597 4.28772Z" stroke="#FF4343" stroke-width="0.681818"/>
+                                                                    </svg>
+                                                                </div>
+                                                                <div class="star-raiting__item">
+                                                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M7.49597 4.28772L7.57251 4.52328H7.8202H11.1708C11.5011 4.52328 11.6384 4.94588 11.3712 5.13999L8.66049 7.10945L8.46011 7.25504L8.53665 7.4906L9.57206 10.6773C9.67411 10.9913 9.31463 11.2525 9.04745 11.0584L6.33672 9.08894L6.13634 8.94336L5.93596 9.08894L3.22523 11.0584C2.95805 11.2525 2.59857 10.9913 2.70062 10.6773L3.73603 7.4906L3.81257 7.25504L3.61219 7.10945L0.901457 5.13999C0.634282 4.94588 0.771592 4.52328 1.10184 4.52328H4.45249H4.70017L4.77671 4.28772L5.81212 1.10106C5.91417 0.786979 6.35851 0.786981 6.46057 1.10106L7.49597 4.28772Z" stroke="#FF4343" stroke-width="0.681818"/>
+                                                                    </svg>
+                                                                </div>
+                                                                <div class="star-raiting__item">
+                                                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M7.49597 4.28772L7.57251 4.52328H7.8202H11.1708C11.5011 4.52328 11.6384 4.94588 11.3712 5.13999L8.66049 7.10945L8.46011 7.25504L8.53665 7.4906L9.57206 10.6773C9.67411 10.9913 9.31463 11.2525 9.04745 11.0584L6.33672 9.08894L6.13634 8.94336L5.93596 9.08894L3.22523 11.0584C2.95805 11.2525 2.59857 10.9913 2.70062 10.6773L3.73603 7.4906L3.81257 7.25504L3.61219 7.10945L0.901457 5.13999C0.634282 4.94588 0.771592 4.52328 1.10184 4.52328H4.45249H4.70017L4.77671 4.28772L5.81212 1.10106C5.91417 0.786979 6.35851 0.786981 6.46057 1.10106L7.49597 4.28772Z" stroke="#FF4343" stroke-width="0.681818"/>
+                                                                    </svg>
+                                                                </div>
+                                                            </div>
+                                                            <div class="product-review__date">22.05.2021</div>
+                                                        </div>
+                                                        <div class="product-review__body">
+                                                            <main class="product-review__main">
+                                                                <div class="product-review__paragraph">Заказ можно получить непосредственно в часы работы любого шинного центра.</div>
+                                                                <div class="product-review__paragraph">После прибытия заказа в шинный центр покупатель получит СМС-оповещение. Для получения заказа нужно предъявить документ, удостоверяющий личность (например, паспорт или водительские права).</div>
+                                                            </main>
+                                                            <section class="product-review__section">
+                                                                <div class="product-review__header">Достоинства</div>
+                                                                <div class="product-review__paragraph">Доставка заказа до шинного центра – бесплатная.</div>
+                                                            </section>
+                                                            <section class="product-review__section">
+                                                                <div class="product-review__header">Недостатки</div>
+                                                                <div class="product-review__paragraph">На сухом асфальте еще пойдет ездить держит нормально, шум есть и это было бы ей простительно если не...</div>
+                                                            </section>
+                                                        </div>
+                                                    </div>
+                                                </article>
+                                                <article class="product-reviews__block product-review">
+                                                    <h3 class="product-info__header product-review__author"><img src="img/user-circle.svg" alt="наличные" class="product-info__header-icon" aria-hidden> Константин</h3>
+                                                    <div class="product-info__content">
+                                                        <div class="product-review__header">
+                                                            <div class="product-review__raiting star-raiting star-raiting_value_four">
+                                                                <div class="star-raiting__item">
+                                                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M7.49597 4.28772L7.57251 4.52328H7.8202H11.1708C11.5011 4.52328 11.6384 4.94588 11.3712 5.13999L8.66049 7.10945L8.46011 7.25504L8.53665 7.4906L9.57206 10.6773C9.67411 10.9913 9.31463 11.2525 9.04745 11.0584L6.33672 9.08894L6.13634 8.94336L5.93596 9.08894L3.22523 11.0584C2.95805 11.2525 2.59857 10.9913 2.70062 10.6773L3.73603 7.4906L3.81257 7.25504L3.61219 7.10945L0.901457 5.13999C0.634282 4.94588 0.771592 4.52328 1.10184 4.52328H4.45249H4.70017L4.77671 4.28772L5.81212 1.10106C5.91417 0.786979 6.35851 0.786981 6.46057 1.10106L7.49597 4.28772Z" stroke="#FF4343" stroke-width="0.681818"/>
+                                                                    </svg>
+                                                                </div>
+                                                                <div class="star-raiting__item">
+                                                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M7.49597 4.28772L7.57251 4.52328H7.8202H11.1708C11.5011 4.52328 11.6384 4.94588 11.3712 5.13999L8.66049 7.10945L8.46011 7.25504L8.53665 7.4906L9.57206 10.6773C9.67411 10.9913 9.31463 11.2525 9.04745 11.0584L6.33672 9.08894L6.13634 8.94336L5.93596 9.08894L3.22523 11.0584C2.95805 11.2525 2.59857 10.9913 2.70062 10.6773L3.73603 7.4906L3.81257 7.25504L3.61219 7.10945L0.901457 5.13999C0.634282 4.94588 0.771592 4.52328 1.10184 4.52328H4.45249H4.70017L4.77671 4.28772L5.81212 1.10106C5.91417 0.786979 6.35851 0.786981 6.46057 1.10106L7.49597 4.28772Z" stroke="#FF4343" stroke-width="0.681818"/>
+                                                                    </svg>
+                                                                </div>
+                                                                <div class="star-raiting__item">
+                                                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M7.49597 4.28772L7.57251 4.52328H7.8202H11.1708C11.5011 4.52328 11.6384 4.94588 11.3712 5.13999L8.66049 7.10945L8.46011 7.25504L8.53665 7.4906L9.57206 10.6773C9.67411 10.9913 9.31463 11.2525 9.04745 11.0584L6.33672 9.08894L6.13634 8.94336L5.93596 9.08894L3.22523 11.0584C2.95805 11.2525 2.59857 10.9913 2.70062 10.6773L3.73603 7.4906L3.81257 7.25504L3.61219 7.10945L0.901457 5.13999C0.634282 4.94588 0.771592 4.52328 1.10184 4.52328H4.45249H4.70017L4.77671 4.28772L5.81212 1.10106C5.91417 0.786979 6.35851 0.786981 6.46057 1.10106L7.49597 4.28772Z" stroke="#FF4343" stroke-width="0.681818"/>
+                                                                    </svg>
+                                                                </div>
+                                                                <div class="star-raiting__item">
+                                                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M7.49597 4.28772L7.57251 4.52328H7.8202H11.1708C11.5011 4.52328 11.6384 4.94588 11.3712 5.13999L8.66049 7.10945L8.46011 7.25504L8.53665 7.4906L9.57206 10.6773C9.67411 10.9913 9.31463 11.2525 9.04745 11.0584L6.33672 9.08894L6.13634 8.94336L5.93596 9.08894L3.22523 11.0584C2.95805 11.2525 2.59857 10.9913 2.70062 10.6773L3.73603 7.4906L3.81257 7.25504L3.61219 7.10945L0.901457 5.13999C0.634282 4.94588 0.771592 4.52328 1.10184 4.52328H4.45249H4.70017L4.77671 4.28772L5.81212 1.10106C5.91417 0.786979 6.35851 0.786981 6.46057 1.10106L7.49597 4.28772Z" stroke="#FF4343" stroke-width="0.681818"/>
+                                                                    </svg>
+                                                                </div>
+                                                                <div class="star-raiting__item">
+                                                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M7.49597 4.28772L7.57251 4.52328H7.8202H11.1708C11.5011 4.52328 11.6384 4.94588 11.3712 5.13999L8.66049 7.10945L8.46011 7.25504L8.53665 7.4906L9.57206 10.6773C9.67411 10.9913 9.31463 11.2525 9.04745 11.0584L6.33672 9.08894L6.13634 8.94336L5.93596 9.08894L3.22523 11.0584C2.95805 11.2525 2.59857 10.9913 2.70062 10.6773L3.73603 7.4906L3.81257 7.25504L3.61219 7.10945L0.901457 5.13999C0.634282 4.94588 0.771592 4.52328 1.10184 4.52328H4.45249H4.70017L4.77671 4.28772L5.81212 1.10106C5.91417 0.786979 6.35851 0.786981 6.46057 1.10106L7.49597 4.28772Z" stroke="#FF4343" stroke-width="0.681818"/>
+                                                                    </svg>
+                                                                </div>
+                                                            </div>
+                                                            <div class="product-review__date">22.05.2021</div>
+                                                        </div>
+                                                        <div class="product-review__body">
+                                                            <main class="product-review__main">
+                                                                <div class="product-review__paragraph">Заказ можно получить непосредственно в часы работы любого шинного центра.</div>
+                                                                <div class="product-review__paragraph">После прибытия заказа в шинный центр покупатель получит СМС-оповещение. Для получения заказа нужно предъявить документ, удостоверяющий личность (например, паспорт или водительские права).</div>
+                                                            </main>
+                                                            <section class="product-review__section">
+                                                                <div class="product-review__header">Достоинства</div>
+                                                                <div class="product-review__paragraph">Доставка заказа до шинного центра – бесплатная.</div>
+                                                            </section>
+                                                            <section class="product-review__section">
+                                                                <div class="product-review__header">Недостатки</div>
+                                                                <div class="product-review__paragraph">На сухом асфальте еще пойдет ездить держит нормально, шум есть и это было бы ей простительно если не...</div>
+                                                            </section>
+                                                        </div>
+                                                    </div>
+                                                </article>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-details__top-sidebar product-sidebar">
+                            <a href="#" class="product-sidebar__my-avto-btn my-avto-btn my-avto-btn_status_que">
+                                <span class="my-avto-btn__icon">
+                                    <img src="img/avto-ask.svg" alt="автомобиль со знаком вопроса">
+                                </span>
+                                <span class="my-avto-btn__text">Подходит на мой авто?</span>
+                            </a>
+                            <div class="product-sidebar__banner sidebar-banner">
+                                <div class="sidebar-banner__image">
+                                    <picture>
+                                        <source srcset="img/sidebar-banner@1x.webp 1x,
+                                                        img/sidebar-banner@2x.webp 2x"
+                                                type="image/webp">
+                                        <img	src="img/sidebar-banner@1x.jpg"
+                                                srcset="img/sidebar-banner@2x.jpg 2x"
+                                                alt="счастливый водитель">
+                                    </picture>
+                                </div>
+                                <div class="sidebar-banner__content">
+                                    <span class="sidebar-banner__icon"><img src="img/sidebar-banner-icon.svg" alt="стрелка влево" aria-hidden></span> Каждый покупатель получает сертификат на <span class="sidebar-banner_size_xl">Бесплатную</span> <span class="sidebar-banner_size_l">эвакуацию</span>
+                                </div>
+                            </div>
+                            <div class="product-sidebar__info-block sidebar-info">
+                                <div class="sidebar-info__title"><span class="sidebar-info__title-icon"><img src="img/medal.svg" alt="медаль" aria-hidden></span>Гарантия производителя</div>
+                                <div class="sidebar-info__text">Расширенная гарантия NOKIAN является дополнением к стандартным гарантийным условиям производителя и распространяется только на эксплуатационные повреждения шин.</div>
+                            </div>
+                            <div class="product-sidebar__info-block sidebar-info">
+                                <div class="sidebar-info__title"><span class="sidebar-info__title-icon"><img src="img/return.svg" alt="возврат" aria-hidden></span>Возврат и обмен</div>
+                                <div class="sidebar-info__text">Вы можете обменять или вернуть товар который не подошел без дополнительных объяснений в течении 14 дней с момента покупки</div>
+                            </div>
+                            <div class="product-sidebar__see-also sidebar-see-also">
+                                <div class="sidebar-see-also__title">Вам может подойти:</div>
+                                <ul class="sidebar-see-also__list">
+                                    <li class="sidebar-see-also__item">Летние шины <a href="#" class="sidebar-see-also__link">Nokian</a></li>
+                                    <li class="sidebar-see-also__item">Все <a href="#" class="sidebar-see-also__link">летние Nokian 175/70 R13</a></li>
+                                    <li class="sidebar-see-also__item">Все модели <a href="#" class="sidebar-see-also__link">Nokian 175/70 R13</a></li>
+                                </ul>
+                            </div>
+                            <ul class="product-sidebar__social social">
+                                <li class="social__item"><a href="https://ru-ru.facebook.com/" class="social__link" aria-label="Facebook"><img src="img/Facebook.svg" alt="лого Facebook"></a></li>
+                                <li class="social__item"><a href="https://vk.com/" class="social__link" aria-label="Вконтакте"><img src="img/VK.svg" alt="лого Вконтакте"></a></li>
+                                <li class="social__item"><a href="https://ok.ru/" class="social__link" aria-label="Одноклассники"><img src="img/OK.svg" alt="лого Одноклассники"></a></li>
+                                <li class="social__item"><a href="https://telegram.org/" class="social__link" aria-label="Телеграм"><img src="img/Telegram.svg" alt="лого Телеграм"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="product-details__wrapper">
+                        <h2 class="product-details__header">Акции</h2>
+                        <div class="product-disconts">
+                            <div class="discont">
+                                <div class="discont__figure">
+                                    <div class="discont__image">
+                                        <picture>
+                                            <source srcset="img/discont-1@1x.webp 1x,
+                                                            img/discont-1@2x.webp 2x"
+                                                    type="image/webp">
+                                            <img	src="img/discont-1@1x.png"
+                                                    srcset="img/discont-1@2x.png 2x"
+                                                    alt="шины Michelin">
+                                        </picture>
+                                    </div>
+                                    <!-- <div class="discont__image-caption">
+                                        <div class="discont__caption-label">Акция!</div>
+                                        <div class="discont__caption-promo">Заправься</div>
+                                        <div class="discont__caption-text">бесплатно с шинами Michelin</div>
+                                    </div> -->
+                                </div>
+                                <div class="discont__info">
+                                    <div class="discont__header">Заправиться с шинами Michelin</div>
+                                    <div class="discont__text">Всем покупателям комплекта зимних или летних Michelin шин мы дарим заправку полного бака топлива. </div>
+                                </div>
+                            </div>
+                            <div class="discont">
+                                <div class="discont__figure">
+                                    <div class="discont__image">
+                                        <picture>
+                                            <source srcset="img/discont-2@1x.webp 1x,
+                                                            img/discont-2@2x.webp 2x"
+                                                    type="image/webp">
+                                            <img	src="img/discont-2@1x.png"
+                                                    srcset="img/discont-2@2x.png 2x"
+                                                    alt="шины Michelin">
+                                        </picture>
+                                    </div>
+                                    <!-- <div class="discont__image-caption">
+                                        <div class="discont__caption-label">Скидка</div>
+                                        <div class="discont__caption-promo">-30%</div>
+                                        <div class="discont__caption-text">для Вас на хранение шин круглый год</div>
+                                    </div> -->
+                                </div>
+                                <div class="discont__info">
+                                    <div class="discont__header">Скидка на хранение 30%</div>
+                                    <div class="discont__text">Шины произведены из уникальной смеси c добавлением кремня, разработанной для увеличения сцепления с влажной поверхностью, акцентируя внимание </div>
+                                </div>
+                            </div>
+                            <div class="discont">
+                                <div class="discont__figure">
+                                    <div class="discont__image">
+                                        <picture>
+                                            <source srcset="img/discont-3@1x.webp 1x,
+                                                            img/discont-3@2x.webp 2x"
+                                                    type="image/webp">
+                                            <img	src="img/discont-3@1x.png"
+                                                    srcset="img/discont-3@2x.png 2x"
+                                                    alt="шины Michelin">
+                                        </picture>
+                                    </div>
+                                    <!-- <div class="discont__image-caption">
+                                        <div class="discont__caption-label">Акция!</div>
+                                        <div class="discont__caption-promo">Бесплатный</div>
+                                        <div class="discont__caption-text">шиномонтаж для покупателей комплекта</div>
+                                    </div> -->
+                                </div>
+                                <div class="discont__info">
+                                    <div class="discont__header">Шиномонтаж бесплатно</div>
+                                    <div class="discont__text">До окнца осени  покупателям комплекта зимних шин мы дарим заправку бесплатный шиномонтаж на СТО партнеров.</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h2 class="product-details__header">Подходит для этих автомобилей</h2>
+                        <div class="product-avto">
+                            <div class="product-avto__models">
+                                <ul class="product-avto__model-list">
+                                    <li class="product-avto__model-item"><a href="#" class="product-avto__model-link">Chevrolet</a></li>
+                                    <li class="product-avto__model-item"><a href="#" class="product-avto__model-link">Daewoo</a></li>
+                                    <li class="product-avto__model-item"><a href="#" class="product-avto__model-link">FAW</a></li>
+                                    <li class="product-avto__model-item"><a href="#" class="product-avto__model-link">Citroën</a></li>
+                                    <li class="product-avto__model-item"><a href="#" class="product-avto__model-link">Honda</a></li>
+                                    <li class="product-avto__model-item"><a href="#" class="product-avto__model-link">Hyundai</a></li>
+                                    <li class="product-avto__model-item"><a href="#" class="product-avto__model-link">Kia</a></li>
+                                    <li class="product-avto__model-item"><a href="#" class="product-avto__model-link">Lancia</a></li>
+                                    <li class="product-avto__model-item"><a href="#" class="product-avto__model-link">Mazda</a></li>
+                                    <li class="product-avto__model-item"><a href="#" class="product-avto__model-link">Mitsubishi</a></li>
+                                    <li class="product-avto__model-item"><a href="#" class="product-avto__model-link">Nissan</a></li>
+                                    <li class="product-avto__model-item"><a href="#" class="product-avto__model-link">Opel</a></li>
+                                    <li class="product-avto__model-item"><a href="#" class="product-avto__model-link">Peugeot</a></li>
+                                    <li class="product-avto__model-item"><a href="#" class="product-avto__model-link">Ravon</a></li>
+                                    <li class="product-avto__model-item"><a href="#" class="product-avto__model-link">Renault</a></li>
+                                    <li class="product-avto__model-item"><a href="#" class="product-avto__model-link">Rover</a></li>
+                                    <li class="product-avto__model-item"><a href="#" class="product-avto__model-link">Skoda</a></li>
+                                    <li class="product-avto__model-item"><a href="#" class="product-avto__model-link">Subaru</a></li>
+                                    <li class="product-avto__model-item"><a href="#" class="product-avto__model-link">Suzuki</a></li>
+                                    <li class="product-avto__model-item"><a href="#" class="product-avto__model-link">Toyota</a></li>
+                                    <li class="product-avto__model-item"><a href="#" class="product-avto__model-link">ВАЗ</a></li>
+                                    <li class="product-avto__model-item"><a href="#" class="product-avto__model-link">Лада</a></li>
+                                </ul>
+                            </div>
+                            <div class="product-avto__table avto-table">
+                                <div class="avto-table__heading-row">
+                                    <div class="avto-table__header">Производитель</div>
+                                    <div class="avto-table__header-wrapper">
+                                        <div class="avto-table__header">Марка</div>
+                                        <div class="avto-table__header">Модели и модификация</div>
+                                    </div>
+                                </div>
+                                <div class="avto-table__row">
+                                    <div class="avto-table__brand">Chevrolet</div>
+                                    <ul class="avto-table__models-list">
+                                        <li class="avto-table__models-item">
+                                            <div class="avto-table__name">Lacetti</div>
+                                            <div class="avto-table__model">J200 (2003-2013)</div>
+                                            <ul class="avto-table__modifications-list">
+                                                <li class="avto-table__modifications-item">1.6i</li>
+                                                <li class="avto-table__modifications-item">1.4i</li>
+                                                <li class="avto-table__modifications-item">1.8</li>
+                                                <li class="avto-table__modifications-item">2.0 D</li>
+                                                <li class="avto-table__modifications-item">1.6i</li>
+                                                <li class="avto-table__modifications-item">1.8</li>
+                                                <li class="avto-table__modifications-item">2.0 D</li>
+                                            </ul>
+                                        </li>
+                                        <li class="avto-table__models-item">
+                                            <div class="avto-table__name">Lacetti</div>
+                                            <div class="avto-table__model">J200 (2003-2013)</div>
+                                            <ul class="avto-table__modifications-list">
+                                                <li class="avto-table__modifications-item">1.6i</li>
+                                                <li class="avto-table__modifications-item">1.4i</li>
+                                                <li class="avto-table__modifications-item">1.8</li>
+                                                <li class="avto-table__modifications-item">2.0 D</li>
+                                                <li class="avto-table__modifications-item">1.6i</li>
+                                                <li class="avto-table__modifications-item">1.8</li>
+                                                <li class="avto-table__modifications-item">2.0 D</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="avto-table__row">
+                                    <div class="avto-table__brand">Chevrolet</div>
+                                    <ul class="avto-table__models-list">
+                                        <li class="avto-table__models-item">
+                                            <div class="avto-table__name">Lacetti</div>
+                                            <div class="avto-table__model">J200 (2003-2013)</div>
+                                            <ul class="avto-table__modifications-list">
+                                                <li class="avto-table__modifications-item">1.6i</li>
+                                                <li class="avto-table__modifications-item">1.4i</li>
+                                                <li class="avto-table__modifications-item">1.8</li>
+                                                <li class="avto-table__modifications-item">2.0 D</li>
+                                                <li class="avto-table__modifications-item">1.6i</li>
+                                                <li class="avto-table__modifications-item">1.8</li>
+                                                <li class="avto-table__modifications-item">2.0 D</li>
+                                            </ul>
+                                        </li>
+                                        <li class="avto-table__models-item">
+                                            <div class="avto-table__name">Lacetti</div>
+                                            <div class="avto-table__model">J200 (2003-2013)</div>
+                                            <ul class="avto-table__modifications-list">
+                                                <li class="avto-table__modifications-item">1.6i</li>
+                                                <li class="avto-table__modifications-item">1.4i</li>
+                                                <li class="avto-table__modifications-item">1.8</li>
+                                                <li class="avto-table__modifications-item">2.0 D</li>
+                                                <li class="avto-table__modifications-item">1.6i</li>
+                                                <li class="avto-table__modifications-item">1.8</li>
+                                                <li class="avto-table__modifications-item">2.0 D</li>
+                                            </ul>
+                                        </li>
+                                        <li class="avto-table__models-item">
+                                            <div class="avto-table__name">Lacetti</div>
+                                            <div class="avto-table__model">J200 (2003-2013)</div>
+                                            <ul class="avto-table__modifications-list">
+                                                <li class="avto-table__modifications-item">1.6i</li>
+                                                <li class="avto-table__modifications-item">1.4i</li>
+                                                <li class="avto-table__modifications-item">1.8</li>
+                                                <li class="avto-table__modifications-item">2.0 D</li>
+                                                <li class="avto-table__modifications-item">1.6i</li>
+                                                <li class="avto-table__modifications-item">1.8</li>
+                                                <li class="avto-table__modifications-item">2.0 D</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="avto-table__row">
+                                    <div class="avto-table__brand">Chevrolet</div>
+                                    <ul class="avto-table__models-list">
+                                        <li class="avto-table__models-item">
+                                            <div class="avto-table__name">Lacetti</div>
+                                            <div class="avto-table__model">J200 (2003-2013)</div>
+                                            <ul class="avto-table__modifications-list">
+                                                <li class="avto-table__modifications-item">1.6i</li>
+                                                <li class="avto-table__modifications-item">1.4i</li>
+                                                <li class="avto-table__modifications-item">1.8</li>
+                                                <li class="avto-table__modifications-item">2.0 D</li>
+                                                <li class="avto-table__modifications-item">1.6i</li>
+                                                <li class="avto-table__modifications-item">1.8</li>
+                                                <li class="avto-table__modifications-item">2.0 D</li>
+                                            </ul>
+                                        </li>
+                                        <li class="avto-table__models-item">
+                                            <div class="avto-table__name">Lacetti</div>
+                                            <div class="avto-table__model">J200 (2003-2013)</div>
+                                            <ul class="avto-table__modifications-list">
+                                                <li class="avto-table__modifications-item">1.6i</li>
+                                                <li class="avto-table__modifications-item">1.4i</li>
+                                                <li class="avto-table__modifications-item">1.8</li>
+                                                <li class="avto-table__modifications-item">2.0 D</li>
+                                                <li class="avto-table__modifications-item">1.6i</li>
+                                                <li class="avto-table__modifications-item">1.8</li>
+                                                <li class="avto-table__modifications-item">2.0 D</li>
+                                            </ul>
+                                        </li>
+                                        <li class="avto-table__models-item">
+                                            <div class="avto-table__name">Lacetti</div>
+                                            <div class="avto-table__model">J200 (2003-2013)</div>
+                                            <ul class="avto-table__modifications-list">
+                                                <li class="avto-table__modifications-item">1.6i</li>
+                                                <li class="avto-table__modifications-item">1.4i</li>
+                                                <li class="avto-table__modifications-item">1.8</li>
+                                                <li class="avto-table__modifications-item">2.0 D</li>
+                                                <li class="avto-table__modifications-item">1.6i</li>
+                                                <li class="avto-table__modifications-item">1.8</li>
+                                                <li class="avto-table__modifications-item">2.0 D</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="avto-table__row">
+                                    <div class="avto-table__brand">Chevrolet</div>
+                                    <ul class="avto-table__models-list">
+                                        <li class="avto-table__models-item">
+                                            <div class="avto-table__name">Lacetti</div>
+                                            <div class="avto-table__model">J200 (2003-2013)</div>
+                                            <ul class="avto-table__modifications-list">
+                                                <li class="avto-table__modifications-item">1.6i</li>
+                                                <li class="avto-table__modifications-item">1.4i</li>
+                                                <li class="avto-table__modifications-item">1.8</li>
+                                                <li class="avto-table__modifications-item">2.0 D</li>
+                                                <li class="avto-table__modifications-item">1.6i</li>
+                                                <li class="avto-table__modifications-item">1.8</li>
+                                                <li class="avto-table__modifications-item">2.0 D</li>
+                                            </ul>
+                                        </li>
+                                        <li class="avto-table__models-item">
+                                            <div class="avto-table__name">Lacetti</div>
+                                            <div class="avto-table__model">J200 (2003-2013)</div>
+                                            <ul class="avto-table__modifications-list">
+                                                <li class="avto-table__modifications-item">1.6i</li>
+                                                <li class="avto-table__modifications-item">1.4i</li>
+                                                <li class="avto-table__modifications-item">1.8</li>
+                                                <li class="avto-table__modifications-item">2.0 D</li>
+                                                <li class="avto-table__modifications-item">1.6i</li>
+                                                <li class="avto-table__modifications-item">1.8</li>
+                                                <li class="avto-table__modifications-item">2.0 D</li>
+                                            </ul>
+                                        </li>
+                                        <li class="avto-table__models-item">
+                                            <div class="avto-table__name">Lacetti</div>
+                                            <div class="avto-table__model">J200 (2003-2013)</div>
+                                            <ul class="avto-table__modifications-list">
+                                                <li class="avto-table__modifications-item">1.6i</li>
+                                                <li class="avto-table__modifications-item">1.4i</li>
+                                                <li class="avto-table__modifications-item">1.8</li>
+                                                <li class="avto-table__modifications-item">2.0 D</li>
+                                                <li class="avto-table__modifications-item">1.6i</li>
+                                                <li class="avto-table__modifications-item">1.8</li>
+                                                <li class="avto-table__modifications-item">2.0 D</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="avto-table__row">
+                                    <div class="avto-table__brand">Chevrolet</div>
+                                    <ul class="avto-table__models-list">
+                                        <li class="avto-table__models-item">
+                                            <div class="avto-table__name">Lacetti</div>
+                                            <div class="avto-table__model">J200 (2003-2013)</div>
+                                            <ul class="avto-table__modifications-list">
+                                                <li class="avto-table__modifications-item">1.6i</li>
+                                                <li class="avto-table__modifications-item">1.4i</li>
+                                                <li class="avto-table__modifications-item">1.8</li>
+                                                <li class="avto-table__modifications-item">2.0 D</li>
+                                                <li class="avto-table__modifications-item">1.6i</li>
+                                                <li class="avto-table__modifications-item">1.8</li>
+                                                <li class="avto-table__modifications-item">2.0 D</li>
+                                            </ul>
+                                        </li>
+                                        <li class="avto-table__models-item">
+                                            <div class="avto-table__name">Lacetti</div>
+                                            <div class="avto-table__model">J200 (2003-2013)</div>
+                                            <ul class="avto-table__modifications-list">
+                                                <li class="avto-table__modifications-item">1.6i</li>
+                                                <li class="avto-table__modifications-item">1.4i</li>
+                                                <li class="avto-table__modifications-item">1.8</li>
+                                                <li class="avto-table__modifications-item">2.0 D</li>
+                                                <li class="avto-table__modifications-item">1.6i</li>
+                                                <li class="avto-table__modifications-item">1.8</li>
+                                                <li class="avto-table__modifications-item">2.0 D</li>
+                                            </ul>
+                                        </li>
+                                        <li class="avto-table__models-item">
+                                            <div class="avto-table__name">Lacetti</div>
+                                            <div class="avto-table__model">J200 (2003-2013)</div>
+                                            <ul class="avto-table__modifications-list">
+                                                <li class="avto-table__modifications-item">1.6i</li>
+                                                <li class="avto-table__modifications-item">1.4i</li>
+                                                <li class="avto-table__modifications-item">1.8</li>
+                                                <li class="avto-table__modifications-item">2.0 D</li>
+                                                <li class="avto-table__modifications-item">1.6i</li>
+                                                <li class="avto-table__modifications-item">1.8</li>
+                                                <li class="avto-table__modifications-item">2.0 D</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h2 class="product-details__header">Альтернативные товары</h2>
+                        <div class="product-analogs">
+                            <div class="product-analogs__label">Летние шины в размере <span class="product-analogs__label_bold">175/70 R13</span> которые подойдут к вашему автомомбилю</div>
+                            <div class="product-analogs__table analogs-table only-desktop">
+                                <div class="analogs-table__row analogs-table__row_heading">
+                                    <div class="analogs-table__header">Арт.</div>
+                                    <div class="analogs-table__header">Бренд</div>
+                                    <div class="analogs-table__header"></div>
+                                    <div class="analogs-table__header">Наименование</div>
+                                    <div class="analogs-table__header">Сезон</div>
+                                    <div class="analogs-table__header">На складе</div>
+                                    <div class="analogs-table__header">Цена</div>
+                                </div>
+                                <div class="analogs-table__row analog-product">
+                                    <div class="analog-product__vendor-code">023123</div>
+                                    <div class="analog-product__brand">Michelin</div>
+                                    <div class="analog-product__image">
+                                        <picture>
+                                            <source srcset="img/gallery-photo-1@1x.webp 1x,
+                                                            img/gallery-photo-1@2x.webp 2x"
+                                                    type="image/webp">
+                                            <img	src="img/gallery-photo-1@1x.jpg"
+                                                    srcset="img/gallery-photo-1@2x.jpg 2x"
+                                                    alt="фото Michelin">
+                                        </picture>
+                                    </div>
+                                    <a href="#" class="analog-product__name">Ovation Ecovision VI-386HP 225/55 R18 98V</a>
+                                    <div class="analog-product__season"><span class="analog-product__season-icon"><img src="img/summer.svg" alt="солнце" aria-hidden></span> Летние</div>
+                                    <div class="analog-product__available available-status available-status_yes">В наличии</div>
+                                    <div class="analog-product__price">14500₽</div>
+                                </div>
+                                <div class="analogs-table__row analog-product">
+                                    <div class="analog-product__vendor-code">023123</div>
+                                    <div class="analog-product__brand">Michelin</div>
+                                    <div class="analog-product__image">
+                                        <picture>
+                                            <source srcset="img/gallery-photo-1@1x.webp 1x,
+                                                            img/gallery-photo-1@2x.webp 2x"
+                                                    type="image/webp">
+                                            <img	src="img/gallery-photo-1@1x.jpg"
+                                                    srcset="img/gallery-photo-1@2x.jpg 2x"
+                                                    alt="фото Michelin">
+                                        </picture>
+                                    </div>
+                                    <a href="#" class="analog-product__name">Ovation Ecovision VI-386HP 225/55 R18 98V</a>
+                                    <div class="analog-product__season"><span class="analog-product__season-icon"><img src="img/winter.svg" alt="снежинка" aria-hidden></span> Зимние</div>
+                                    <div class="analog-product__available available-status available-status_no">Нет в наличии</div>
+                                    <div class="analog-product__price">14500₽</div>
+                                </div>
+                                <div class="analogs-table__row analog-product">
+                                    <div class="analog-product__vendor-code">023123</div>
+                                    <div class="analog-product__brand">Michelin</div>
+                                    <div class="analog-product__image">
+                                        <picture>
+                                            <source srcset="img/gallery-photo-1@1x.webp 1x,
+                                                            img/gallery-photo-1@2x.webp 2x"
+                                                    type="image/webp">
+                                            <img	src="img/gallery-photo-1@1x.jpg"
+                                                    srcset="img/gallery-photo-1@2x.jpg 2x"
+                                                    alt="фото Michelin">
+                                        </picture>
+                                    </div>
+                                    <a href="#" class="analog-product__name">Ovation Ecovision VI-386HP 225/55 R18 98V</a>
+                                    <div class="analog-product__season"><span class="analog-product__season-icon"><img src="img/summer.svg" alt="солнце" aria-hidden></span> Летние</div>
+                                    <div class="analog-product__available available-status available-status_yes">В наличии</div>
+                                    <div class="analog-product__price">14500₽</div>
+                                </div>
+                                <div class="analogs-table__row analog-product">
+                                    <div class="analog-product__vendor-code">023123</div>
+                                    <div class="analog-product__brand">Michelin</div>
+                                    <div class="analog-product__image">
+                                        <picture>
+                                            <source srcset="img/gallery-photo-1@1x.webp 1x,
+                                                            img/gallery-photo-1@2x.webp 2x"
+                                                    type="image/webp">
+                                            <img	src="img/gallery-photo-1@1x.jpg"
+                                                    srcset="img/gallery-photo-1@2x.jpg 2x"
+                                                    alt="фото Michelin">
+                                        </picture>
+                                    </div>
+                                    <a href="#" class="analog-product__name">Ovation Ecovision VI-386HP 225/55 R18 98V</a>
+                                    <div class="analog-product__season"><span class="analog-product__season-icon"><img src="img/summer.svg" alt="солнце" aria-hidden></span> Летние</div>
+                                    <div class="analog-product__available available-status available-status_yes">В наличии</div>
+                                    <div class="analog-product__price">14500₽</div>
+                                </div>
+                                <div class="analogs-table__row analog-product">
+                                    <div class="analog-product__vendor-code">023123</div>
+                                    <div class="analog-product__brand">Michelin</div>
+                                    <div class="analog-product__image">
+                                        <picture>
+                                            <source srcset="img/gallery-photo-1@1x.webp 1x,
+                                                            img/gallery-photo-1@2x.webp 2x"
+                                                    type="image/webp">
+                                            <img	src="img/gallery-photo-1@1x.jpg"
+                                                    srcset="img/gallery-photo-1@2x.jpg 2x"
+                                                    alt="фото Michelin">
+                                        </picture>
+                                    </div>
+                                    <a href="#" class="analog-product__name">Ovation Ecovision VI-386HP 225/55 R18 98V</a>
+                                    <div class="analog-product__season"><span class="analog-product__season-icon"><img src="img/summer.svg" alt="солнце" aria-hidden></span> Летние</div>
+                                    <div class="analog-product__available available-status available-status_yes">В наличии</div>
+                                    <div class="analog-product__price">14500₽</div>
+                                </div>
+                            </div>
+                            <div class="product-analogs__list only-mobile">
+                                <div class="analog-product">
+                                    <div class="analog-product__image">
+                                        <picture>
+                                            <source srcset="img/gallery-photo-1@1x.webp 1x,
+                                                            img/gallery-photo-1@2x.webp 2x"
+                                                    type="image/webp">
+                                            <img	src="img/gallery-photo-1@1x.jpg"
+                                                    srcset="img/gallery-photo-1@2x.jpg 2x"
+                                                    alt="фото Michelin">
+                                        </picture>
+                                    </div>
+                                    <div class="analog-product__wrapper">
+                                        <div class="analog-product__top">
+                                            <div class="analog-product__brand">Michelin</div>
+                                            <div class="analog-product__season"><span class="analog-product__season-icon"><img src="img/summer.svg" alt="солнце" aria-hidden></span> Летние</div>
+                                        </div>
+                                        <a href="#" class="analog-product__name">Ovation Ecovision VI-386HP 225/55 R18 98V</a>
+                                        <div class="analog-product__bottom">
+                                            <div class="analog-product__available available-status available-status_yes">В наличии</div>
+                                            <div class="analog-product__price">14500₽</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="analog-product">
+                                    <div class="analog-product__image">
+                                        <picture>
+                                            <source srcset="img/gallery-photo-1@1x.webp 1x,
+                                                            img/gallery-photo-1@2x.webp 2x"
+                                                    type="image/webp">
+                                            <img	src="img/gallery-photo-1@1x.jpg"
+                                                    srcset="img/gallery-photo-1@2x.jpg 2x"
+                                                    alt="фото Michelin">
+                                        </picture>
+                                    </div>
+                                    <div class="analog-product__wrapper">
+                                        <div class="analog-product__top">
+                                            <div class="analog-product__brand">Michelin</div>
+                                            <div class="analog-product__season"><span class="analog-product__season-icon"><img src="img/winter.svg" alt="снежинка" aria-hidden></span> Зимние</div>
+                                        </div>
+                                        <a href="#" class="analog-product__name">Ovation Ecovision VI-386HP 225/55 R18 98V</a>
+                                        <div class="analog-product__bottom">
+                                            <div class="analog-product__available available-status available-status_no">Нет в наличии</div>
+                                            <div class="analog-product__price">14500₽</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="analog-product">
+                                    <div class="analog-product__image">
+                                        <picture>
+                                            <source srcset="img/gallery-photo-1@1x.webp 1x,
+                                                            img/gallery-photo-1@2x.webp 2x"
+                                                    type="image/webp">
+                                            <img	src="img/gallery-photo-1@1x.jpg"
+                                                    srcset="img/gallery-photo-1@2x.jpg 2x"
+                                                    alt="фото Michelin">
+                                        </picture>
+                                    </div>
+                                    <div class="analog-product__wrapper">
+                                        <div class="analog-product__top">
+                                            <div class="analog-product__brand">Michelin</div>
+                                            <div class="analog-product__season"><span class="analog-product__season-icon"><img src="img/summer.svg" alt="солнце" aria-hidden></span> Летние</div>
+                                        </div>
+                                        <a href="#" class="analog-product__name">Ovation Ecovision VI-386HP 225/55 R18 98V</a>
+                                        <div class="analog-product__bottom">
+                                            <div class="analog-product__available available-status available-status_yes">В наличии</div>
+                                            <div class="analog-product__price">14500₽</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="analog-product">
+                                    <div class="analog-product__image">
+                                        <picture>
+                                            <source srcset="img/gallery-photo-1@1x.webp 1x,
+                                                            img/gallery-photo-1@2x.webp 2x"
+                                                    type="image/webp">
+                                            <img	src="img/gallery-photo-1@1x.jpg"
+                                                    srcset="img/gallery-photo-1@2x.jpg 2x"
+                                                    alt="фото Michelin">
+                                        </picture>
+                                    </div>
+                                    <div class="analog-product__wrapper">
+                                        <div class="analog-product__top">
+                                            <div class="analog-product__brand">Michelin</div>
+                                            <div class="analog-product__season"><span class="analog-product__season-icon"><img src="img/summer.svg" alt="солнце" aria-hidden></span> Летние</div>
+                                        </div>
+                                        <a href="#" class="analog-product__name">Ovation Ecovision VI-386HP 225/55 R18 98V</a>
+                                        <div class="analog-product__bottom">
+                                            <div class="analog-product__available available-status available-status_yes">В наличии</div>
+                                            <div class="analog-product__price">14500₽</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="analog-product">
+                                    <div class="analog-product__image">
+                                        <picture>
+                                            <source srcset="img/gallery-photo-1@1x.webp 1x,
+                                                            img/gallery-photo-1@2x.webp 2x"
+                                                    type="image/webp">
+                                            <img	src="img/gallery-photo-1@1x.jpg"
+                                                    srcset="img/gallery-photo-1@2x.jpg 2x"
+                                                    alt="фото Michelin">
+                                        </picture>
+                                    </div>
+                                    <div class="analog-product__wrapper">
+                                        <div class="analog-product__top">
+                                            <div class="analog-product__brand">Michelin</div>
+                                            <div class="analog-product__season"><span class="analog-product__season-icon"><img src="img/summer.svg" alt="солнце" aria-hidden></span> Летние</div>
+                                        </div>
+                                        <a href="#" class="analog-product__name">Ovation Ecovision VI-386HP 225/55 R18 98V</a>
+                                        <div class="analog-product__bottom">
+                                            <div class="analog-product__available available-status available-status_yes">В наличии</div>
+                                            <div class="analog-product__price">14500₽</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <footer class="footer"></footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+
+    <script src="js/main.min.js"></script>
+</body>
+</html>
