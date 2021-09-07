@@ -438,30 +438,6 @@
 }
 .product-available {
     &__status {
-        font-weight: bold;
-        font-size: 18px;
-        font-family: $font-open-sans;
-        line-height: 100%;
-        text-transform: uppercase;
-
-        &_yes {
-            color: $cPastelGreen;
-
-            &::before {
-                margin-right: 9px;
-                vertical-align: middle;
-                content: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21.5 13L14.1666 20L10.5 16.5' stroke='%236EE152' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z' stroke='%236EE152' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
-            }
-        }
-        &_no {
-            color: $color-warn;
-
-            &::before {
-                margin-right: 9px;
-                vertical-align: middle;
-                content: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M19.3334 13L12 20' stroke='%23FF4343' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M12.0001 13L19.3335 20' stroke='%23FF4343' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z' stroke='%23FF4343' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
-            }
-        }
     }
 
     &__cities {

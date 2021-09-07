@@ -142,20 +142,8 @@
     }
 
     &__available {
-        font-size: 18px;
-        font-family: $font-open-sans;
-        line-height: 100%;
-        text-transform: uppercase;
-
         @media screen and (max-width: $md4 + px) {
             font-size: 13px;
-        }
-
-        &_yes {
-            color: $cPastelGreen;
-        }
-        &_no {
-            color: $color-warn;
         }
     }
 
