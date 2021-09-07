@@ -15,7 +15,7 @@
         flex: 1;
         @media screen and (min-width: $md3 + 1 + px) {
             padding: 30px 30px 50px 30px;
-            background: #f9f9f9;
+            background: $color-gray-back;
         }
     }
 
@@ -37,7 +37,8 @@
             display: block;
             height: 1px;
             margin-top: 10px;
-            background: #99cee9;
+            background: $color-accent;
+            opacity: 0.2;
             content: '';
         }
     }
@@ -176,7 +177,7 @@
                 @media screen and (max-width: $md3 + px) {
                     height: 62px;
                     padding: 20px 15px;
-                    background: #fff;
+                    background: $cWhite;
                 }
 
                 &::before {
@@ -208,7 +209,7 @@
 
             &.active a {
                 color: $color-accent;
-                background: #f9f9f9;
+                background: $color-gray-back;
                 &::before {
                     background: $color-accent;
                     transform: translate3d(0, -50%, 0) scale(0.47);
@@ -290,7 +291,7 @@
         position: relative;
         padding-bottom: 56.25%;
         overflow: hidden;
-        background: #343434;
+        background: $color-gray-back;
         border-radius: 4px;
 
         iframe {

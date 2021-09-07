@@ -33,7 +33,7 @@
         &_heading {
             padding: 17px 10px;
             font-weight: bold;
-            background: #f9f9f9;
+            background: $color-gray-back;
         }
     }
 
@@ -152,10 +152,10 @@
         }
 
         &_yes {
-            color: #6ee152;
+            color: $cPastelGreen;
         }
         &_no {
-            color: #ff4343;
+            color: $color-warn;
         }
     }
 

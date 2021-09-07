@@ -30,55 +30,19 @@
     &__social {
     }
 }
-.my-avto-btn {
-    display: block;
-    text-align: left;
-    background: none;
-    border: none;
-
-    &__icon {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        width: 42px;
-        height: 42px;
-        margin-right: 10px;
-        vertical-align: middle;
-        background: $color-accent;
-        border-radius: 8px;
-
-        img {
-            max-width: 30px;
-        }
-    }
-
-    &__text {
-        color: $color-main;
-        font-weight: bold;
-        font-size: 16px;
-        font-family: $font-open-sans;
-        line-height: 120%;
-        text-transform: uppercase;
-    }
-
-    &:hover &__text,
-    &:focus &__text {
-        text-decoration: underline;
-    }
-}
 .sidebar-banner {
     position: relative;
     width: 100%;
     min-height: 420px;
     padding: 25px 18px;
     overflow: hidden;
-    color: #fff;
+    color: $cWhite;
     font-weight: bold;
     font-size: 18px;
     font-family: $font-open-sans;
     line-height: 120%;
     text-transform: uppercase;
-    background: #3d1654;
+    background: $color-gray-back;
     border-radius: 4px;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
 
@@ -145,7 +109,7 @@
 .sidebar-see-also {
     padding: 30px 15px 45px;
     color: $color-main;
-    background: #f9f9f9;
+    background: $color-gray-back;
     border-radius: 3px;
 
     &__title {
@@ -159,7 +123,7 @@
             width: 100%;
             height: 1px;
             margin-top: 10px;
-            background: #d8dcde;
+            background: $cIron;
             content: '';
         }
     }
