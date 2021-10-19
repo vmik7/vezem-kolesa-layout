@@ -38,5 +38,6 @@ $.fn.responsiveTabs = function () {
 };
 
 $('.product-info__tabs').responsiveTabs();
-
+$('.tirefit-price__tabs').responsiveTabs();
+$('.wheel-size-list').responsiveTabs();
 /* eslint-enable no-undef, no-unused-vars */
