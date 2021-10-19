@@ -503,18 +503,37 @@ body {
   background: #fff;
   border: 2px solid #d8dcde;
   border-radius: 4px;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.my-button:active {
+  color: #fff;
+  background: #34af9d;
+  border-color: #34af9d;
 }
 
 .my-button_grey {
   color: #fff;
   background: #d8dcde;
-  border: none;
+  border-color: #d8dcde;
 }
 
 .my-button_accent {
   color: #fff;
   background: #0e8ecf;
-  border: none;
+  border-color: #0e8ecf;
+}
+
+.my-button_green {
+  color: #fff;
+  background: #37a72e;
+  border-color: #37a72e;
+}
+
+.my-button:disabled {
+  opacity: 0.3;
 }
 
 .my-avto-btn {
@@ -714,12 +733,125 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   min-height: 100vh;
+  color: #444;
+  font-family: "Roboto", sans-serif;
+}
+
+.page__header {
+  color: #444;
+  font-weight: bold;
+  font-family: "Open Sans Condensed", "Roboto", sans-serif;
+}
+
+.page__header_level_one {
+  margin-top: 15px;
+  margin-bottom: 30px;
+  font-size: 40px;
+  line-height: 48px;
+}
+
+.page__header_level_two {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 28px;
+  line-height: 35px;
+}
+
+.page__text-block {
+  margin: 20px 0;
+}
+
+.page__paragraph {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  line-height: 120%;
+}
+
+.page__link {
+  color: #0e8ecf;
+  font-weight: bold;
+}
+
+.page__collapse-button[aria-expanded='true'] {
+  display: none;
+}
+
+.page__text-field {
+  height: 35px;
+  padding: 5px 8px;
+  background: #fff;
+  border: 1px solid #dbe2e9;
+  border-radius: 4px;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.page__text-field:focus {
+  border-color: #0e8ecf;
+  -webkit-box-shadow: 0 0 3px 1px #0e8ecf;
+          box-shadow: 0 0 3px 1px #0e8ecf;
+}
+
+.page__text-field::-webkit-input-placeholder {
+  color: #949da7;
+}
+
+.page__text-field::-moz-placeholder {
+  color: #949da7;
+}
+
+.page__text-field:-ms-input-placeholder {
+  color: #949da7;
+}
+
+.page__text-field::-ms-input-placeholder {
+  color: #949da7;
+}
+
+.page__text-field::placeholder {
+  color: #949da7;
+}
+
+.shadow-block {
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
 }
 
 .page-container {
   max-width: 1440px;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+.page-container_with-sidebar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.page-container__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.page-container__sidebar {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 260px;
+          flex: 0 0 260px;
+  margin-left: 40px;
 }
 
 .header {
@@ -1885,7 +2017,317 @@ body {
   height: 25px;
 }
 
+.quick-order {
+  padding-bottom: 45px;
+}
+
+.quick-order__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 15px 0;
+}
+
+.quick-order__header-icon {
+  margin-right: 15px;
+}
+
+.quick-order__header-text {
+  font-weight: bold;
+  font-size: 25px;
+  font-family: "Open Sans Condensed", "Roboto", sans-serif;
+}
+
+.quick-order__sub-header {
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  line-height: 17px;
+}
+
+.quick-order__form {
+  margin-top: 10px;
+}
+
+.quick-order__input {
+  width: 100%;
+  margin-top: 15px;
+}
+
+.quick-order__submit {
+  margin-top: 25px;
+}
+
+.tirefit-hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  -webkit-column-gap: 25px;
+     -moz-column-gap: 25px;
+          column-gap: 25px;
+}
+
+.tirefit-hero__benefits {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.tirefit-hero__registration {
+  height: 100%;
+}
+
+.tirefit-benefit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 8px;
+  border: 1px solid #d8dcde;
+  border-radius: 4px;
+}
+
+.tirefit-benefit__name {
+  color: #0e8ecf;
+  font-weight: bold;
+  font-size: 15px;
+  font-family: "Open Sans Condensed", "Roboto", sans-serif;
+  text-transform: uppercase;
+}
+
+.tirefit-registration {
+  position: relative;
+}
+
+.tirefit-registration__bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  overflow: hidden;
+  border-radius: inherit;
+}
+
+.tirefit-registration__bg img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.tirefit-registration__content {
+  position: relative;
+}
+
+.tirefit-registration__header {
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 28px;
+  font-family: "Open Sans Condensed", "Roboto", sans-serif;
+}
+
+.tirefit-registration__select {
+  display: block;
+  width: 100%;
+}
+
+.tirefit-registration__select:not(:first-child) {
+  margin-top: 10px;
+}
+
+.tirefit-registration__submit {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  margin-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#tirefit-price .product-tabs {
+  border: 0;
+}
+
+#tirefit-price .product-tabs__item a {
+  position: relative;
+  padding: 20px 15px 20px 40px;
+  color: #444;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: "Open Sans Condensed", "Roboto", sans-serif;
+  line-height: 120%;
+  text-transform: uppercase;
+  background: transparent;
+  border: 0;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#tirefit-price .product-tabs__item a::before {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  display: block;
+  width: 19px;
+  height: 19px;
+  vertical-align: middle;
+  background: transparent;
+  border: 3px solid #0e8ecf;
+  border-radius: 4px;
+  -webkit-transform: translate3d(0, -50%, 0);
+          transform: translate3d(0, -50%, 0);
+  opacity: 0.2;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  content: '';
+}
+
+#tirefit-price .product-tabs__item.active a {
+  color: #0e8ecf;
+  background: #f9f9f9;
+}
+
+#tirefit-price .product-tabs__item.active a::before {
+  background: #0e8ecf;
+  -webkit-transform: translate3d(0, -50%, 0) scale(0.47);
+          transform: translate3d(0, -50%, 0) scale(0.47);
+  opacity: 1;
+}
+
+.tirefit-price {
+  margin-bottom: 50px;
+}
+
+.tirefit-price__tab-content {
+  margin-top: 30px;
+}
+
+.tire-price-table {
+  width: 100%;
+}
+
+.tire-price-table_desktop .tire-price-table__row:not(:first-child) {
+  border-top: 1px solid #99cee9;
+}
+
+.tire-price-table__h,
+.tire-price-table__cell {
+  padding: 10px;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  line-height: 120%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.tire-price-table__h:first-child,
+.tire-price-table__cell:first-child {
+  text-align: left;
+}
+
+.tire-price-table__h {
+  font-weight: bold;
+  font-family: "Open Sans Condensed", "Roboto", sans-serif;
+}
+
+.tire-price-table_desktop .tire-price-table__h {
+  background: #f9f9f9;
+}
+
+.tire-price-table_mobile .tire-price-table__h {
+  padding: 20px 10px;
+  font-size: 17px;
+}
+
+.tire-price-table_mobile .tire-price-table__h span {
+  color: #0e8ecf;
+}
+
+.tire-price-table__head,
+.tire-price-table__head .tire-price-table__h {
+  color: #fff;
+  background: #0e8ecf;
+}
+
+.tire-price-table_desktop .tire-price-table__cell_header {
+  max-width: 180px;
+  padding-right: 20px;
+  border-right: 1px solid #99cee9;
+}
+
+.tire-price-table_mobile .tire-price-table__cell:not(th) {
+  color: #0e8ecf;
+  font-weight: bold;
+}
+
+.wheel-size-content:not(.active) {
+  display: none;
+}
+
+#tire-price-table_mobile .wheel-size-list {
+  border: 0;
+}
+
+#tire-price-table_mobile .wheel-size-list__item a {
+  position: relative;
+  min-width: 92px;
+  height: 40px;
+  padding: 8px 10px;
+  color: #444;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: "Open Sans Condensed", "Roboto", sans-serif;
+  line-height: 120%;
+  white-space: nowrap;
+  text-transform: uppercase;
+  background: #fff;
+  border: 1px solid #dbe2e9;
+  border-radius: 4px;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#tire-price-table_mobile .wheel-size-list__item a::before {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  display: block;
+  width: 19px;
+  height: 19px;
+  vertical-align: middle;
+  background: transparent;
+  border: 3px solid #0e8ecf;
+  border-radius: 4px;
+  -webkit-transform: translate3d(0, -50%, 0);
+          transform: translate3d(0, -50%, 0);
+  opacity: 0.2;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  content: '';
+}
+
+#tire-price-table_mobile .wheel-size-list__item.active a {
+  color: #0e8ecf;
+}
+
+#tire-price-table_mobile .wheel-size-list__item.active a::before {
+  background: #0e8ecf;
+  -webkit-transform: translate3d(0, -50%, 0) scale(0.47);
+          transform: translate3d(0, -50%, 0) scale(0.47);
+  opacity: 1;
+}
+
 @media screen and (min-width: 480px) {
+  .tirefit-benefit__img {
+    margin-right: 10px;
+  }
+}
+
+@media screen and (min-width: 481px) {
   .product-promo__icon {
     margin-right: 10px;
   }
@@ -1906,7 +2348,13 @@ body {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
+  .my-button:hover:not(:disabled) {
+    color: #fff;
+    background: #34af9d;
+    border-color: #34af9d;
+  }
+
   .only-mobile {
     display: none;
   }
@@ -1947,21 +2395,39 @@ body {
     background: #f9f9f9;
     content: '';
   }
+
+  #tirefit-price .responsive-tabs.nav-tabs span.glyphicon {
+    display: none;
+  }
+
+  #tire-price-table_mobile .responsive-tabs.nav-tabs span.glyphicon {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 992px) {
+  .tirefit-registration__form {
+    max-width: 200px;
+  }
+}
+
+@media screen and (min-width: 993px) {
   .product-hero__delivery-line {
     display: none;
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1200px) {
+  .page-container__sidebar {
+    display: none;
+  }
+
   .product-details__top-sidebar {
     display: none;
   }
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 992px) {
   .product-hero {
     grid-template-columns: 260px 1fr;
   }
@@ -2028,7 +2494,7 @@ body {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .only-desktop {
     display: none;
   }
@@ -2229,9 +2695,163 @@ body {
   .analog-product__name {
     font-size: 20px;
   }
+
+  #tirefit-price .responsive-tabs.nav-tabs {
+    position: relative;
+    z-index: 10;
+    overflow: visible;
+    border-bottom: none;
+  }
+
+  #tirefit-price .responsive-tabs.nav-tabs span.glyphicon {
+    position: absolute;
+    top: 50%;
+    right: 22px;
+    color: #0e8ecf;
+    -webkit-transform: translate3d(0, -50%, 0);
+            transform: translate3d(0, -50%, 0);
+  }
+
+  #tirefit-price .responsive-tabs.nav-tabs span.glyphicon.glyphicon-chevron-up {
+    display: none;
+  }
+
+  #tirefit-price .responsive-tabs.nav-tabs > li {
+    display: none;
+    float: none;
+    text-align: center;
+  }
+
+  #tirefit-price .responsive-tabs.nav-tabs > li:last-of-type > a {
+    margin-right: 0;
+  }
+
+  #tirefit-price .responsive-tabs.nav-tabs > li > a {
+    margin-right: 0;
+    padding-right: 55px;
+    text-align: left;
+  }
+
+  #tirefit-price .responsive-tabs.nav-tabs > li.active {
+    display: block;
+  }
+
+  #tirefit-price .responsive-tabs.nav-tabs > li.active a {
+    border-radius: 6px;
+  }
+
+  #tirefit-price .responsive-tabs.nav-tabs.open span.glyphicon.glyphicon-chevron-down {
+    opacity: 0;
+  }
+
+  #tirefit-price .responsive-tabs.nav-tabs.open > li {
+    display: block;
+  }
+
+  #tirefit-price .responsive-tabs.nav-tabs.open > li a {
+    border-radius: 0;
+  }
+
+  #tirefit-price .responsive-tabs.nav-tabs.open > li:first-of-type a {
+    border-radius: 5px 5px 0 0;
+  }
+
+  #tirefit-price .responsive-tabs.nav-tabs.open > li:last-of-type a {
+    border-radius: 0 0 5px 5px;
+  }
+
+  #tirefit-price .product-tabs {
+    -webkit-filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.15));
+            filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.15));
+  }
+
+  #tirefit-price .product-tabs__item a {
+    padding: 20px 15px;
+    background: #fff;
+  }
+
+  #tirefit-price .product-tabs__item a::before {
+    display: none;
+  }
+
+  #tire-price-table_mobile .responsive-tabs.nav-tabs {
+    position: relative;
+    z-index: 10;
+    height: 40px;
+    overflow: visible;
+    border-bottom: none;
+  }
+
+  #tire-price-table_mobile .responsive-tabs.nav-tabs span.glyphicon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    color: #0e8ecf;
+    -webkit-transform: translate3d(0, -50%, 0);
+            transform: translate3d(0, -50%, 0);
+  }
+
+  #tire-price-table_mobile .responsive-tabs.nav-tabs span.glyphicon.glyphicon-chevron-up {
+    display: none;
+  }
+
+  #tire-price-table_mobile .responsive-tabs.nav-tabs > li {
+    display: none;
+    float: none;
+    text-align: center;
+  }
+
+  #tire-price-table_mobile .responsive-tabs.nav-tabs > li:last-of-type > a {
+    margin-right: 0;
+  }
+
+  #tire-price-table_mobile .responsive-tabs.nav-tabs > li > a {
+    margin-right: 0;
+    padding-right: 30px;
+    text-align: left;
+  }
+
+  #tire-price-table_mobile .responsive-tabs.nav-tabs > li.active {
+    display: block;
+  }
+
+  #tire-price-table_mobile .responsive-tabs.nav-tabs > li.active a {
+    border-radius: 6px;
+  }
+
+  #tire-price-table_mobile .responsive-tabs.nav-tabs.open span.glyphicon.glyphicon-chevron-down {
+    opacity: 0;
+  }
+
+  #tire-price-table_mobile .responsive-tabs.nav-tabs.open > li {
+    display: block;
+  }
+
+  #tire-price-table_mobile .responsive-tabs.nav-tabs.open > li a {
+    border-radius: 0;
+  }
+
+  #tire-price-table_mobile .responsive-tabs.nav-tabs.open > li:first-of-type a {
+    border-radius: 5px 5px 0 0;
+  }
+
+  #tire-price-table_mobile .responsive-tabs.nav-tabs.open > li:last-of-type a {
+    border-radius: 0 0 5px 5px;
+  }
+
+  #tire-price-table_mobile .wheel-size-list__item a::before {
+    display: none;
+  }
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 767px) {
+  .tirefit-hero {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
   .product-hero {
     padding: 15px 0;
     border: none;
@@ -2414,7 +3034,28 @@ body {
   }
 }
 
-@media screen and (max-width: 991px) and (min-width: 768px) {
+@media screen and (max-width: 479px) {
+  .tirefit-benefit {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .tirefit-benefit__img {
+    margin-bottom: 8px;
+  }
+
+  .tirefit-benefit__name {
+    text-align: center;
+  }
+
+  .tirefit-registration__bg {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 992px) and (min-width: 769px) {
   #product-info .product-tabs__item a {
     padding: 17px 15px 17px 35px;
     font-size: 15px;
@@ -2424,5 +3065,51 @@ body {
     width: 15px;
     height: 15px;
     border-radius: 2px;
+  }
+
+  #tirefit-price .product-tabs__item a {
+    padding: 17px 15px 17px 35px;
+    font-size: 15px;
+  }
+
+  #tirefit-price .product-tabs__item a::before {
+    width: 15px;
+    height: 15px;
+    border-radius: 2px;
+  }
+
+  #tire-price-table_mobile .wheel-size-list__item a::before {
+    width: 15px;
+    height: 15px;
+    border-radius: 2px;
+  }
+}
+
+@media screen and (max-width: 1199px) and (min-width: 992px) {
+  .product-disconts {
+    -webkit-column-gap: 1%;
+       -moz-column-gap: 1%;
+            column-gap: 1%;
+  }
+
+  .discont__figure {
+    background: transparent;
+  }
+
+  .discont__image img {
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+}
+
+@media screen and (max-width: 991px) and (min-width: 768px) {
+  .tirefit-registration__bg {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) and (min-width: 480px) {
+  .tirefit-registration__form {
+    max-width: 320px;
   }
 }
