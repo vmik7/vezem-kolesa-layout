@@ -10,8 +10,11 @@ $color-gray-back: $cAlabaster;
 $font-roboto: 'Roboto', sans-serif;
 $font-open-sans: 'Open Sans Condensed', $font-roboto;
 
-$md0: 1360;
+$md0: 1920;
 $md1: 1200;
 $md2: 992;
 $md3: 768;
 $md4: 480;
+$md_min: 360;
+
+$container-padding: 20;

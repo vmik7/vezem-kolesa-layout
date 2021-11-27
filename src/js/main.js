@@ -22,6 +22,17 @@ const productGallerySwiper = new Swiper('.product-gallery__swiper', {
         bulletActiveClass: 'product-gallery__paggination-bullet-active',
     },
 });
+const homeSwiper = new Swiper('.home-slider', {
+    effect: 'fade',
+    fadeEffect: {
+        crossFade: true,
+    },
+    autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+    },
+    loop: true,
+});
 
 $.fn.responsiveTabs = function () {
     this.addClass('responsive-tabs');

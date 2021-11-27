@@ -1,0 +1,228 @@
+@import '../vars';
+
+.home {
+    // .home__slider
+    &__slider {
+    }
+
+    // .home__header
+    &__header {
+    }
+}
+
+.home-slider {
+    overflow: visible;
+
+    // .home-slider__slide
+    &__slide {
+        position: relative;
+    }
+
+    // .home-slider__container
+    &__container {
+        display: flex;
+
+        @media screen and (min-width: $md2 + px) {
+            @include responsive-pixels(min-height, 335, $md0);
+            @include responsive-pixels(padding-top, 100, $md0);
+            @include responsive-pixels(padding-bottom, 92, $md0);
+        }
+        @media screen and (max-width: $md2 - 1 + px) {
+            @include responsive-pixels(min-height, 200, $md_min);
+            @include responsive-pixels(padding-top, 60, $md_min);
+            @include responsive-pixels(padding-bottom, 60, $md_min);
+        }
+    }
+
+    // .home-slider__info
+    &__info {
+        z-index: 2;
+        @media screen and (min-width: $md2 + px) {
+            @include responsive-pixels(max-width, 650, $md0);
+            @include responsive-pixels(margin-left, 82, $md0);
+        }
+        @media screen and (max-width: $md2 - 1 + px) {
+            @include responsive-pixels(max-width, 260, $md_min);
+            @include responsive-pixels(margin-left, 65, $md_min);
+        }
+    }
+
+    // .home-slider__label
+    &__label {
+        position: relative;
+        display: inline-block;
+        color: #fff;
+        font-weight: 900;
+        font-family: $font-roboto;
+        font-style: italic;
+
+        @media screen and (min-width: $md2 + px) {
+            @include responsive-pixels(font-size, 72, $md0);
+            @include responsive-pixels(line-height, 88, $md0);
+        }
+        @media screen and (max-width: $md2 - 1 + px) {
+            @include responsive-pixels(font-size, 29, $md_min);
+            @include responsive-pixels(line-height, 35, $md_min);
+        }
+
+        &::before {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            z-index: -1;
+            color: $cWhite;
+            background: $cTundora;
+            transform: skewX(-10deg);
+            content: '';
+
+            @media screen and (min-width: $md2 + px) {
+                @include responsive-pixels(right, -36, $md0);
+                @include responsive-pixels(left, -32, $md0);
+            }
+            @media screen and (max-width: $md2 - 1 + px) {
+                @include responsive-pixels(right, -17, $md_min);
+                @include responsive-pixels(left, -15, $md_min);
+            }
+        }
+
+        // .home-slider__label_color_green
+        &_color_green {
+            &::before {
+                background: $cForestGreen;
+            }
+        }
+
+        // .home-slider__label_color_blue
+        &_color_blue {
+            &::before {
+                background: $cStTopaz;
+            }
+        }
+
+        // .home-slider__label_color_pink
+        &_color_pink {
+            &::before {
+                background: $cAmaranth;
+            }
+        }
+
+        // .home-slider__label_color_yellow
+        &_color_yellow {
+            color: $cTundora;
+
+            &::before {
+                background: $cBroom;
+            }
+        }
+    }
+
+    // .home-slider__text
+    &__text {
+        color: $color-main;
+        font-weight: 900;
+        font-family: $font-roboto;
+        font-style: italic;
+        line-height: 100%;
+
+        @media screen and (min-width: $md2 + px) {
+            @include responsive-pixels(margin-top, 5, $md0);
+            @include responsive-pixels(font-size, 48, $md0);
+        }
+        @media screen and (max-width: $md2 - 1 + px) {
+            @include responsive-pixels(margin-top, 2, $md_min);
+            @include responsive-pixels(font-size, 19, $md_min);
+
+            color: $cWhite;
+        }
+    }
+
+    // .home-slider__container
+    &__image-container {
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        @media screen and (min-width: $md2 + px) {
+            @include responsive-pixels(width, 1050, $md0);
+            @include responsive-pixels(height, 520, $md0);
+        }
+        @media screen and (max-width: $md2 - 1 + px) {
+            @include responsive-pixels(width, 323, $md_min);
+            @include responsive-pixels(height, 200, $md_min);
+        }
+
+        &::before {
+            position: absolute;
+            z-index: 1;
+            background: #ff4343;
+            transform: skewX(-10deg);
+            content: '';
+
+            @media screen and (min-width: $md2 + px) {
+                right: 95%;
+                @include responsive-pixels(width, 12, $md0);
+                @include responsive-pixels(top, -24, $md0);
+                @include responsive-pixels(bottom, -24, $md0);
+            }
+            @media screen and (max-width: $md2 - 1 + px) {
+                right: 93%;
+                @include responsive-pixels(width, 7, $md_min);
+                @include responsive-pixels(top, -10, $md_min);
+                @include responsive-pixels(bottom, -10, $md_min);
+            }
+        }
+    }
+
+    // .home-slider__image
+    &__image {
+        width: 100%;
+        height: 100%;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: left center;
+
+            @media screen and (min-width: $md2 + px) {
+                -webkit-mask-image: linear-gradient(
+                    100deg,
+                    transparent 8%,
+                    black 8%
+                );
+            }
+            @media screen and (max-width: $md2 - 1 + px) {
+                -webkit-mask-image: linear-gradient(
+                    100deg,
+                    transparent 11%,
+                    black 11%
+                );
+            }
+        }
+    }
+}
+
+.home-header {
+    // .home-header__container
+    &__container {
+        display: grid;
+        grid-template-columns: 1fr 312px;
+        column-gap: 60px;
+    }
+
+    // .home-header__forms
+    &__forms {
+    }
+
+    // .home-header__banner
+    &__banner {
+    }
+}
+
+.home-pic-forms {
+    padding: 40px;
+    background: rgba(249, 249, 249, 0.8);
+    border-radius: 6px;
+    box-shadow: 0 10px 32px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(64px);
+}
