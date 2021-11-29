@@ -18,7 +18,7 @@
           integrity='sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp'
           crossorigin='anonymous'>
 
-        <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"/>
 
@@ -85,7 +85,7 @@
                             <div class='home-slider__image'>
                                 <picture>
                                     <source srcset='img/home/home-slider-photo-2@1x.webp 1x,
-                            img/home/home-slider-photo-2@2x.webp 2x'
+                                                    img/home/home-slider-photo-2@2x.webp 2x'
                                             type='image/webp'>
                                     <img src='img/home/home-slider-photo-2@1x.jpg'
                                          srcset='img/home/home-slider-photo-2@2x.jpg 2x'
@@ -175,32 +175,1515 @@
                 </div>
             </div>
 
-<!--            <div class='home__header home-header'>-->
-<!--                <div-->
-<!--                    class='page-container page-container_width_1920 home-header__container'>-->
-<!--                    <div class='home-header__forms home-pic-forms'></div>-->
-<!--                    <div class='home-header__banner sidebar-banner'>-->
-<!--                        <div class='sidebar-banner__image'>-->
-<!--                            <picture>-->
-<!--                                <source srcset='img/sidebar-banner@1x.webp 1x,-->
-<!--                                                        img/sidebar-banner@2x.webp 2x'-->
-<!--                                        type='image/webp'>-->
-<!--                                <img src='img/sidebar-banner@1x.jpg'-->
-<!--                                     srcset='img/sidebar-banner@2x.jpg 2x'-->
-<!--                                     alt='счастливый водитель'>-->
-<!--                            </picture>-->
-<!--                        </div>-->
-<!--                        <div class='sidebar-banner__content'>-->
-<!--                            <span class='sidebar-banner__icon'><img-->
-<!--                                src='img/sidebar-banner-icon.svg'-->
-<!--                                alt='стрелка влево' aria-hidden></span> Каждый-->
-<!--                            покупатель получает сертификат на <span-->
-<!--                            class='sidebar-banner_size_xl'>Бесплатную</span>-->
-<!--                            <span class='sidebar-banner_size_l'>эвакуацию</span>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
+            <header class='home__header home-header'>
+                <div
+                    class='page-container page-container_width_1920 home-header__container'>
+                    <div class='home-header__forms home-pic-forms'>
+                        <div class='home-pic-forms__container'>
+                            <div class='home-pic-forms__tires'>
+                                <div class='home-pic-forms__tires_mobile'>
+                                    <ul class='home-pic-forms__header home-pic-forms__tires-header' id='tires-form' role="tablist">
+                                        Шины
+                                        <li role='presentation' class='home-pic-forms__tab active'><a class='home-pic-forms__tab-link' id='tires-form-tab1' href='#multiCollapseFormBlock1' role="tab" data-toggle="tab" aria-controls="multiCollapseFormBlock1">по авто</a></li>
+                                        <li role='presentation' class='home-pic-forms__tab'><a class='home-pic-forms__tab-link' id='tires-form-tab2' href='#multiCollapseFormBlock2' role="tab" data-toggle="tab" aria-controls="multiCollapseFormBlock2">по параметрам</a></li>
+
+                                    </ul>
+                                    <div class="home-pic-forms__tab-content tab-content">
+                                        <div role="tabpanel" class='home-pic-forms__block tab-pane fade in active' id="multiCollapseFormBlock1" aria-labelledby="tires-form-tab1">
+                                            <form action="#" class="home-pic-forms__form">
+                                                <select class="home-pic-forms__select page__text-field page__text-field_wide">
+                                                    <option selected>Марка</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                                <select class="home-pic-forms__select page__text-field page__text-field_wide">
+                                                    <option selected>Семейство</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                                <select class="home-pic-forms__select page__text-field page__text-field_wide">
+                                                    <option selected>Модель</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                                <button type="submit" class="my-button my-button_size_sm my-button_accent home-pic-forms__submit">Подобрать</button>
+                                            </form>
+                                        </div>
+                                        <div role="tabpanel" class='home-pic-forms__block tab-pane fade' id="multiCollapseFormBlock2" aria-labelledby="tires-form-tab2">
+                                            <form action="#" class="home-pic-forms__form">
+                                                <select class="home-pic-forms__select page__text-field page__text-field_wide">
+                                                    <option selected>Ширина</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                                <select class="home-pic-forms__select page__text-field page__text-field_wide">
+                                                    <option selected>Высота</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                                <select class="home-pic-forms__select page__text-field page__text-field_wide">
+                                                    <option selected>Диаметр шины</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                                <select class="home-pic-forms__select page__text-field page__text-field_wide">
+                                                    <option selected>Сезон</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                                <select class="home-pic-forms__select page__text-field page__text-field_wide">
+                                                    <option selected>Производитель</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                                <button type="submit" class="my-button my-button_size_sm my-button_accent home-pic-forms__submit">Подобрать</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class='home-pic-forms__tires_desktop'>
+                                    <div class='home-pic-forms__block'>
+                                        <div class='home-pic-forms__header'>Шины по авто</div>
+                                        <form action="#" class="home-pic-forms__form">
+                                            <select class="home-pic-forms__select page__text-field page__text-field_wide">
+                                                <option selected>Марка</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                            <select class="home-pic-forms__select page__text-field page__text-field_wide">
+                                                <option selected>Семейство</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                            <select class="home-pic-forms__select page__text-field page__text-field_wide">
+                                                <option selected>Модель</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                            <button type="submit" class="my-button my-button_size_sm my-button_accent home-pic-forms__submit">Подобрать</button>
+                                        </form>
+                                    </div>
+                                    <div class='home-pic-forms__block'>
+                                        <div class='home-pic-forms__header'>Шины по параметрам</div>
+                                        <form action="#" class="home-pic-forms__form">
+                                            <select class="home-pic-forms__select page__text-field page__text-field_wide">
+                                                <option selected>Ширина</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                            <select class="home-pic-forms__select page__text-field page__text-field_wide">
+                                                <option selected>Высота</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                            <select class="home-pic-forms__select page__text-field page__text-field_wide">
+                                                <option selected>Диаметр шины</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                            <select class="home-pic-forms__select page__text-field page__text-field_wide">
+                                                <option selected>Сезон</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                            <select class="home-pic-forms__select page__text-field page__text-field_wide">
+                                                <option selected>Производитель</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                            <button type="submit" class="my-button my-button_size_sm my-button_accent home-pic-forms__submit">Подобрать</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='home-pic-forms__block-separator'></div>
+                            <div class='home-pic-forms__disks'>
+                                <div class='home-pic-forms__block'>
+                                    <div class='home-pic-forms__header'>Диски</div>
+                                    <form action="#" class="home-pic-forms__form">
+                                        <select class="home-pic-forms__select page__text-field page__text-field_wide">
+                                            <option selected>Диаметр диска</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                        <select class="home-pic-forms__select page__text-field page__text-field_wide">
+                                            <option selected>PCD</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                        <select class="home-pic-forms__select page__text-field page__text-field_wide">
+                                            <option selected>Тип</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                        <select class="home-pic-forms__select page__text-field page__text-field_wide">
+                                            <option selected>Производитель</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                        <button type="submit" class="my-button my-button_size_sm my-button_accent home-pic-forms__submit">Подобрать</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='home-header__banner sidebar-banner'>
+                        <div class='sidebar-banner__image'>
+                            <picture>
+                                <source srcset='img/sidebar-banner@1x.webp 1x,
+                                                        img/sidebar-banner@2x.webp 2x'
+                                        type='image/webp'>
+                                <img src='img/sidebar-banner@1x.jpg'
+                                     srcset='img/sidebar-banner@2x.jpg 2x'
+                                     alt='счастливый водитель'>
+                            </picture>
+                        </div>
+                        <div class='sidebar-banner__content'>
+                            <span class='sidebar-banner__icon'><img
+                                src='img/sidebar-banner-icon.svg'
+                                alt='стрелка влево' aria-hidden></span> Каждый
+                            покупатель получает сертификат на <span
+                            class='sidebar-banner_size_xl'>Бесплатную</span>
+                            <span class='sidebar-banner_size_l'>эвакуацию</span>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <main class='home__content'>
+                <section class='home__section'>
+                    <div class='page-container page-container_width_1920'>
+                        <h2 class='home__section-header'>Хиты продаж</h2>
+                        <div class='cards-container'>
+                            <div class='product-preview'>
+                                <div class='product-preview__left'>
+                                    <div class='product-preview__image'>
+                                        <picture>
+                                            <source srcset="img/home/hit-product-tire@1x.webp 1x,
+                                                        img/home/hit-product-tire@2x.webp 2x"
+                                                    type="image/webp">
+                                            <img	src="img/home/hit-product-tire@1x.jpg"
+                                                    srcset="img/home/hit-product-tire@2x.jpg 2x"
+                                                    alt="фото">
+                                        </picture>
+                                        <div class='product-preview__icons-block'>
+                                            <div class='product-preview__icon'>
+                                                <img src='img/winter.svg' alt='зима'>
+                                            </div>
+                                            <div class='product-preview__icon'>
+                                                <img src='img/summer.svg' alt='лето'>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class='product-preview__price-block'>
+                                        <div class='product-preview__price'>от <span class='product-preview__price-value'>4200 ₽</span></div>
+                                        <div class="product-preview__available available-status available-status_no">Нет в наличии</div>
+                                    </div>
+                                </div>
+                                <div class='product-preview__right'>
+                                    <header class='product-preview__header'>
+                                        <div class='product-preview__brand'>
+                                            <picture>
+                                                <source srcset="img/product-logo@1x.webp 1x,
+                                                            img/product-logo@2x.webp 2x"
+                                                        type="image/webp">
+                                                <img	src="img/product-logo@1x.jpg"
+                                                        srcset="img/product-logo@2x.jpg 2x"
+                                                        alt="фото">
+                                            </picture>
+                                        </div>
+                                        <div class='product-preview__vendor'>арт. T430358</div>
+                                    </header>
+                                    <main class='product-preview__main'>
+                                        <div class='product-preview__type-label'>Зимняя шина</div>
+                                        <div class='product-preview__title'>Nokian Ecovision VI-386HP</div>
+                                        <div class='product-preview__info'>
+                                            Доступно:
+                                            <span class='product-preview__info-accent'>R17</span>
+                                            <span class='product-preview__info-accent'>R18</span>
+                                            <span class='product-preview__info-accent'>R19</span>
+                                        </div>
+                                    </main>
+                                    <footer class='product-preview__footer'>
+                                        <button class='my-button my-button_wide my-button_size_sm product-preview__open-button'>Посмотреть</button>
+                                    </footer>
+                                </div>
+                            </div>
+                            <div class='product-preview'>
+                                <div class='product-preview__left'>
+                                    <div class='product-preview__image'>
+                                        <picture>
+                                            <source srcset="img/home/hit-product-tire@1x.webp 1x,
+                                                        img/home/hit-product-tire@2x.webp 2x"
+                                                    type="image/webp">
+                                            <img	src="img/home/hit-product-tire@1x.jpg"
+                                                    srcset="img/home/hit-product-tire@2x.jpg 2x"
+                                                    alt="фото">
+                                        </picture>
+                                    </div>
+                                    <div class='product-preview__price-block'>
+                                        <div class='product-preview__price'>от <span class='product-preview__price-value'>4200 ₽</span></div>
+                                        <div class="product-preview__available available-status available-status_yes">В наличии</div>
+                                    </div>
+                                </div>
+                                <div class='product-preview__right'>
+                                    <header class='product-preview__header'>
+                                        <div class='product-preview__brand'>
+                                            <picture>
+                                                <source srcset="img/product-logo@1x.webp 1x,
+                                                            img/product-logo@2x.webp 2x"
+                                                        type="image/webp">
+                                                <img	src="img/product-logo@1x.jpg"
+                                                        srcset="img/product-logo@2x.jpg 2x"
+                                                        alt="фото">
+                                            </picture>
+                                        </div>
+                                        <div class='product-preview__vendor'>арт. T430358</div>
+                                    </header>
+                                    <main class='product-preview__main'>
+                                        <div class='product-preview__type-label'>Зимняя шина</div>
+                                        <div class='product-preview__title'>Nokian Ecovision VI-386HP</div>
+                                        <div class='product-preview__info'>
+                                            Доступно:
+                                            <span class='product-preview__info-accent'>R13</span>
+                                            <span class='product-preview__info-accent'>R14</span>
+                                            <span class='product-preview__info-accent'>R16</span>
+                                            <span class='product-preview__info-accent'>R17</span>
+                                            <span class='product-preview__info-accent'>R18</span>
+                                            <span class='product-preview__info-accent'>R19</span>
+                                        </div>
+                                    </main>
+                                    <footer class='product-preview__footer'>
+                                        <button class='my-button my-button_wide my-button_size_sm product-preview__open-button'>Посмотреть</button>
+                                    </footer>
+                                </div>
+                            </div>
+                            <div class='product-preview'>
+                                <div class='product-preview__left'>
+                                    <div class='product-preview__image'>
+                                        <picture>
+                                            <source srcset="img/home/hit-product-tire@1x.webp 1x,
+                                                        img/home/hit-product-tire@2x.webp 2x"
+                                                    type="image/webp">
+                                            <img	src="img/home/hit-product-tire@1x.jpg"
+                                                    srcset="img/home/hit-product-tire@2x.jpg 2x"
+                                                    alt="фото">
+                                        </picture>
+                                    </div>
+                                    <div class='product-preview__price-block'>
+                                        <div class='product-preview__price'>от <span class='product-preview__price-value'>4200 ₽</span></div>
+                                        <div class="product-preview__available available-status available-status_yes">В наличии</div>
+                                    </div>
+                                </div>
+                                <div class='product-preview__right'>
+                                    <header class='product-preview__header'>
+                                        <div class='product-preview__brand'>
+                                            <picture>
+                                                <source srcset="img/product-logo@1x.webp 1x,
+                                                            img/product-logo@2x.webp 2x"
+                                                        type="image/webp">
+                                                <img	src="img/product-logo@1x.jpg"
+                                                        srcset="img/product-logo@2x.jpg 2x"
+                                                        alt="фото">
+                                            </picture>
+                                        </div>
+                                        <div class='product-preview__vendor'>арт. T430358</div>
+                                    </header>
+                                    <main class='product-preview__main'>
+                                        <div class='product-preview__type-label'>Зимняя шина</div>
+                                        <div class='product-preview__title'>Nokian Ecovision VI-386HP</div>
+                                        <div class='product-preview__info'>
+                                            Доступно:
+                                            <span class='product-preview__info-accent'>R13</span>
+                                            <span class='product-preview__info-accent'>R14</span>
+                                            <span class='product-preview__info-accent'>R16</span>
+                                            <span class='product-preview__info-accent'>R17</span>
+                                            <span class='product-preview__info-accent'>R18</span>
+                                            <span class='product-preview__info-accent'>R19</span>
+                                        </div>
+                                    </main>
+                                    <footer class='product-preview__footer'>
+                                        <button class='my-button my-button_wide my-button_size_sm product-preview__open-button'>Посмотреть</button>
+                                    </footer>
+                                </div>
+                            </div>
+                            <div class='product-preview'>
+                                <div class='product-preview__left'>
+                                    <div class='product-preview__image'>
+                                        <picture>
+                                            <source srcset="img/home/hit-product-tire@1x.webp 1x,
+                                                        img/home/hit-product-tire@2x.webp 2x"
+                                                    type="image/webp">
+                                            <img	src="img/home/hit-product-tire@1x.jpg"
+                                                    srcset="img/home/hit-product-tire@2x.jpg 2x"
+                                                    alt="фото">
+                                        </picture>
+                                    </div>
+                                    <div class='product-preview__price-block'>
+                                        <div class='product-preview__price'>от <span class='product-preview__price-value'>4200 ₽</span></div>
+                                        <div class="product-preview__available available-status available-status_yes">В наличии</div>
+                                    </div>
+                                </div>
+                                <div class='product-preview__right'>
+                                    <header class='product-preview__header'>
+                                        <div class='product-preview__brand'>
+                                            <picture>
+                                                <source srcset="img/product-logo@1x.webp 1x,
+                                                            img/product-logo@2x.webp 2x"
+                                                        type="image/webp">
+                                                <img	src="img/product-logo@1x.jpg"
+                                                        srcset="img/product-logo@2x.jpg 2x"
+                                                        alt="фото">
+                                            </picture>
+                                        </div>
+                                        <div class='product-preview__vendor'>арт. T430358</div>
+                                    </header>
+                                    <main class='product-preview__main'>
+                                        <div class='product-preview__type-label'>Зимняя шина</div>
+                                        <div class='product-preview__title'>Nokian Ecovision VI-386HP</div>
+                                        <div class='product-preview__info'>
+                                            Доступно:
+                                            <span class='product-preview__info-accent'>R13</span>
+                                            <span class='product-preview__info-accent'>R14</span>
+                                            <span class='product-preview__info-accent'>R16</span>
+                                            <span class='product-preview__info-accent'>R17</span>
+                                            <span class='product-preview__info-accent'>R18</span>
+                                            <span class='product-preview__info-accent'>R19</span>
+                                        </div>
+                                    </main>
+                                    <footer class='product-preview__footer'>
+                                        <button class='my-button my-button_wide my-button_size_sm product-preview__open-button'>Посмотреть</button>
+                                    </footer>
+                                </div>
+                            </div>
+                            <div class='product-preview'>
+                                <div class='product-preview__left'>
+                                    <div class='product-preview__image'>
+                                        <picture>
+                                            <source srcset="img/home/hit-product-tire@1x.webp 1x,
+                                                        img/home/hit-product-tire@2x.webp 2x"
+                                                    type="image/webp">
+                                            <img	src="img/home/hit-product-tire@1x.jpg"
+                                                    srcset="img/home/hit-product-tire@2x.jpg 2x"
+                                                    alt="фото">
+                                        </picture>
+                                    </div>
+                                    <div class='product-preview__price-block'>
+                                        <div class='product-preview__price'>от <span class='product-preview__price-value'>4200 ₽</span></div>
+                                        <div class="product-preview__available available-status available-status_yes">В наличии</div>
+                                    </div>
+                                </div>
+                                <div class='product-preview__right'>
+                                    <header class='product-preview__header'>
+                                        <div class='product-preview__brand'>
+                                            <picture>
+                                                <source srcset="img/product-logo@1x.webp 1x,
+                                                            img/product-logo@2x.webp 2x"
+                                                        type="image/webp">
+                                                <img	src="img/product-logo@1x.jpg"
+                                                        srcset="img/product-logo@2x.jpg 2x"
+                                                        alt="фото">
+                                            </picture>
+                                        </div>
+                                        <div class='product-preview__vendor'>арт. T430358</div>
+                                    </header>
+                                    <main class='product-preview__main'>
+                                        <div class='product-preview__type-label'>Зимняя шина</div>
+                                        <div class='product-preview__title'>Nokian Ecovision VI-386HP</div>
+                                        <div class='product-preview__info'>
+                                            Доступно:
+                                            <span class='product-preview__info-accent'>R13</span>
+                                            <span class='product-preview__info-accent'>R14</span>
+                                            <span class='product-preview__info-accent'>R16</span>
+                                            <span class='product-preview__info-accent'>R17</span>
+                                            <span class='product-preview__info-accent'>R18</span>
+                                            <span class='product-preview__info-accent'>R19</span>
+                                        </div>
+                                    </main>
+                                    <footer class='product-preview__footer'>
+                                        <button class='my-button my-button_wide my-button_size_sm product-preview__open-button'>Посмотреть</button>
+                                    </footer>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class='home__section'>
+                    <div class='page-container page-container_width_1920'>
+                        <h2 class='home__section-header'>Популярные производители шин</h2>
+                        <div class='swiper brand-slider' id='tires-brand-slider'>
+                            <div class='swiper-wrapper brand-slider__wrapper'>
+                                <div class='swiper-slide brand-slider__slide'>
+                                    <div class='brand-slider__image'>
+                                        <picture>
+                                            <source srcset="img/home/brand-firelli@1x.webp 1x,
+                                                    img/home/brand-firelli@2x.webp 2x"
+                                                    type="image/webp">
+                                            <img	src="img/home/brand-firelli@1x.jpg"
+                                                    srcset="img/home/brand-firelli@2x.jpg 2x"
+                                                    alt="фото">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class='swiper-slide brand-slider__slide'>
+                                    <div class='brand-slider__image'>
+                                        <picture>
+                                            <source srcset="img/home/brand-continental@1x.webp 1x,
+                                                    img/home/brand-continental@2x.webp 2x"
+                                                    type="image/webp">
+                                            <img	src="img/home/brand-continental@1x.jpg"
+                                                    srcset="img/home/brand-continental@2x.jpg 2x"
+                                                    alt="фото">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class='swiper-slide brand-slider__slide'>
+                                    <div class='brand-slider__image'>
+                                        <picture>
+                                            <source srcset="img/home/brand-hankook@1x.webp 1x,
+                                                    img/home/brand-hankook@2x.webp 2x"
+                                                    type="image/webp">
+                                            <img	src="img/home/brand-hankook@1x.jpg"
+                                                    srcset="img/home/brand-hankook@2x.jpg 2x"
+                                                    alt="фото">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class='swiper-slide brand-slider__slide'>
+                                    <div class='brand-slider__image'>
+                                        <picture>
+                                            <source srcset="img/home/brand-yokohama@1x.webp 1x,
+                                                    img/home/brand-yokohama@2x.webp 2x"
+                                                    type="image/webp">
+                                            <img	src="img/home/brand-yokohama@1x.jpg"
+                                                    srcset="img/home/brand-yokohama@2x.jpg 2x"
+                                                    alt="фото">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class='swiper-slide brand-slider__slide'>
+                                    <div class='brand-slider__image'>
+                                        <picture>
+                                            <source srcset="img/home/brand-toyo-tires@1x.webp 1x,
+                                                    img/home/brand-toyo-tires@2x.webp 2x"
+                                                    type="image/webp">
+                                            <img	src="img/home/brand-toyo-tires@1x.jpg"
+                                                    srcset="img/home/brand-toyo-tires@2x.jpg 2x"
+                                                    alt="фото">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class='swiper-slide brand-slider__slide'>
+                                    <div class='brand-slider__image'>
+                                        <picture>
+                                            <source srcset="img/home/brand-good-year@1x.webp 1x,
+                                                    img/home/brand-good-year@2x.webp 2x"
+                                                    type="image/webp">
+                                            <img	src="img/home/brand-good-year@1x.jpg"
+                                                    srcset="img/home/brand-good-year@2x.jpg 2x"
+                                                    alt="фото">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class='swiper-slide brand-slider__slide'>
+                                    <div class='brand-slider__image'>
+                                        <picture>
+                                            <source srcset="img/home/brand-hankook@1x.webp 1x,
+                                                    img/home/brand-hankook@2x.webp 2x"
+                                                    type="image/webp">
+                                            <img	src="img/home/brand-hankook@1x.jpg"
+                                                    srcset="img/home/brand-hankook@2x.jpg 2x"
+                                                    alt="фото">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class='swiper-slide brand-slider__slide'>
+                                    <div class='brand-slider__image'>
+                                        <picture>
+                                            <source srcset="img/home/brand-yokohama@1x.webp 1x,
+                                                    img/home/brand-yokohama@2x.webp 2x"
+                                                    type="image/webp">
+                                            <img	src="img/home/brand-yokohama@1x.jpg"
+                                                    srcset="img/home/brand-yokohama@2x.jpg 2x"
+                                                    alt="фото">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class='swiper-slide brand-slider__slide'>
+                                    <div class='brand-slider__image'>
+                                        <picture>
+                                            <source srcset="img/home/brand-toyo-tires@1x.webp 1x,
+                                                    img/home/brand-toyo-tires@2x.webp 2x"
+                                                    type="image/webp">
+                                            <img	src="img/home/brand-toyo-tires@1x.jpg"
+                                                    srcset="img/home/brand-toyo-tires@2x.jpg 2x"
+                                                    alt="фото">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class='swiper-slide brand-slider__slide'>
+                                    <div class='brand-slider__image'>
+                                        <picture>
+                                            <source srcset="img/home/brand-good-year@1x.webp 1x,
+                                                    img/home/brand-good-year@2x.webp 2x"
+                                                    type="image/webp">
+                                            <img	src="img/home/brand-good-year@1x.jpg"
+                                                    srcset="img/home/brand-good-year@2x.jpg 2x"
+                                                    alt="фото">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class='swiper-slide brand-slider__slide'>
+                                    <div class='brand-slider__image'>
+                                        <picture>
+                                            <source srcset="img/home/brand-firelli@1x.webp 1x,
+                                                    img/home/brand-firelli@2x.webp 2x"
+                                                    type="image/webp">
+                                            <img	src="img/home/brand-firelli@1x.jpg"
+                                                    srcset="img/home/brand-firelli@2x.jpg 2x"
+                                                    alt="фото">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class='swiper-slide brand-slider__slide'>
+                                    <div class='brand-slider__image'>
+                                        <picture>
+                                            <source srcset="img/home/brand-continental@1x.webp 1x,
+                                                    img/home/brand-continental@2x.webp 2x"
+                                                    type="image/webp">
+                                            <img	src="img/home/brand-continental@1x.jpg"
+                                                    srcset="img/home/brand-continental@2x.jpg 2x"
+                                                    alt="фото">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class='swiper-slide brand-slider__slide'>
+                                    <div class='brand-slider__image'>
+                                        <picture>
+                                            <source srcset="img/home/brand-hankook@1x.webp 1x,
+                                                    img/home/brand-hankook@2x.webp 2x"
+                                                    type="image/webp">
+                                            <img	src="img/home/brand-hankook@1x.jpg"
+                                                    srcset="img/home/brand-hankook@2x.jpg 2x"
+                                                    alt="фото">
+                                        </picture>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination brand-slider__pagination"></div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class='home__section'>
+                    <div class='page-container page-container_width_1920'>
+                        <div class="tires-season tabs" id='tires-season'>
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs tires-season__tabs tabs__list" role="tablist">
+                                <li role="presentation" class="active tabs__item"><a href="#tires-season-summer" aria-controls="tires-season-summer" role="tab" data-toggle="tab">Популярные летние шины</a></li>
+                                <li role="presentation" class="tabs__item"><a href="#tires-season-winter" aria-controls="tires-season-winter" role="tab" data-toggle="tab">Популярные зимние шины</a></li>
+                            </ul>
+                            <!-- Tab panes -->
+                            <div class="tab-content tabs__content">
+                                <div role="tabpanel" class="tab-pane fade in active tabs__panel" id="tires-season-summer">
+                                    <div class='cards-container'>
+                                        <div class='product-preview'>
+                                            <div class='product-preview__left'>
+                                                <div class='product-preview__image'>
+                                                    <picture>
+                                                        <source srcset="img/home/hit-product-disk@1x.webp 1x,
+                                                        img/home/hit-product-disk@2x.webp 2x"
+                                                                type="image/webp">
+                                                        <img	src="img/home/hit-product-disk@1x.jpg"
+                                                                srcset="img/home/hit-product-disk@2x.jpg 2x"
+                                                                alt="фото">
+                                                    </picture>
+                                                </div>
+                                                <div class='product-preview__price-block'>
+                                                    <div class='product-preview__price'>от <span class='product-preview__price-value'>4200 ₽</span></div>
+                                                    <div class="product-preview__available available-status available-status_yes">В наличии</div>
+                                                </div>
+                                            </div>
+                                            <div class='product-preview__right'>
+                                                <header class='product-preview__header'>
+                                                    <div class='product-preview__brand'>
+                                                        <picture>
+                                                            <source srcset="img/product-logo@1x.webp 1x,
+                                                            img/product-logo@2x.webp 2x"
+                                                                    type="image/webp">
+                                                            <img	src="img/product-logo@1x.jpg"
+                                                                    srcset="img/product-logo@2x.jpg 2x"
+                                                                    alt="фото">
+                                                        </picture>
+                                                    </div>
+                                                    <div class='product-preview__vendor'>арт. T430358</div>
+                                                </header>
+                                                <main class='product-preview__main'>
+                                                    <div class='product-preview__type-label'>Зимняя шина</div>
+                                                    <div class='product-preview__title'>Nokian Ecovision VI-386HP</div>
+                                                    <div class='product-preview__info'>
+                                                        Доступно:
+                                                        <span class='product-preview__info-accent'>R17</span>
+                                                        <span class='product-preview__info-accent'>R18</span>
+                                                        <span class='product-preview__info-accent'>R19</span>
+                                                    </div>
+                                                </main>
+                                                <footer class='product-preview__footer'>
+                                                    <button class='my-button my-button_wide my-button_size_sm product-preview__open-button'>Посмотреть</button>
+                                                </footer>
+                                            </div>
+                                        </div>
+                                        <div class='product-preview'>
+                                            <div class='product-preview__left'>
+                                                <div class='product-preview__image'>
+                                                    <picture>
+                                                        <source srcset="img/home/hit-product-disk@1x.webp 1x,
+                                                        img/home/hit-product-disk@2x.webp 2x"
+                                                                type="image/webp">
+                                                        <img	src="img/home/hit-product-disk@1x.jpg"
+                                                                srcset="img/home/hit-product-disk@2x.jpg 2x"
+                                                                alt="фото">
+                                                    </picture>
+                                                </div>
+                                                <div class='product-preview__price-block'>
+                                                    <div class='product-preview__price'>от <span class='product-preview__price-value'>4200 ₽</span></div>
+                                                    <div class="product-preview__available available-status available-status_yes">В наличии</div>
+                                                </div>
+                                            </div>
+                                            <div class='product-preview__right'>
+                                                <header class='product-preview__header'>
+                                                    <div class='product-preview__brand'>
+                                                        <picture>
+                                                            <source srcset="img/product-logo@1x.webp 1x,
+                                                            img/product-logo@2x.webp 2x"
+                                                                    type="image/webp">
+                                                            <img	src="img/product-logo@1x.jpg"
+                                                                    srcset="img/product-logo@2x.jpg 2x"
+                                                                    alt="фото">
+                                                        </picture>
+                                                    </div>
+                                                    <div class='product-preview__vendor'>арт. T430358</div>
+                                                </header>
+                                                <main class='product-preview__main'>
+                                                    <div class='product-preview__type-label'>Зимняя шина</div>
+                                                    <div class='product-preview__title'>Nokian Ecovision VI-386HP</div>
+                                                    <div class='product-preview__info'>
+                                                        Доступно:
+                                                        <span class='product-preview__info-accent'>R17</span>
+                                                        <span class='product-preview__info-accent'>R18</span>
+                                                        <span class='product-preview__info-accent'>R19</span>
+                                                    </div>
+                                                </main>
+                                                <footer class='product-preview__footer'>
+                                                    <button class='my-button my-button_wide my-button_size_sm product-preview__open-button'>Посмотреть</button>
+                                                </footer>
+                                            </div>
+                                        </div>
+                                        <div class='product-preview'>
+                                            <div class='product-preview__left'>
+                                                <div class='product-preview__image'>
+                                                    <picture>
+                                                        <source srcset="img/home/hit-product-disk@1x.webp 1x,
+                                                        img/home/hit-product-disk@2x.webp 2x"
+                                                                type="image/webp">
+                                                        <img	src="img/home/hit-product-disk@1x.jpg"
+                                                                srcset="img/home/hit-product-disk@2x.jpg 2x"
+                                                                alt="фото">
+                                                    </picture>
+                                                </div>
+                                                <div class='product-preview__price-block'>
+                                                    <div class='product-preview__price'>от <span class='product-preview__price-value'>4200 ₽</span></div>
+                                                    <div class="product-preview__available available-status available-status_yes">В наличии</div>
+                                                </div>
+                                            </div>
+                                            <div class='product-preview__right'>
+                                                <header class='product-preview__header'>
+                                                    <div class='product-preview__brand'>
+                                                        <picture>
+                                                            <source srcset="img/product-logo@1x.webp 1x,
+                                                            img/product-logo@2x.webp 2x"
+                                                                    type="image/webp">
+                                                            <img	src="img/product-logo@1x.jpg"
+                                                                    srcset="img/product-logo@2x.jpg 2x"
+                                                                    alt="фото">
+                                                        </picture>
+                                                    </div>
+                                                    <div class='product-preview__vendor'>арт. T430358</div>
+                                                </header>
+                                                <main class='product-preview__main'>
+                                                    <div class='product-preview__type-label'>Зимняя шина</div>
+                                                    <div class='product-preview__title'>Nokian Ecovision VI-386HP</div>
+                                                    <div class='product-preview__info'>
+                                                        Доступно:
+                                                        <span class='product-preview__info-accent'>R17</span>
+                                                        <span class='product-preview__info-accent'>R18</span>
+                                                        <span class='product-preview__info-accent'>R19</span>
+                                                    </div>
+                                                </main>
+                                                <footer class='product-preview__footer'>
+                                                    <button class='my-button my-button_wide my-button_size_sm product-preview__open-button'>Посмотреть</button>
+                                                </footer>
+                                            </div>
+                                        </div>
+                                        <div class='product-preview'>
+                                            <div class='product-preview__left'>
+                                                <div class='product-preview__image'>
+                                                    <picture>
+                                                        <source srcset="img/home/hit-product-disk@1x.webp 1x,
+                                                        img/home/hit-product-disk@2x.webp 2x"
+                                                                type="image/webp">
+                                                        <img	src="img/home/hit-product-disk@1x.jpg"
+                                                                srcset="img/home/hit-product-disk@2x.jpg 2x"
+                                                                alt="фото">
+                                                    </picture>
+                                                </div>
+                                                <div class='product-preview__price-block'>
+                                                    <div class='product-preview__price'>от <span class='product-preview__price-value'>4200 ₽</span></div>
+                                                    <div class="product-preview__available available-status available-status_yes">В наличии</div>
+                                                </div>
+                                            </div>
+                                            <div class='product-preview__right'>
+                                                <header class='product-preview__header'>
+                                                    <div class='product-preview__brand'>
+                                                        <picture>
+                                                            <source srcset="img/product-logo@1x.webp 1x,
+                                                            img/product-logo@2x.webp 2x"
+                                                                    type="image/webp">
+                                                            <img	src="img/product-logo@1x.jpg"
+                                                                    srcset="img/product-logo@2x.jpg 2x"
+                                                                    alt="фото">
+                                                        </picture>
+                                                    </div>
+                                                    <div class='product-preview__vendor'>арт. T430358</div>
+                                                </header>
+                                                <main class='product-preview__main'>
+                                                    <div class='product-preview__type-label'>Зимняя шина</div>
+                                                    <div class='product-preview__title'>Nokian Ecovision VI-386HP</div>
+                                                    <div class='product-preview__info'>
+                                                        Доступно:
+                                                        <span class='product-preview__info-accent'>R17</span>
+                                                        <span class='product-preview__info-accent'>R18</span>
+                                                        <span class='product-preview__info-accent'>R19</span>
+                                                    </div>
+                                                </main>
+                                                <footer class='product-preview__footer'>
+                                                    <button class='my-button my-button_wide my-button_size_sm product-preview__open-button'>Посмотреть</button>
+                                                </footer>
+                                            </div>
+                                        </div>
+                                        <div class='product-preview'>
+                                            <div class='product-preview__left'>
+                                                <div class='product-preview__image'>
+                                                    <picture>
+                                                        <source srcset="img/home/hit-product-disk@1x.webp 1x,
+                                                        img/home/hit-product-disk@2x.webp 2x"
+                                                                type="image/webp">
+                                                        <img	src="img/home/hit-product-disk@1x.jpg"
+                                                                srcset="img/home/hit-product-disk@2x.jpg 2x"
+                                                                alt="фото">
+                                                    </picture>
+                                                </div>
+                                                <div class='product-preview__price-block'>
+                                                    <div class='product-preview__price'>от <span class='product-preview__price-value'>4200 ₽</span></div>
+                                                    <div class="product-preview__available available-status available-status_yes">В наличии</div>
+                                                </div>
+                                            </div>
+                                            <div class='product-preview__right'>
+                                                <header class='product-preview__header'>
+                                                    <div class='product-preview__brand'>
+                                                        <picture>
+                                                            <source srcset="img/product-logo@1x.webp 1x,
+                                                            img/product-logo@2x.webp 2x"
+                                                                    type="image/webp">
+                                                            <img	src="img/product-logo@1x.jpg"
+                                                                    srcset="img/product-logo@2x.jpg 2x"
+                                                                    alt="фото">
+                                                        </picture>
+                                                    </div>
+                                                    <div class='product-preview__vendor'>арт. T430358</div>
+                                                </header>
+                                                <main class='product-preview__main'>
+                                                    <div class='product-preview__type-label'>Зимняя шина</div>
+                                                    <div class='product-preview__title'>Nokian Ecovision VI-386HP</div>
+                                                    <div class='product-preview__info'>
+                                                        Доступно:
+                                                        <span class='product-preview__info-accent'>R17</span>
+                                                        <span class='product-preview__info-accent'>R18</span>
+                                                        <span class='product-preview__info-accent'>R19</span>
+                                                    </div>
+                                                </main>
+                                                <footer class='product-preview__footer'>
+                                                    <button class='my-button my-button_wide my-button_size_sm product-preview__open-button'>Посмотреть</button>
+                                                </footer>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane fade tabs__panel" id="tires-season-winter">
+                                    <div class='cards-container'>
+                                        <div class='product-preview'>
+                                            <div class='product-preview__left'>
+                                                <div class='product-preview__image'>
+                                                    <picture>
+                                                        <source srcset="img/home/hit-product-disk@1x.webp 1x,
+                                                        img/home/hit-product-disk@2x.webp 2x"
+                                                                type="image/webp">
+                                                        <img	src="img/home/hit-product-disk@1x.jpg"
+                                                                srcset="img/home/hit-product-disk@2x.jpg 2x"
+                                                                alt="фото">
+                                                    </picture>
+                                                </div>
+                                                <div class='product-preview__price-block'>
+                                                    <div class='product-preview__price'>от <span class='product-preview__price-value'>4200 ₽</span></div>
+                                                    <div class="product-preview__available available-status available-status_yes">В наличии</div>
+                                                </div>
+                                            </div>
+                                            <div class='product-preview__right'>
+                                                <header class='product-preview__header'>
+                                                    <div class='product-preview__brand'>
+                                                        <picture>
+                                                            <source srcset="img/product-logo@1x.webp 1x,
+                                                            img/product-logo@2x.webp 2x"
+                                                                    type="image/webp">
+                                                            <img	src="img/product-logo@1x.jpg"
+                                                                    srcset="img/product-logo@2x.jpg 2x"
+                                                                    alt="фото">
+                                                        </picture>
+                                                    </div>
+                                                    <div class='product-preview__vendor'>арт. T430358</div>
+                                                </header>
+                                                <main class='product-preview__main'>
+                                                    <div class='product-preview__type-label'>Зимняя шина</div>
+                                                    <div class='product-preview__title'>Nokian Ecovision VI-386HP</div>
+                                                    <div class='product-preview__info'>
+                                                        Доступно:
+                                                        <span class='product-preview__info-accent'>R17</span>
+                                                        <span class='product-preview__info-accent'>R18</span>
+                                                        <span class='product-preview__info-accent'>R19</span>
+                                                    </div>
+                                                </main>
+                                                <footer class='product-preview__footer'>
+                                                    <button class='my-button my-button_wide my-button_size_sm product-preview__open-button'>Посмотреть</button>
+                                                </footer>
+                                            </div>
+                                        </div>
+                                        <div class='product-preview'>
+                                            <div class='product-preview__left'>
+                                                <div class='product-preview__image'>
+                                                    <picture>
+                                                        <source srcset="img/home/hit-product-disk@1x.webp 1x,
+                                                        img/home/hit-product-disk@2x.webp 2x"
+                                                                type="image/webp">
+                                                        <img	src="img/home/hit-product-disk@1x.jpg"
+                                                                srcset="img/home/hit-product-disk@2x.jpg 2x"
+                                                                alt="фото">
+                                                    </picture>
+                                                </div>
+                                                <div class='product-preview__price-block'>
+                                                    <div class='product-preview__price'>от <span class='product-preview__price-value'>4200 ₽</span></div>
+                                                    <div class="product-preview__available available-status available-status_yes">В наличии</div>
+                                                </div>
+                                            </div>
+                                            <div class='product-preview__right'>
+                                                <header class='product-preview__header'>
+                                                    <div class='product-preview__brand'>
+                                                        <picture>
+                                                            <source srcset="img/product-logo@1x.webp 1x,
+                                                            img/product-logo@2x.webp 2x"
+                                                                    type="image/webp">
+                                                            <img	src="img/product-logo@1x.jpg"
+                                                                    srcset="img/product-logo@2x.jpg 2x"
+                                                                    alt="фото">
+                                                        </picture>
+                                                    </div>
+                                                    <div class='product-preview__vendor'>арт. T430358</div>
+                                                </header>
+                                                <main class='product-preview__main'>
+                                                    <div class='product-preview__type-label'>Зимняя шина</div>
+                                                    <div class='product-preview__title'>Nokian Ecovision VI-386HP</div>
+                                                    <div class='product-preview__info'>
+                                                        Доступно:
+                                                        <span class='product-preview__info-accent'>R17</span>
+                                                        <span class='product-preview__info-accent'>R18</span>
+                                                        <span class='product-preview__info-accent'>R19</span>
+                                                    </div>
+                                                </main>
+                                                <footer class='product-preview__footer'>
+                                                    <button class='my-button my-button_wide my-button_size_sm product-preview__open-button'>Посмотреть</button>
+                                                </footer>
+                                            </div>
+                                        </div>
+                                        <div class='product-preview'>
+                                            <div class='product-preview__left'>
+                                                <div class='product-preview__image'>
+                                                    <picture>
+                                                        <source srcset="img/home/hit-product-disk@1x.webp 1x,
+                                                        img/home/hit-product-disk@2x.webp 2x"
+                                                                type="image/webp">
+                                                        <img	src="img/home/hit-product-disk@1x.jpg"
+                                                                srcset="img/home/hit-product-disk@2x.jpg 2x"
+                                                                alt="фото">
+                                                    </picture>
+                                                </div>
+                                                <div class='product-preview__price-block'>
+                                                    <div class='product-preview__price'>от <span class='product-preview__price-value'>4200 ₽</span></div>
+                                                    <div class="product-preview__available available-status available-status_yes">В наличии</div>
+                                                </div>
+                                            </div>
+                                            <div class='product-preview__right'>
+                                                <header class='product-preview__header'>
+                                                    <div class='product-preview__brand'>
+                                                        <picture>
+                                                            <source srcset="img/product-logo@1x.webp 1x,
+                                                            img/product-logo@2x.webp 2x"
+                                                                    type="image/webp">
+                                                            <img	src="img/product-logo@1x.jpg"
+                                                                    srcset="img/product-logo@2x.jpg 2x"
+                                                                    alt="фото">
+                                                        </picture>
+                                                    </div>
+                                                    <div class='product-preview__vendor'>арт. T430358</div>
+                                                </header>
+                                                <main class='product-preview__main'>
+                                                    <div class='product-preview__type-label'>Зимняя шина</div>
+                                                    <div class='product-preview__title'>Nokian Ecovision VI-386HP</div>
+                                                    <div class='product-preview__info'>
+                                                        Доступно:
+                                                        <span class='product-preview__info-accent'>R17</span>
+                                                        <span class='product-preview__info-accent'>R18</span>
+                                                        <span class='product-preview__info-accent'>R19</span>
+                                                    </div>
+                                                </main>
+                                                <footer class='product-preview__footer'>
+                                                    <button class='my-button my-button_wide my-button_size_sm product-preview__open-button'>Посмотреть</button>
+                                                </footer>
+                                            </div>
+                                        </div>
+                                        <div class='product-preview'>
+                                            <div class='product-preview__left'>
+                                                <div class='product-preview__image'>
+                                                    <picture>
+                                                        <source srcset="img/home/hit-product-disk@1x.webp 1x,
+                                                        img/home/hit-product-disk@2x.webp 2x"
+                                                                type="image/webp">
+                                                        <img	src="img/home/hit-product-disk@1x.jpg"
+                                                                srcset="img/home/hit-product-disk@2x.jpg 2x"
+                                                                alt="фото">
+                                                    </picture>
+                                                </div>
+                                                <div class='product-preview__price-block'>
+                                                    <div class='product-preview__price'>от <span class='product-preview__price-value'>4200 ₽</span></div>
+                                                    <div class="product-preview__available available-status available-status_yes">В наличии</div>
+                                                </div>
+                                            </div>
+                                            <div class='product-preview__right'>
+                                                <header class='product-preview__header'>
+                                                    <div class='product-preview__brand'>
+                                                        <picture>
+                                                            <source srcset="img/product-logo@1x.webp 1x,
+                                                            img/product-logo@2x.webp 2x"
+                                                                    type="image/webp">
+                                                            <img	src="img/product-logo@1x.jpg"
+                                                                    srcset="img/product-logo@2x.jpg 2x"
+                                                                    alt="фото">
+                                                        </picture>
+                                                    </div>
+                                                    <div class='product-preview__vendor'>арт. T430358</div>
+                                                </header>
+                                                <main class='product-preview__main'>
+                                                    <div class='product-preview__type-label'>Зимняя шина</div>
+                                                    <div class='product-preview__title'>Nokian Ecovision VI-386HP</div>
+                                                    <div class='product-preview__info'>
+                                                        Доступно:
+                                                        <span class='product-preview__info-accent'>R17</span>
+                                                        <span class='product-preview__info-accent'>R18</span>
+                                                        <span class='product-preview__info-accent'>R19</span>
+                                                    </div>
+                                                </main>
+                                                <footer class='product-preview__footer'>
+                                                    <button class='my-button my-button_wide my-button_size_sm product-preview__open-button'>Посмотреть</button>
+                                                </footer>
+                                            </div>
+                                        </div>
+                                        <div class='product-preview'>
+                                            <div class='product-preview__left'>
+                                                <div class='product-preview__image'>
+                                                    <picture>
+                                                        <source srcset="img/home/hit-product-disk@1x.webp 1x,
+                                                        img/home/hit-product-disk@2x.webp 2x"
+                                                                type="image/webp">
+                                                        <img	src="img/home/hit-product-disk@1x.jpg"
+                                                                srcset="img/home/hit-product-disk@2x.jpg 2x"
+                                                                alt="фото">
+                                                    </picture>
+                                                </div>
+                                                <div class='product-preview__price-block'>
+                                                    <div class='product-preview__price'>от <span class='product-preview__price-value'>4200 ₽</span></div>
+                                                    <div class="product-preview__available available-status available-status_yes">В наличии</div>
+                                                </div>
+                                            </div>
+                                            <div class='product-preview__right'>
+                                                <header class='product-preview__header'>
+                                                    <div class='product-preview__brand'>
+                                                        <picture>
+                                                            <source srcset="img/product-logo@1x.webp 1x,
+                                                            img/product-logo@2x.webp 2x"
+                                                                    type="image/webp">
+                                                            <img	src="img/product-logo@1x.jpg"
+                                                                    srcset="img/product-logo@2x.jpg 2x"
+                                                                    alt="фото">
+                                                        </picture>
+                                                    </div>
+                                                    <div class='product-preview__vendor'>арт. T430358</div>
+                                                </header>
+                                                <main class='product-preview__main'>
+                                                    <div class='product-preview__type-label'>Зимняя шина</div>
+                                                    <div class='product-preview__title'>Nokian Ecovision VI-386HP</div>
+                                                    <div class='product-preview__info'>
+                                                        Доступно:
+                                                        <span class='product-preview__info-accent'>R17</span>
+                                                        <span class='product-preview__info-accent'>R18</span>
+                                                        <span class='product-preview__info-accent'>R19</span>
+                                                    </div>
+                                                </main>
+                                                <footer class='product-preview__footer'>
+                                                    <button class='my-button my-button_wide my-button_size_sm product-preview__open-button'>Посмотреть</button>
+                                                </footer>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class='home__section'>
+                    <div class='page-container page-container_width_1920'>
+                        <h2 class='home__section-header'>Популярные производители дисков</h2>
+                        <div class='swiper brand-slider' id='disks-brand-slider'>
+                            <div class='swiper-wrapper brand-slider__wrapper'>
+                                <div class='swiper-slide brand-slider__slide'>
+                                    <div class='brand-slider__image'>
+                                        <picture>
+                                            <source srcset="img/home/brand-firelli@1x.webp 1x,
+                                                    img/home/brand-firelli@2x.webp 2x"
+                                                    type="image/webp">
+                                            <img	src="img/home/brand-firelli@1x.jpg"
+                                                    srcset="img/home/brand-firelli@2x.jpg 2x"
+                                                    alt="фото">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class='swiper-slide brand-slider__slide'>
+                                    <div class='brand-slider__image'>
+                                        <picture>
+                                            <source srcset="img/home/brand-continental@1x.webp 1x,
+                                                    img/home/brand-continental@2x.webp 2x"
+                                                    type="image/webp">
+                                            <img	src="img/home/brand-continental@1x.jpg"
+                                                    srcset="img/home/brand-continental@2x.jpg 2x"
+                                                    alt="фото">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class='swiper-slide brand-slider__slide'>
+                                    <div class='brand-slider__image'>
+                                        <picture>
+                                            <source srcset="img/home/brand-hankook@1x.webp 1x,
+                                                    img/home/brand-hankook@2x.webp 2x"
+                                                    type="image/webp">
+                                            <img	src="img/home/brand-hankook@1x.jpg"
+                                                    srcset="img/home/brand-hankook@2x.jpg 2x"
+                                                    alt="фото">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class='swiper-slide brand-slider__slide'>
+                                    <div class='brand-slider__image'>
+                                        <picture>
+                                            <source srcset="img/home/brand-yokohama@1x.webp 1x,
+                                                    img/home/brand-yokohama@2x.webp 2x"
+                                                    type="image/webp">
+                                            <img	src="img/home/brand-yokohama@1x.jpg"
+                                                    srcset="img/home/brand-yokohama@2x.jpg 2x"
+                                                    alt="фото">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class='swiper-slide brand-slider__slide'>
+                                    <div class='brand-slider__image'>
+                                        <picture>
+                                            <source srcset="img/home/brand-toyo-tires@1x.webp 1x,
+                                                    img/home/brand-toyo-tires@2x.webp 2x"
+                                                    type="image/webp">
+                                            <img	src="img/home/brand-toyo-tires@1x.jpg"
+                                                    srcset="img/home/brand-toyo-tires@2x.jpg 2x"
+                                                    alt="фото">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class='swiper-slide brand-slider__slide'>
+                                    <div class='brand-slider__image'>
+                                        <picture>
+                                            <source srcset="img/home/brand-good-year@1x.webp 1x,
+                                                    img/home/brand-good-year@2x.webp 2x"
+                                                    type="image/webp">
+                                            <img	src="img/home/brand-good-year@1x.jpg"
+                                                    srcset="img/home/brand-good-year@2x.jpg 2x"
+                                                    alt="фото">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class='swiper-slide brand-slider__slide'>
+                                    <div class='brand-slider__image'>
+                                        <picture>
+                                            <source srcset="img/home/brand-hankook@1x.webp 1x,
+                                                    img/home/brand-hankook@2x.webp 2x"
+                                                    type="image/webp">
+                                            <img	src="img/home/brand-hankook@1x.jpg"
+                                                    srcset="img/home/brand-hankook@2x.jpg 2x"
+                                                    alt="фото">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class='swiper-slide brand-slider__slide'>
+                                    <div class='brand-slider__image'>
+                                        <picture>
+                                            <source srcset="img/home/brand-yokohama@1x.webp 1x,
+                                                    img/home/brand-yokohama@2x.webp 2x"
+                                                    type="image/webp">
+                                            <img	src="img/home/brand-yokohama@1x.jpg"
+                                                    srcset="img/home/brand-yokohama@2x.jpg 2x"
+                                                    alt="фото">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class='swiper-slide brand-slider__slide'>
+                                    <div class='brand-slider__image'>
+                                        <picture>
+                                            <source srcset="img/home/brand-toyo-tires@1x.webp 1x,
+                                                    img/home/brand-toyo-tires@2x.webp 2x"
+                                                    type="image/webp">
+                                            <img	src="img/home/brand-toyo-tires@1x.jpg"
+                                                    srcset="img/home/brand-toyo-tires@2x.jpg 2x"
+                                                    alt="фото">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class='swiper-slide brand-slider__slide'>
+                                    <div class='brand-slider__image'>
+                                        <picture>
+                                            <source srcset="img/home/brand-good-year@1x.webp 1x,
+                                                    img/home/brand-good-year@2x.webp 2x"
+                                                    type="image/webp">
+                                            <img	src="img/home/brand-good-year@1x.jpg"
+                                                    srcset="img/home/brand-good-year@2x.jpg 2x"
+                                                    alt="фото">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class='swiper-slide brand-slider__slide'>
+                                    <div class='brand-slider__image'>
+                                        <picture>
+                                            <source srcset="img/home/brand-firelli@1x.webp 1x,
+                                                    img/home/brand-firelli@2x.webp 2x"
+                                                    type="image/webp">
+                                            <img	src="img/home/brand-firelli@1x.jpg"
+                                                    srcset="img/home/brand-firelli@2x.jpg 2x"
+                                                    alt="фото">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class='swiper-slide brand-slider__slide'>
+                                    <div class='brand-slider__image'>
+                                        <picture>
+                                            <source srcset="img/home/brand-continental@1x.webp 1x,
+                                                    img/home/brand-continental@2x.webp 2x"
+                                                    type="image/webp">
+                                            <img	src="img/home/brand-continental@1x.jpg"
+                                                    srcset="img/home/brand-continental@2x.jpg 2x"
+                                                    alt="фото">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class='swiper-slide brand-slider__slide'>
+                                    <div class='brand-slider__image'>
+                                        <picture>
+                                            <source srcset="img/home/brand-hankook@1x.webp 1x,
+                                                    img/home/brand-hankook@2x.webp 2x"
+                                                    type="image/webp">
+                                            <img	src="img/home/brand-hankook@1x.jpg"
+                                                    srcset="img/home/brand-hankook@2x.jpg 2x"
+                                                    alt="фото">
+                                        </picture>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination brand-slider__pagination"></div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class='home__section'>
+                    <div class='page-container page-container_width_1920'>
+                        <h2 class='home__section-header'>Хиты продаж — диски</h2>
+                        <div class='cards-container'>
+                            <div class='product-preview'>
+                                <div class='product-preview__left'>
+                                    <div class='product-preview__image'>
+                                        <picture>
+                                            <source srcset="img/home/hit-product-disk@1x.webp 1x,
+                                                        img/home/hit-product-disk@2x.webp 2x"
+                                                    type="image/webp">
+                                            <img	src="img/home/hit-product-disk@1x.jpg"
+                                                    srcset="img/home/hit-product-disk@2x.jpg 2x"
+                                                    alt="фото">
+                                        </picture>
+                                    </div>
+                                    <div class='product-preview__price-block'>
+                                        <div class='product-preview__price'>от <span class='product-preview__price-value'>4200 ₽</span></div>
+                                        <div class="product-preview__available available-status available-status_yes">В наличии</div>
+                                    </div>
+                                </div>
+                                <div class='product-preview__right'>
+                                    <header class='product-preview__header'>
+                                        <div class='product-preview__brand'>
+                                            <picture>
+                                                <source srcset="img/product-logo@1x.webp 1x,
+                                                            img/product-logo@2x.webp 2x"
+                                                        type="image/webp">
+                                                <img	src="img/product-logo@1x.jpg"
+                                                        srcset="img/product-logo@2x.jpg 2x"
+                                                        alt="фото">
+                                            </picture>
+                                        </div>
+                                        <div class='product-preview__vendor'>арт. T430358</div>
+                                    </header>
+                                    <main class='product-preview__main'>
+                                        <div class='product-preview__type-label'>Зимняя шина</div>
+                                        <div class='product-preview__title'>Nokian Ecovision VI-386HP</div>
+                                        <div class='product-preview__info'>
+                                            Доступно:
+                                            <span class='product-preview__info-accent'>R17</span>
+                                            <span class='product-preview__info-accent'>R18</span>
+                                            <span class='product-preview__info-accent'>R19</span>
+                                        </div>
+                                    </main>
+                                    <footer class='product-preview__footer'>
+                                        <button class='my-button my-button_wide my-button_size_sm product-preview__open-button'>Посмотреть</button>
+                                    </footer>
+                                </div>
+                            </div>
+                            <div class='product-preview'>
+                                <div class='product-preview__left'>
+                                    <div class='product-preview__image'>
+                                        <picture>
+                                            <source srcset="img/home/hit-product-disk@1x.webp 1x,
+                                                        img/home/hit-product-disk@2x.webp 2x"
+                                                    type="image/webp">
+                                            <img	src="img/home/hit-product-disk@1x.jpg"
+                                                    srcset="img/home/hit-product-disk@2x.jpg 2x"
+                                                    alt="фото">
+                                        </picture>
+                                    </div>
+                                    <div class='product-preview__price-block'>
+                                        <div class='product-preview__price'>от <span class='product-preview__price-value'>4200 ₽</span></div>
+                                        <div class="product-preview__available available-status available-status_yes">В наличии</div>
+                                    </div>
+                                </div>
+                                <div class='product-preview__right'>
+                                    <header class='product-preview__header'>
+                                        <div class='product-preview__brand'>
+                                            <picture>
+                                                <source srcset="img/product-logo@1x.webp 1x,
+                                                            img/product-logo@2x.webp 2x"
+                                                        type="image/webp">
+                                                <img	src="img/product-logo@1x.jpg"
+                                                        srcset="img/product-logo@2x.jpg 2x"
+                                                        alt="фото">
+                                            </picture>
+                                        </div>
+                                        <div class='product-preview__vendor'>арт. T430358</div>
+                                    </header>
+                                    <main class='product-preview__main'>
+                                        <div class='product-preview__type-label'>Зимняя шина</div>
+                                        <div class='product-preview__title'>Nokian Ecovision VI-386HP</div>
+                                        <div class='product-preview__info'>
+                                            Доступно:
+                                            <span class='product-preview__info-accent'>R17</span>
+                                            <span class='product-preview__info-accent'>R18</span>
+                                            <span class='product-preview__info-accent'>R19</span>
+                                        </div>
+                                    </main>
+                                    <footer class='product-preview__footer'>
+                                        <button class='my-button my-button_wide my-button_size_sm product-preview__open-button'>Посмотреть</button>
+                                    </footer>
+                                </div>
+                            </div>
+                            <div class='product-preview'>
+                                <div class='product-preview__left'>
+                                    <div class='product-preview__image'>
+                                        <picture>
+                                            <source srcset="img/home/hit-product-disk@1x.webp 1x,
+                                                        img/home/hit-product-disk@2x.webp 2x"
+                                                    type="image/webp">
+                                            <img	src="img/home/hit-product-disk@1x.jpg"
+                                                    srcset="img/home/hit-product-disk@2x.jpg 2x"
+                                                    alt="фото">
+                                        </picture>
+                                    </div>
+                                    <div class='product-preview__price-block'>
+                                        <div class='product-preview__price'>от <span class='product-preview__price-value'>4200 ₽</span></div>
+                                        <div class="product-preview__available available-status available-status_yes">В наличии</div>
+                                    </div>
+                                </div>
+                                <div class='product-preview__right'>
+                                    <header class='product-preview__header'>
+                                        <div class='product-preview__brand'>
+                                            <picture>
+                                                <source srcset="img/product-logo@1x.webp 1x,
+                                                            img/product-logo@2x.webp 2x"
+                                                        type="image/webp">
+                                                <img	src="img/product-logo@1x.jpg"
+                                                        srcset="img/product-logo@2x.jpg 2x"
+                                                        alt="фото">
+                                            </picture>
+                                        </div>
+                                        <div class='product-preview__vendor'>арт. T430358</div>
+                                    </header>
+                                    <main class='product-preview__main'>
+                                        <div class='product-preview__type-label'>Зимняя шина</div>
+                                        <div class='product-preview__title'>Nokian Ecovision VI-386HP</div>
+                                        <div class='product-preview__info'>
+                                            Доступно:
+                                            <span class='product-preview__info-accent'>R17</span>
+                                            <span class='product-preview__info-accent'>R18</span>
+                                            <span class='product-preview__info-accent'>R19</span>
+                                        </div>
+                                    </main>
+                                    <footer class='product-preview__footer'>
+                                        <button class='my-button my-button_wide my-button_size_sm product-preview__open-button'>Посмотреть</button>
+                                    </footer>
+                                </div>
+                            </div>
+                            <div class='product-preview'>
+                                <div class='product-preview__left'>
+                                    <div class='product-preview__image'>
+                                        <picture>
+                                            <source srcset="img/home/hit-product-disk@1x.webp 1x,
+                                                        img/home/hit-product-disk@2x.webp 2x"
+                                                    type="image/webp">
+                                            <img	src="img/home/hit-product-disk@1x.jpg"
+                                                    srcset="img/home/hit-product-disk@2x.jpg 2x"
+                                                    alt="фото">
+                                        </picture>
+                                    </div>
+                                    <div class='product-preview__price-block'>
+                                        <div class='product-preview__price'>от <span class='product-preview__price-value'>4200 ₽</span></div>
+                                        <div class="product-preview__available available-status available-status_yes">В наличии</div>
+                                    </div>
+                                </div>
+                                <div class='product-preview__right'>
+                                    <header class='product-preview__header'>
+                                        <div class='product-preview__brand'>
+                                            <picture>
+                                                <source srcset="img/product-logo@1x.webp 1x,
+                                                            img/product-logo@2x.webp 2x"
+                                                        type="image/webp">
+                                                <img	src="img/product-logo@1x.jpg"
+                                                        srcset="img/product-logo@2x.jpg 2x"
+                                                        alt="фото">
+                                            </picture>
+                                        </div>
+                                        <div class='product-preview__vendor'>арт. T430358</div>
+                                    </header>
+                                    <main class='product-preview__main'>
+                                        <div class='product-preview__type-label'>Зимняя шина</div>
+                                        <div class='product-preview__title'>Nokian Ecovision VI-386HP</div>
+                                        <div class='product-preview__info'>
+                                            Доступно:
+                                            <span class='product-preview__info-accent'>R17</span>
+                                            <span class='product-preview__info-accent'>R18</span>
+                                            <span class='product-preview__info-accent'>R19</span>
+                                        </div>
+                                    </main>
+                                    <footer class='product-preview__footer'>
+                                        <button class='my-button my-button_wide my-button_size_sm product-preview__open-button'>Посмотреть</button>
+                                    </footer>
+                                </div>
+                            </div>
+                            <div class='product-preview'>
+                                <div class='product-preview__left'>
+                                    <div class='product-preview__image'>
+                                        <picture>
+                                            <source srcset="img/home/hit-product-disk@1x.webp 1x,
+                                                        img/home/hit-product-disk@2x.webp 2x"
+                                                    type="image/webp">
+                                            <img	src="img/home/hit-product-disk@1x.jpg"
+                                                    srcset="img/home/hit-product-disk@2x.jpg 2x"
+                                                    alt="фото">
+                                        </picture>
+                                    </div>
+                                    <div class='product-preview__price-block'>
+                                        <div class='product-preview__price'>от <span class='product-preview__price-value'>4200 ₽</span></div>
+                                        <div class="product-preview__available available-status available-status_yes">В наличии</div>
+                                    </div>
+                                </div>
+                                <div class='product-preview__right'>
+                                    <header class='product-preview__header'>
+                                        <div class='product-preview__brand'>
+                                            <picture>
+                                                <source srcset="img/product-logo@1x.webp 1x,
+                                                            img/product-logo@2x.webp 2x"
+                                                        type="image/webp">
+                                                <img	src="img/product-logo@1x.jpg"
+                                                        srcset="img/product-logo@2x.jpg 2x"
+                                                        alt="фото">
+                                            </picture>
+                                        </div>
+                                        <div class='product-preview__vendor'>арт. T430358</div>
+                                    </header>
+                                    <main class='product-preview__main'>
+                                        <div class='product-preview__type-label'>Зимняя шина</div>
+                                        <div class='product-preview__title'>Nokian Ecovision VI-386HP</div>
+                                        <div class='product-preview__info'>
+                                            Доступно:
+                                            <span class='product-preview__info-accent'>R17</span>
+                                            <span class='product-preview__info-accent'>R18</span>
+                                            <span class='product-preview__info-accent'>R19</span>
+                                        </div>
+                                    </main>
+                                    <footer class='product-preview__footer'>
+                                        <button class='my-button my-button_wide my-button_size_sm product-preview__open-button'>Посмотреть</button>
+                                    </footer>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
 
         </div>
     </section>

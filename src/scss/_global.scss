@@ -13,6 +13,7 @@ body {
 .my-button {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     padding: 14px 20px;
     color: $color-accent;
     font-weight: bold;
@@ -59,6 +60,16 @@ body {
 
     &:disabled {
         opacity: 0.3;
+    }
+
+    &_size {
+        &_sm {
+            padding: 10px 20px;
+        }
+    }
+
+    &_wide {
+        width: 100%;
     }
 }
 
@@ -308,6 +319,11 @@ body {
         &::placeholder {
             color: $cRegentGray;
         }
+
+        &_wide {
+            display: block;
+            width: 100%;
+        }
     }
 }
 
@@ -368,5 +384,177 @@ body {
 .only-mobile {
     @media screen and (min-width: $md3 + 1 + px) {
         display: none;
+    }
+}
+
+.tabs {
+    // .tabs__list
+    &__list {
+        border: 0 !important;
+
+        @media screen and (max-width: $md3 + px) {
+            margin: 20px 0 30px !important;
+            filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.15));
+        }
+    }
+
+    // .tabs__item
+    &__item {
+        a {
+            position: relative !important;
+            padding: 20px 15px 20px 40px !important;
+            color: $color-main !important;
+            font-weight: bold;
+            font-size: 18px !important;
+            font-family: $font-open-sans;
+            line-height: 100% !important;
+            text-transform: uppercase;
+            background: transparent !important;
+            border: 0 !important;
+            transition: all 0.3s ease;
+
+            @include singleLineElipsis();
+
+            @media screen and (max-width: $md2 + px) and (min-width: $md3 + 1 + px) {
+                padding: 17px 15px 17px 35px !important;
+                font-size: 15px !important;
+            }
+            @media screen and (max-width: $md3 + px) {
+                height: 62px;
+                padding: 20px 35px 20px 15px !important;
+                background: $cWhite !important;
+            }
+
+            &::before {
+                position: absolute;
+                top: 50%;
+                left: 10px;
+                display: block;
+                width: 19px;
+                height: 19px;
+                vertical-align: middle;
+                background: transparent;
+                border: 3px solid $color-accent;
+                border-radius: 4px;
+                transform: translate3d(0, -50%, 0);
+                opacity: 0.2;
+                transition: all 0.3s ease;
+                content: '';
+
+                @media screen and (max-width: $md2 + px) and (min-width: $md3 + 1 + px) {
+                    width: 15px;
+                    height: 15px;
+                    border-radius: 2px;
+                }
+                @media screen and (max-width: $md3 + px) {
+                    display: none;
+                }
+            }
+        }
+
+        &.active a {
+            color: $color-accent !important;
+            background: $color-gray-back !important;
+            &::before {
+                background: $color-accent;
+                transform: translate3d(0, -50%, 0) scale(0.47);
+                opacity: 1;
+            }
+        }
+    }
+
+    // .tabs__content
+    &__content {
+    }
+
+    // .tabs__panel
+    &__panel {
+    }
+
+    &__list.responsive-tabs {
+        @media screen and (max-width: $md3 + px) {
+            position: relative;
+            z-index: 10;
+            height: 62px;
+            overflow: visible;
+            border-bottom: none !important;
+        }
+
+        span.glyphicon {
+            @media screen and (max-width: $md3 + px) {
+                position: absolute;
+                top: 50%;
+                right: 22px;
+                color: $color-accent;
+                transform: translate3d(0, -50%, 0);
+                &.glyphicon-chevron-up {
+                    display: none;
+                }
+            }
+            @media screen and (min-width: $md3 + 1 + px) {
+                display: none;
+            }
+        }
+
+        &.open {
+            span.glyphicon {
+                &.glyphicon-chevron-up {
+                    @media screen and (max-width: $md3 + px) {
+                        // display: block;
+                    }
+                }
+                &.glyphicon-chevron-down {
+                    @media screen and (max-width: $md3 + px) {
+                        opacity: 0 !important;
+                    }
+                }
+            }
+        }
+    }
+
+    &__list.responsive-tabs > &__item {
+        @media screen and (max-width: $md3 + px) {
+            display: none;
+            float: none;
+            text-align: center;
+
+            &:last-of-type > a {
+                margin-right: 0;
+            }
+        }
+
+        > a {
+            @media screen and (max-width: $md3 + px) {
+                margin-right: 0 !important;
+            }
+        }
+
+        &.active {
+            @media screen and (max-width: $md3 + px) {
+                display: block;
+            }
+            a {
+                @media screen and (max-width: $md3 + px) {
+                    border-radius: 6px;
+                }
+            }
+        }
+    }
+
+    &__list.responsive-tabs.open > &__item {
+        @media screen and (max-width: $md3 + px) {
+            display: block;
+
+            a {
+                border-radius: 0;
+            }
+
+            &:first-of-type a {
+                border-radius: 5px 5px 0 0;
+            }
+            &:last-of-type a {
+                border-radius: 0 0 5px 5px;
+            }
+        }
     }
 }

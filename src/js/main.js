@@ -33,6 +33,66 @@ const homeSwiper = new Swiper('.home-slider', {
     },
     loop: true,
 });
+const brand1Swiper = new Swiper('#tires-brand-slider', {
+    slidesPerView: 1,
+    autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+    },
+    loop: true,
+    pagination: {
+        el: '.brand-slider__pagination',
+        type: 'bullets',
+        dynamicBullets: true,
+    },
+    breakpoints: {
+        620: {
+            slidesPerView: 2,
+        },
+        900: {
+            slidesPerView: 3,
+        },
+        1200: {
+            slidesPerView: 4,
+        },
+        1465: {
+            slidesPerView: 5,
+        },
+        1730: {
+            slidesPerView: 6,
+        },
+    },
+});
+const brand2Swiper = new Swiper('#disks-brand-slider', {
+    slidesPerView: 1,
+    autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+    },
+    loop: true,
+    pagination: {
+        el: '.brand-slider__pagination',
+        type: 'bullets',
+        dynamicBullets: true,
+    },
+    breakpoints: {
+        620: {
+            slidesPerView: 2,
+        },
+        900: {
+            slidesPerView: 3,
+        },
+        1200: {
+            slidesPerView: 4,
+        },
+        1465: {
+            slidesPerView: 5,
+        },
+        1730: {
+            slidesPerView: 6,
+        },
+    },
+});
 
 $.fn.responsiveTabs = function () {
     this.addClass('responsive-tabs');
@@ -51,4 +111,5 @@ $.fn.responsiveTabs = function () {
 $('.product-info__tabs').responsiveTabs();
 $('.tirefit-price__tabs').responsiveTabs();
 $('.wheel-size-list').responsiveTabs();
+$('.tires-season__tabs').responsiveTabs();
 /* eslint-enable no-undef, no-unused-vars */
