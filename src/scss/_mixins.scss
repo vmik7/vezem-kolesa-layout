@@ -49,3 +49,18 @@
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
+
+// Mixin for responsive propetry-values
+
+@mixin responsive-value($prop, $init, $finally, $md_init, $md_final) {
+    @media screen and (max-width: $md_init + px) {
+        #{$prop}: calc(
+            #{$finally}px + (#{$init} - #{$finally}) *
+                ((100vw - #{$md_final}px) / (#{$md_init} - #{$md_final}))
+        );
+    }
+}
+
+@mixin responsive-pixels($prop, $value, $md) {
+    #{$prop}: calc(#{$value} * 100vw / #{$md});
+}

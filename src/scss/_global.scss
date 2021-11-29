@@ -13,6 +13,7 @@ body {
 .my-button {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     padding: 14px 20px;
     color: $color-accent;
     font-weight: bold;
@@ -32,6 +33,7 @@ body {
             border-color: #34af9d;
         }
     }
+
     &:active {
         color: $cWhite;
         background: #34af9d;
@@ -58,6 +60,16 @@ body {
 
     &:disabled {
         opacity: 0.3;
+    }
+
+    &_size {
+        &_sm {
+            padding: 10px 20px;
+        }
+    }
+
+    &_wide {
+        width: 100%;
     }
 }
 
@@ -132,12 +144,15 @@ body {
 
     &_yes {
         color: $cPastelGreen;
+
         &::before {
             content: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21.5 13L14.1666 20L10.5 16.5' stroke='%236EE152' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z' stroke='%236EE152' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
         }
     }
+
     &_no {
         color: $color-warn;
+
         &::before {
             content: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M19.3334 13L12 20' stroke='%23FF4343' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M12.0001 13L19.3335 20' stroke='%23FF4343' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z' stroke='%23FF4343' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
         }
@@ -181,15 +196,19 @@ body {
     &_value_five > &__item:nth-child(5) path {
         fill: $color-warn;
     }
+
     &_value_five > &__item:nth-child(4) path {
         fill: $color-warn;
     }
+
     &_value_five > &__item:nth-child(3) path {
         fill: $color-warn;
     }
+
     &_value_five > &__item:nth-child(2) path {
         fill: $color-warn;
     }
+
     &_value_five > &__item:nth-child(1) path {
         fill: $color-warn;
     }
@@ -197,12 +216,15 @@ body {
     &_value_four > &__item:nth-child(4) path {
         fill: $color-warn;
     }
+
     &_value_four > &__item:nth-child(3) path {
         fill: $color-warn;
     }
+
     &_value_four > &__item:nth-child(2) path {
         fill: $color-warn;
     }
+
     &_value_four > &__item:nth-child(1) path {
         fill: $color-warn;
     }
@@ -210,9 +232,11 @@ body {
     &_value_three > &__item:nth-child(3) path {
         fill: $color-warn;
     }
+
     &_value_three > &__item:nth-child(2) path {
         fill: $color-warn;
     }
+
     &_value_three > &__item:nth-child(1) path {
         fill: $color-warn;
     }
@@ -220,6 +244,7 @@ body {
     &_value_two > &__item:nth-child(2) path {
         fill: $color-warn;
     }
+
     &_value_two > &__item:nth-child(1) path {
         fill: $color-warn;
     }
@@ -248,6 +273,7 @@ body {
                 font-size: 40px;
                 line-height: 48px;
             }
+
             &_two {
                 margin-top: 10px;
                 margin-bottom: 20px;
@@ -293,6 +319,11 @@ body {
         &::placeholder {
             color: $cRegentGray;
         }
+
+        &_wide {
+            display: block;
+            width: 100%;
+        }
     }
 }
 
@@ -306,7 +337,11 @@ body {
 .page-container {
     max-width: 1440px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 $container-padding + px;
+
+    &_width_1920 {
+        max-width: 1840px;
+    }
 
     &_with-sidebar {
         display: flex;
@@ -331,9 +366,11 @@ body {
 .header {
     display: none;
 }
+
 .main {
     flex: 1;
 }
+
 .footer {
     height: 500px;
 }
@@ -347,5 +384,177 @@ body {
 .only-mobile {
     @media screen and (min-width: $md3 + 1 + px) {
         display: none;
+    }
+}
+
+.tabs {
+    // .tabs__list
+    &__list {
+        border: 0 !important;
+
+        @media screen and (max-width: $md3 + px) {
+            margin: 20px 0 30px !important;
+            filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.15));
+        }
+    }
+
+    // .tabs__item
+    &__item {
+        a {
+            position: relative !important;
+            padding: 20px 15px 20px 40px !important;
+            color: $color-main !important;
+            font-weight: bold;
+            font-size: 18px !important;
+            font-family: $font-open-sans;
+            line-height: 100% !important;
+            text-transform: uppercase;
+            background: transparent !important;
+            border: 0 !important;
+            transition: all 0.3s ease;
+
+            @include singleLineElipsis();
+
+            @media screen and (max-width: $md2 + px) and (min-width: $md3 + 1 + px) {
+                padding: 17px 15px 17px 35px !important;
+                font-size: 15px !important;
+            }
+            @media screen and (max-width: $md3 + px) {
+                height: 62px;
+                padding: 20px 35px 20px 15px !important;
+                background: $cWhite !important;
+            }
+
+            &::before {
+                position: absolute;
+                top: 50%;
+                left: 10px;
+                display: block;
+                width: 19px;
+                height: 19px;
+                vertical-align: middle;
+                background: transparent;
+                border: 3px solid $color-accent;
+                border-radius: 4px;
+                transform: translate3d(0, -50%, 0);
+                opacity: 0.2;
+                transition: all 0.3s ease;
+                content: '';
+
+                @media screen and (max-width: $md2 + px) and (min-width: $md3 + 1 + px) {
+                    width: 15px;
+                    height: 15px;
+                    border-radius: 2px;
+                }
+                @media screen and (max-width: $md3 + px) {
+                    display: none;
+                }
+            }
+        }
+
+        &.active a {
+            color: $color-accent !important;
+            background: $color-gray-back !important;
+            &::before {
+                background: $color-accent;
+                transform: translate3d(0, -50%, 0) scale(0.47);
+                opacity: 1;
+            }
+        }
+    }
+
+    // .tabs__content
+    &__content {
+    }
+
+    // .tabs__panel
+    &__panel {
+    }
+
+    &__list.responsive-tabs {
+        @media screen and (max-width: $md3 + px) {
+            position: relative;
+            z-index: 10;
+            height: 62px;
+            overflow: visible;
+            border-bottom: none !important;
+        }
+
+        span.glyphicon {
+            @media screen and (max-width: $md3 + px) {
+                position: absolute;
+                top: 50%;
+                right: 22px;
+                color: $color-accent;
+                transform: translate3d(0, -50%, 0);
+                &.glyphicon-chevron-up {
+                    display: none;
+                }
+            }
+            @media screen and (min-width: $md3 + 1 + px) {
+                display: none;
+            }
+        }
+
+        &.open {
+            span.glyphicon {
+                &.glyphicon-chevron-up {
+                    @media screen and (max-width: $md3 + px) {
+                        // display: block;
+                    }
+                }
+                &.glyphicon-chevron-down {
+                    @media screen and (max-width: $md3 + px) {
+                        opacity: 0 !important;
+                    }
+                }
+            }
+        }
+    }
+
+    &__list.responsive-tabs > &__item {
+        @media screen and (max-width: $md3 + px) {
+            display: none;
+            float: none;
+            text-align: center;
+
+            &:last-of-type > a {
+                margin-right: 0;
+            }
+        }
+
+        > a {
+            @media screen and (max-width: $md3 + px) {
+                margin-right: 0 !important;
+            }
+        }
+
+        &.active {
+            @media screen and (max-width: $md3 + px) {
+                display: block;
+            }
+            a {
+                @media screen and (max-width: $md3 + px) {
+                    border-radius: 6px;
+                }
+            }
+        }
+    }
+
+    &__list.responsive-tabs.open > &__item {
+        @media screen and (max-width: $md3 + px) {
+            display: block;
+
+            a {
+                border-radius: 0;
+            }
+
+            &:first-of-type a {
+                border-radius: 5px 5px 0 0;
+            }
+            &:last-of-type a {
+                border-radius: 0 0 5px 5px;
+            }
+        }
     }
 }
