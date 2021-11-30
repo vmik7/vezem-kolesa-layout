@@ -1751,6 +1751,7 @@ body {
 .sidebar-banner__content {
   position: absolute;
   bottom: 25px;
+  max-width: 230px;
 }
 
 .sidebar-banner_size_l {
@@ -2610,8 +2611,7 @@ body {
 
 .cards-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, -webkit-max-content));
-  grid-template-columns: repeat(auto-fit, minmax(320px, max-content));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -2716,6 +2716,9 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .product-preview__header {
@@ -2923,6 +2926,66 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   row-gap: 10px;
+}
+
+.home-news-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.home-news-item__image {
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.home-news-item__image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+.home-news-item__header {
+  font-family: "Open Sans Condensed", "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 120%;
+  color: #0e8ecf;
+  margin-bottom: 10px;
+}
+
+.home-news-item__date {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  line-height: 120%;
+  color: #949da7;
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home-news-item__clock-icon {
+  margin-right: 3px;
+}
+
+.home-news-item__text {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 120%;
+  color: #444;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 @media screen and (min-width: 480px) {
@@ -3774,7 +3837,6 @@ body {
   }
 
   .home-header__banner {
-    max-width: 312px;
     margin-top: 20px;
     -ms-flex-item-align: center;
         align-self: center;
