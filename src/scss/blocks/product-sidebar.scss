@@ -44,7 +44,6 @@
     font-family: $font-open-sans;
     line-height: 120%;
     text-transform: uppercase;
-    //background: $color-gray-back;
     border-radius: 4px;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
 
@@ -65,6 +64,7 @@
     &__content {
         position: absolute;
         bottom: 25px;
+        max-width: 230px;
     }
 
     &_size {
