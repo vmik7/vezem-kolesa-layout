@@ -37,7 +37,12 @@
         font-weight: bold;
         font-size: 32px;
         font-family: $font-open-sans;
-        line-height: 36px;
+        line-height: 120%;
+
+        @media screen and (max-width: $md3 - 1 + px) {
+            @include responsive-value(font-size, 32, 26, $md3, $md_min);
+            @include responsive-value(margin-bottom, 40, 30, $md3, $md_min);
+        }
     }
 }
 
@@ -653,6 +658,10 @@
     // .brand-slider__image
     &__image {
         text-align: center;
+
+        img {
+            width: 100%;
+        }
     }
 
     // .brand-slider__pagination
@@ -702,7 +711,7 @@
     // .extra-services__container
     &__container {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, max-content));
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         gap: 10px;
         justify-content: center;
 
@@ -762,7 +771,7 @@
             @include responsive-pixels(row-gap, 60, $md0);
         }
 
-        @media screen and (max-width: $md1 - 1 + px) {
+        @media screen and (max-width: $md3 - 1 + px) {
             grid-template-columns: 1fr;
         }
     }
@@ -776,6 +785,9 @@
         @media screen and (max-width: $md0 - 1 + px) {
             @include responsive-pixels(padding, 60, $md0);
         }
+        @media screen and (max-width: $md3 - 1 + px) {
+            padding: 20px;
+        }
     }
 
     // .home-size-panel__header
@@ -786,6 +798,10 @@
         font-size: 32px;
         font-family: $font-open-sans;
         line-height: 120%;
+
+        @media screen and (max-width: $md3 - 1 + px) {
+            @include responsive-value(font-size, 32, 21, $md3, $md_min);
+        }
     }
 
     // .home-size-panel__container
@@ -802,6 +818,20 @@
         @media screen and (max-width: $md0 - 1 + px) {
             @include responsive-pixels(column-gap, 60, $md0);
         }
+        @media screen and (max-width: $md1 - 1 + px) and (min-width: $md3 + px) {
+            grid-template-columns: repeat(3, max-content);
+            justify-content: space-around;
+
+            @media screen and (max-width: $md2 - 1 + px) {
+                grid-template-columns: repeat(2, max-content);
+            }
+        }
+
+        @media screen and (max-width: $md3 - 1 + px) {
+            grid-template-columns: repeat(3, max-content);
+            justify-content: space-around;
+        }
+
         @media screen and (max-width: $md4 - 1 + px) {
             grid-template-columns: repeat(2, max-content);
             justify-content: space-around;
